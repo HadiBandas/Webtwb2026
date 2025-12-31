@@ -147,7 +147,10 @@ const FacilityPage: React.FC<FacilityPageProps> = ({ onNavigateToGallery }) => {
           <p className="text-white/80 font-light max-w-2xl mx-auto mb-12 leading-relaxed text-lg">
             {t('facility.map.desc')}
           </p>
-          <button className="inline-flex items-center gap-3 border border-white text-white px-10 py-4 text-sm uppercase tracking-[0.2em] hover:bg-white hover:text-forest-dark transition-all duration-300">
+          <button
+            onClick={() => window.open('https://maps.google.com/?q=-7.1475,107.5542&z=15', '_blank')}
+            className="inline-flex items-center gap-3 border border-white text-white px-10 py-4 text-sm uppercase tracking-[0.2em] hover:bg-white hover:text-forest-dark transition-all duration-300"
+          >
             <span>{t('facility.map.button')}</span>
             <ArrowRight size={16} />
           </button>

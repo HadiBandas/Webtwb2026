@@ -78,8 +78,33 @@ export function VillaDetailPage({ villaId }: VillaDetailPageProps) {
     const [isWishlisted, setIsWishlisted] = useState(false);
     const [galleryOpen, setGalleryOpen] = useState(false);
     const [galleryStartIndex, setGalleryStartIndex] = useState(0);
+    const [shareTooltip, setShareTooltip] = useState('');
 
     const currentVilla = VILLAS.find(v => v.id === villaId);
+
+    // Load wishlist from localStorage on mount
+    useEffect(() => {
+        const savedWishlist = localStorage.getItem('twb_wishlist');
+        if (savedWishlist) {
+            const wishlist = JSON.parse(savedWishlist);
+            setIsWishlisted(wishlist.includes(villaId));
+        }
+    }, [villaId]);
+
+    // Save wishlist to localStorage
+    const handleWishlistToggle = () => {
+        const savedWishlist = localStorage.getItem('twb_wishlist');
+        let wishlist = savedWishlist ? JSON.parse(savedWishlist) : [];
+
+        if (isWishlisted) {
+            wishlist = wishlist.filter((id: string) => id !== villaId);
+        } else {
+            wishlist.push(villaId);
+        }
+
+        localStorage.setItem('twb_wishlist', JSON.stringify(wishlist));
+        setIsWishlisted(!isWishlisted);
+    };
 
     // Track page view and villa view on mount
     useEffect(() => {
@@ -113,15 +138,26 @@ export function VillaDetailPage({ villaId }: VillaDetailPageProps) {
     };
 
     const handleShare = async () => {
+        const shareData = {
+            title: currentVilla.name,
+            text: getContent(currentVilla.description),
+            url: window.location.href,
+        };
+
         if (navigator.share) {
             try {
-                await navigator.share({
-                    title: currentVilla.name,
-                    text: getContent(currentVilla.description),
-                    url: window.location.href,
-                });
+                await navigator.share(shareData);
             } catch (err) {
                 console.log('Error sharing:', err);
+            }
+        } else {
+            // Fallback: Copy to clipboard
+            try {
+                await navigator.clipboard.writeText(window.location.href);
+                setShareTooltip(t('common.copied', 'Link copied!'));
+                setTimeout(() => setShareTooltip(''), 2000);
+            } catch (err) {
+                console.log('Error copying:', err);
             }
         }
     };
@@ -159,19 +195,26 @@ export function VillaDetailPage({ villaId }: VillaDetailPageProps) {
                         </div>
                         <div className="flex items-center gap-6">
                             <button
-                                onClick={() => setIsWishlisted(!isWishlisted)}
+                                onClick={handleWishlistToggle}
                                 className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-gray-600 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
                             >
-                                <Heart size={14} className={isWishlisted ? 'fill-current text-error' : ''} />
-                                <span>{t('common.save', 'Save')}</span>
+                                <Heart size={14} className={isWishlisted ? 'fill-current text-red-500' : ''} />
+                                <span>{isWishlisted ? t('common.saved', 'Saved') : t('common.save', 'Save')}</span>
                             </button>
-                            <button
-                                onClick={handleShare}
-                                className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-gray-600 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
-                            >
-                                <Share2 size={14} />
-                                <span>{t('common.share', 'Share')}</span>
-                            </button>
+                            <div className="relative">
+                                <button
+                                    onClick={handleShare}
+                                    className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-gray-600 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
+                                >
+                                    <Share2 size={14} />
+                                    <span>{t('common.share', 'Share')}</span>
+                                </button>
+                                {shareTooltip && (
+                                    <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-forest-dark text-white text-xs px-3 py-1 rounded-full whitespace-nowrap animate-fadeIn">
+                                        {shareTooltip}
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
 
