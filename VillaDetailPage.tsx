@@ -196,21 +196,21 @@ export function VillaDetailPage({ villaId }: VillaDetailPageProps) {
                             <h1 className="font-serif text-4xl md:text-5xl font-light tracking-wide mb-2">{currentVilla.name}</h1>
                             <p className="text-forest-dark/80 text-lg font-light tracking-wide">{currentVilla.cluster || currentVilla.category}</p>
                         </div>
-                        <div className="flex items-center gap-6">
+                        <div className="flex items-center gap-3">
                             <button
                                 onClick={handleWishlistToggle}
-                                className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-gray-600 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
+                                className="flex items-center gap-2 px-4 py-3 md:px-3 md:py-2 text-xs uppercase tracking-[0.2em] text-gray-600 hover:text-gray-900 transition-colors bg-gray-50 hover:bg-gray-100 rounded-lg md:bg-transparent md:rounded-none md:border-b md:border-transparent md:hover:border-gray-900 md:pb-1"
                             >
-                                <Heart size={14} className={isWishlisted ? 'fill-current text-red-500' : ''} />
-                                <span>{isWishlisted ? t('common.saved', 'Saved') : t('common.save', 'Save')}</span>
+                                <Heart size={18} className={isWishlisted ? 'fill-current text-red-500' : ''} />
+                                <span className="hidden md:inline">{isWishlisted ? t('common.saved', 'Saved') : t('common.save', 'Save')}</span>
                             </button>
                             <div className="relative">
                                 <button
                                     onClick={handleShare}
-                                    className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-gray-600 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
+                                    className="flex items-center gap-2 px-4 py-3 md:px-3 md:py-2 text-xs uppercase tracking-[0.2em] text-gray-600 hover:text-gray-900 transition-colors bg-gray-50 hover:bg-gray-100 rounded-lg md:bg-transparent md:rounded-none md:border-b md:border-transparent md:hover:border-gray-900 md:pb-1"
                                 >
-                                    <Share2 size={14} />
-                                    <span>{t('common.share', 'Share')}</span>
+                                    <Share2 size={18} />
+                                    <span className="hidden md:inline">{t('common.share', 'Share')}</span>
                                 </button>
                                 {shareTooltip && (
                                     <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-forest-dark text-white text-xs px-3 py-1 rounded-full whitespace-nowrap animate-fadeIn">
@@ -221,35 +221,51 @@ export function VillaDetailPage({ villaId }: VillaDetailPageProps) {
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-4 text-sm text-gray-500">
-                        <div className="flex items-center gap-1">
-                            <Users size={16} />
-                            <span>{currentVilla.capacity}</span>
+                    <div className="grid grid-cols-2 md:flex md:items-center gap-3 md:gap-4 text-sm text-gray-500">
+                        <div className="flex items-center gap-2 bg-gray-50 p-3 rounded-lg md:bg-transparent md:p-0">
+                            <Users size={18} className="text-forest" />
+                            <span className="font-medium">{currentVilla.capacity}</span>
                         </div>
-                        <span>·</span>
-                        <div className="flex items-center gap-1">
-                            <BedDouble size={16} />
-                            <span>{currentVilla.bedrooms} {t('villa.bedrooms', 'Bedrooms')}</span>
+                        <div className="flex items-center gap-2 bg-gray-50 p-3 rounded-lg md:bg-transparent md:p-0">
+                            <BedDouble size={18} className="text-forest" />
+                            <span className="font-medium">{currentVilla.bedrooms} {t('villa.bedrooms', 'Bedrooms')}</span>
                         </div>
-                        <span>·</span>
-                        <div className="flex items-center gap-1">
-                            <Bath size={16} />
-                            <span>{currentVilla.toilets || 1} {t('villa.bathrooms', 'Bathrooms')}</span>
+                        <div className="flex items-center gap-2 bg-gray-50 p-3 rounded-lg md:bg-transparent md:p-0">
+                            <Bath size={18} className="text-forest" />
+                            <span className="font-medium">{currentVilla.toilets || 1} {t('villa.bathrooms', 'Bathrooms')}</span>
                         </div>
                         {currentVilla.area && (
-                            <>
-                                <span>·</span>
-                                <div className="flex items-center gap-1">
-                                    <span className="text-gray-900 font-serif font-medium">m²</span>
-                                    <span>{currentVilla.area} m²</span>
-                                </div>
-                            </>
+                            <div className="flex items-center gap-2 bg-gray-50 p-3 rounded-lg md:bg-transparent md:p-0">
+                                <span className="text-forest font-serif font-bold text-sm">m²</span>
+                                <span className="font-medium">{currentVilla.area} m²</span>
+                            </div>
                         )}
                     </div>
                 </div>
 
-                {/* Image Grid */}
-                <div className="grid grid-cols-4 grid-rows-2 gap-1 h-[400px] md:h-[500px] overflow-hidden mb-12 cursor-pointer rounded-xl">
+                {/* Image Grid - Mobile: Single hero image, Desktop: 1+4 grid */}
+                {/* Mobile Gallery */}
+                <div className="md:hidden relative mb-8 cursor-pointer" onClick={() => handleImageClick(0)}>
+                    <div className="aspect-[4/3] rounded-xl overflow-hidden">
+                        <img
+                            src={optimizeImage(images[0], 800)}
+                            alt={`${currentVilla.name} Main View`}
+                            className="w-full h-full object-cover"
+                            width="800"
+                            height="600"
+                        />
+                    </div>
+                    <button
+                        onClick={(e) => { e.stopPropagation(); handleImageClick(0); }}
+                        className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm text-forest-dark px-5 py-3 rounded-lg font-medium text-sm flex items-center gap-2 shadow-lg hover:bg-white transition-colors"
+                    >
+                        <Grid3x3 size={18} />
+                        <span>{t('villa.showAllPhotos', 'Show all photos')}</span>
+                    </button>
+                </div>
+
+                {/* Desktop Gallery */}
+                <div className="hidden md:grid grid-cols-4 grid-rows-2 gap-1 h-[500px] overflow-hidden mb-12 cursor-pointer rounded-xl">
                     <div
                         className="col-span-2 row-span-2 relative group"
                         onClick={() => handleImageClick(0)}
