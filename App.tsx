@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { trackWhatsAppBooking } from './utils/analytics';
 import { useRoute } from './hooks/useRouter';
 import {
   Menu, X, MapPin, Star,
@@ -308,6 +309,8 @@ function App() {
           target="_blank"
           rel="noreferrer"
           aria-label="Chat with us on WhatsApp"
+          id="btn-global-whatsapp"
+          onClick={() => trackWhatsAppBooking('Global Floating Button')}
           className="fixed bottom-32 right-4 lg:bottom-8 lg:right-8 z-50 bg-whatsapp text-white p-3 lg:p-4 rounded-full shadow-strong hover:scale-110 transition-transform flex items-center gap-2 group"
         >
           <MessageCircle size={24} />

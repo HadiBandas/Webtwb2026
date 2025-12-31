@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Star } from 'lucide-react';
+import { trackWhatsAppBooking } from '../../utils/analytics';
 import { Button } from '../ui/Button';
 import { useCurrency } from '../../hooks/useCurrency';
 
@@ -21,6 +22,9 @@ export function BookingCard({ price, rating = 4.9, reviews = 120, villaId, villa
     const [guests, setGuests] = useState(2);
 
     const handleBook = () => {
+        // Track booking attempt
+        trackWhatsAppBooking(villaName || 'Unknown Villa');
+
         // Format WhatsApp message
         const message = `Hi, I'm interested in booking ${villaName}%0A%0ACheck-in: ${checkIn || 'TBD'}%0ACheck-out: ${checkOut || 'TBD'}%0AGuests: ${guests}%0A%0APlease confirm availability.`;
         const whatsappUrl = `https://wa.me/6281224178271?text=${message}`;
@@ -83,7 +87,7 @@ export function BookingCard({ price, rating = 4.9, reviews = 120, villaId, villa
             </div>
 
             {/* Book Button */}
-            <Button variant="primary" size="lg" className="w-full mb-4" onClick={handleBook}>
+            <Button variant="primary" size="lg" className="w-full mb-4" onClick={handleBook} id="btn-booking-card-submit">
                 {t('footer.whatsappBooking', 'Reserve via WhatsApp')}
             </Button>
 

@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { BookingState, Villa, Package } from '../types';
 import { VILLAS, PACKAGES } from '../constants';
+import { trackEvent, trackBookingStart } from '../utils/analytics';
 
 interface BookingFormProps {
   initialVilla?: string;
@@ -41,6 +42,14 @@ const BookingForm: React.FC<BookingFormProps> = ({ initialVilla, initialPackage 
   const handleNext = () => {
     if (state.step === 1 && !state.itemId) return;
     if (state.step === 2 && (!state.checkIn || !state.checkOut)) return;
+
+    // Track step completion
+    trackEvent({
+      action: 'booking_step_' + state.step,
+      category: 'engagement',
+      label: state.itemId
+    });
+
     setState(s => ({ ...s, step: s.step + 1 }));
   };
 
@@ -49,6 +58,14 @@ const BookingForm: React.FC<BookingFormProps> = ({ initialVilla, initialPackage 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!state.termsAccepted) return;
+
+    // Track submission
+    trackEvent({
+      action: 'booking_submit',
+      category: 'conversion',
+      label: state.type,
+      value: calculateEstimate()
+    });
 
     setTimeout(() => {
       setBookingRefId(`TWB-${Math.floor(1000 + Math.random() * 9000)}`);
