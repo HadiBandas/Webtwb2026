@@ -155,22 +155,28 @@ export const StickyBookingBar: React.FC<StickyBookingBarProps> = ({
 
             {/* Mobile Sticky Bar - Compact & Expandable */}
             <div
-                className={`lg:hidden fixed bottom-0 left-0 right-0 z-50 transition-all duration-500 mobile-booking-bar ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
+                className={`lg:hidden fixed bottom-0 left-0 right-0 z-30 transition-all duration-500 mobile-booking-bar ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
                     }`}
             >
-                <div className="bg-white/95 backdrop-blur-xl border-t border-gray-200/50 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+                <div className="bg-white/95 backdrop-blur-xl border-t border-gray-200/50 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] pb-safe">
                     {/* Compact View (Default) */}
                     {!isExpanded && (
-                        <div className="px-4 py-3 flex items-center justify-between gap-4">
+                        <div
+                            className="px-4 py-3 flex items-center justify-between gap-4 cursor-pointer active:bg-gray-50 transition-colors"
+                            onClick={() => setIsExpanded(true)}
+                        >
                             <div className="flex flex-col">
-                                <span className="text-[10px] uppercase tracking-widest text-gray-500 font-medium">Start Your Journey</span>
+                                <span className="text-[10px] uppercase tracking-widest text-forest-dark font-bold flex items-center gap-1.5">
+                                    <span className="w-1.5 h-1.5 bg-gold rounded-full animate-pulse"></span>
+                                    {lang === 'id' ? 'Mulai Reservasi' : 'Start Your Journey'}
+                                </span>
                                 <span className="text-sm font-serif text-gray-900">From Rp 2.000.000/night</span>
                             </div>
                             <button
-                                onClick={() => setIsExpanded(true)}
+                                onClick={(e) => { e.stopPropagation(); setIsExpanded(true); }}
                                 className="bg-forest-dark text-white px-6 py-3 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-black transition-colors"
                             >
-                                {lang === 'id' ? 'Book Now' : 'Book Now'}
+                                {lang === 'id' ? 'Book' : 'Book'}
                             </button>
                         </div>
                     )}
