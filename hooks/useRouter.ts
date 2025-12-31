@@ -89,6 +89,6 @@ export function useRoute(initialView: ViewState = 'home') {
 }
 
 function isValidView(view: string): view is ViewState {
-    const validViews = ['home', 'villas', 'resto', 'facility', 'gallery', 'villa-detail', 'offers', 'about', 'location', 'contact', 'faq', 'blog', 'membership', 'privacy', 'terms'];
+    const validViews = ['home', 'villas', 'resto', 'facility', 'gallery', 'villa-detail', 'offers', 'about', 'location', 'contact', 'faq', 'blog', 'membership', 'privacy', 'terms', 'sustainability'];
     return validViews.includes(view);
 }

@@ -27,6 +27,7 @@ const LocationPage = React.lazy(() => import('./LocationPage').then(module => ({
 const ContactPage = React.lazy(() => import('./ContactPage').then(module => ({ default: module.ContactPage })));
 const FAQPage = React.lazy(() => import('./FAQPage').then(module => ({ default: module.FAQPage })));
 const BlogPage = React.lazy(() => import('./BlogPage').then(module => ({ default: module.BlogPage })));
+const SustainabilityPage = React.lazy(() => import('./SustainabilityPage').then(module => ({ default: module.SustainabilityPage })));
 const MembershipPage = React.lazy(() => import('./components/MembershipPage').then(module => ({ default: module.MembershipPage })));
 const PrivacyPage = React.lazy(() => import('./PrivacyPage').then(module => ({ default: module.PrivacyPage })));
 const TermsPage = React.lazy(() => import('./TermsPage').then(module => ({ default: module.TermsPage })));

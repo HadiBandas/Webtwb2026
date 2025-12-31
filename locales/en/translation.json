@@ -338,5 +338,48 @@
         "share": "Share",
         "perNight": "/ night",
         "reviews": "reviews"
+    },
+    "sustainability": {
+        "seo": {
+            "title": "Sustainability | Taman Wisata Bougenville",
+            "description": "Our commitment to nature conservation, community empowerment, and eco-friendly practices in Mount Puntang.",
+            "keywords": "eco resort bandung, sustainable tourism indonesia, nature conservation puntang"
+        },
+        "hero": {
+            "label": "Our Commitment",
+            "title": "Harmony with Nature",
+            "description": "We don’t just exist in nature; we are part of it. Our mission is to preserve the beauty of Mount Puntang for generations to come."
+        },
+        "message": {
+            "quote": "Leave nothing but footprints, take nothing but pictures.",
+            "body": "At Taman Wisata Bougenville, luxury and sustainability go hand in hand. We believe that true hospitality means caring for our guests and our home—the earth. From protecting the Cigeureuh river to empowering our local Sundanese community, every decision we make is rooted in respect for the environment."
+        },
+        "pillars": {
+            "label": "Core Pillars",
+            "title": "Our Approach to Sustainability",
+            "conservation": {
+                "title": "Forest Conservation",
+                "desc": "We actively protect over 5 hectares of pine forest and native vegetation, ensuring a safe habitat for local biodiversity such as the Javan Eagle."
+            },
+            "water": {
+                "title": "Water Stewardship",
+                "desc": "The Cigeureuh river is our lifeline. We implement strict strict 'no-chemical' zones near waterways and treat all wastewater biologically."
+            },
+            "waste": {
+                "title": "Responsible Waste",
+                "desc": "We aim for zero-waste-to-landfill. Organic waste is composted for our gardens, and recyclables are processed by local partners."
+            },
+            "community": {
+                "title": "Community Empowerment",
+                "desc": "Over 80% of our staff are from local villages. We prioritize local farmers and artisans for our kitchen and decor needs."
+            }
+        },
+        "plastic": {
+            "label": "Green Initiative",
+            "title": "Towards Plastic-Free",
+            "description": "We are phasing out single-use plastics across our resort to reduce our environmental footprint.",
+            "item1": "Glass bottles & filtered water stations",
+            "item2": "Bamboo & corn-starch amenities"
+        }
     }
 }

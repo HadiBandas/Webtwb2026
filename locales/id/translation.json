@@ -337,5 +337,48 @@
         "share": "Bagikan",
         "perNight": "/ malam",
         "reviews": "ulasan"
+    },
+    "sustainability": {
+        "seo": {
+            "title": "Keberlanjutan | Taman Wisata Bougenville",
+            "description": "Komitmen kami terhadap pelestarian alam, pemberdayaan komunitas, dan praktik ramah lingkungan di Gunung Puntang.",
+            "keywords": "eco resort bandung, pariwisata berkelanjutan indonesia, konservasi alam puntang"
+        },
+        "hero": {
+            "label": "Komitmen Kami",
+            "title": "Harmoni dengan Alam",
+            "description": "Kami tidak hanya ada di alam; kami adalah bagian darinya. Misi kami adalah melestarikan keindahan Gunung Puntang untuk generasi mendatang."
+        },
+        "message": {
+            "quote": "Tinggalkan jejak langkahmu saja, ambil fotomu saja.",
+            "body": "Di Taman Wisata Bougenville, kemewahan dan keberlanjutan berjalan beriringan. Kami percaya bahwa keramahtamahan sejati berarti peduli pada tamu kami dan rumah kami—bumi. Dari melindungi sungai Cigeureuh hingga memberdayakan komunitas Sunda setempat, setiap keputusan kami berakar pada rasa hormat terhadap lingkungan."
+        },
+        "pillars": {
+            "label": "Pilar Utama",
+            "title": "Pendekatan Keberlanjutan Kami",
+            "conservation": {
+                "title": "Konservasi Hutan",
+                "desc": "Kami secara aktif melindungi lebih dari 5 hektar hutan pinus dan vegetasi asli, memastikan habitat yang aman bagi keanekaragaman hayati lokal seperti Elang Jawa."
+            },
+            "water": {
+                "title": "Penjagaan Air",
+                "desc": "Sungai Cigeureuh adalah nadi kehidupan kami. Kami menerapkan zona 'tanpa bahan kimia' yang ketat di dekat saluran air dan mengolah semua air limbah secara biologis."
+            },
+            "waste": {
+                "title": "Limbah Bertanggung Jawab",
+                "desc": "Kami menargetkan nol limbah ke TPA. Limbah organik dikomposkan untuk kebun kami, dan barang yang dapat didaur ulang diproses oleh mitra lokal."
+            },
+            "community": {
+                "title": "Pemberdayaan Komunitas",
+                "desc": "Lebih dari 80% staf kami berasal dari desa setempat. Kami memprioritaskan petani dan pengrajin lokal untuk kebutuhan dapur dan dekorasi kami."
+            }
+        },
+        "plastic": {
+            "label": "Inisiatif Hijau",
+            "title": "Menuju Bebas Plastik",
+            "description": "Kami secara bertahap menghapus plastik sekali pakai di seluruh resort kami untuk mengurangi jejak lingkungan kami.",
+            "item1": "Botol kaca & stasiun air minum",
+            "item2": "Perlengkapan berbahan bambu & pati jagung"
+        }
     }
 }

@@ -320,5 +320,48 @@
         "share": "Teilen",
         "perNight": "/ Nacht",
         "reviews": "Bewertungen"
+    },
+    "sustainability": {
+        "seo": {
+            "title": "Nachhaltigkeit | Taman Wisata Bougenville",
+            "description": "Unser Engagement für Naturschutz, Stärkung der Gemeinschaft und umweltfreundliche Praktiken am Mount Puntang.",
+            "keywords": "öko-resort bandung, nachhaltiger tourismus indonesien, naturschutz puntang"
+        },
+        "hero": {
+            "label": "Unser Engagement",
+            "title": "Harmonie mit der Natur",
+            "description": "Wir existieren nicht nur in der Natur; wir sind Teil von ihr. Unsere Mission ist es, die Schönheit des Mount Puntang für kommende Generationen zu bewahren."
+        },
+        "message": {
+            "quote": "Nimm nichts mit als deine Bilder, lass nichts zurück als deine Fußspuren.",
+            "body": "Im Taman Wisata Bougenville gehen Luxus und Nachhaltigkeit Hand in Hand. Wir glauben, dass wahre Gastfreundschaft bedeutet, sich um unsere Gäste und unser Zuhause – die Erde – zu kümmern. Vom Schutz des Flusses Cigeureuh bis zur Stärkung unserer lokalen sundanesischen Gemeinschaft ist jede Entscheidung, die wir treffen, im Respekt vor der Umwelt verwurzelt."
+        },
+        "pillars": {
+            "label": "Grundpfeiler",
+            "title": "Unser Ansatz zur Nachhaltigkeit",
+            "conservation": {
+                "title": "Waldschutz",
+                "desc": "Wir schützen aktiv über 5 Hektar Pinienwald und einheimische Vegetation und sorgen für einen sicheren Lebensraum für die lokale Artenvielfalt wie den Javanadler."
+            },
+            "water": {
+                "title": "Gewässerschutz",
+                "desc": "Der Fluss Cigeureuh ist unsere Lebensader. Wir setzen strenge 'chemikalienfreie' Zonen in der Nähe von Wasserwegen durch und behandeln alle Abwässer biologisch."
+            },
+            "waste": {
+                "title": "Verantwortungsvoller Abfall",
+                "desc": "Unser Ziel ist null Abfall auf Deponien. Organische Abfälle werden für unsere Gärten kompostiert, und Wertstoffe werden von lokalen Partnern verarbeitet."
+            },
+            "community": {
+                "title": "Stärkung der Gemeinschaft",
+                "desc": "Über 80% unserer Mitarbeiter stammen aus lokalen Dörfern. Wir bevorzugen lokale Bauern und Handwerker für unsere Küchen- und Dekorationsbedürfnisse."
+            }
+        },
+        "plastic": {
+            "label": "Grüne Initiative",
+            "title": "Auf dem Weg zu Plastikfrei",
+            "description": "Wir schaffen Einwegplastik in unserem gesamten Resort schrittweise ab, um unseren ökologischen Fußabdruck zu verringern.",
+            "item1": "Glasflaschen & gefilterte Wasserstationen",
+            "item2": "Ausstattung aus Bambus & Maisstärke"
+        }
     }
 }
