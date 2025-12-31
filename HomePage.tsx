@@ -191,7 +191,7 @@ export function HomePage() {
                                             </button>
                                         </div>
 
-                                        <div className="p-8">
+                                        <div className="p-5 md:p-8">
                                             <h3 className="font-serif text-2xl text-forest-dark mb-2">{villa.name}</h3>
                                             <p className="text-gray-500 text-sm mb-6 line-clamp-2 font-light">
                                                 {typeof villa.description === 'string'
@@ -199,7 +199,7 @@ export function HomePage() {
                                                     : (villa.description[i18n.language.split('-')[0] as 'id' | 'en' | 'zh' | 'de'] || villa.description.id)}
                                             </p>
 
-                                            <div className="flex items-center gap-6 mb-8 text-sm text-gray-500">
+                                            <div className="flex flex-wrap items-center gap-4 md:gap-6 mb-6 md:mb-8 text-sm text-gray-500">
                                                 <div className="flex items-center gap-2">
                                                     <Users size={16} className="text-gold" />
                                                     <span>{villa.capacity}</span>
@@ -215,21 +215,21 @@ export function HomePage() {
                                                     <span>{t('home.mountainView')}</span>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div className="flex items-center justify-between pt-6 border-t border-gray-100">
-                                            <div>
-                                                <span className="text-xs text-gray-400 uppercase tracking-wider block mb-1">{t('home.fromPrice')}</span>
-                                                <span className="text-forest-dark font-serif text-lg">
-                                                    {formatPrice(villa.priceWeekday || 0)}
-                                                </span>
+                                            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6 border-t border-gray-100">
+                                                <div>
+                                                    <span className="text-xs text-gray-400 uppercase tracking-wider block mb-1">{t('home.fromPrice')}</span>
+                                                    <span className="text-forest-dark font-serif text-lg">
+                                                        {formatPrice(villa.priceWeekday || 0)}
+                                                    </span>
+                                                </div>
+                                                <button
+                                                    onClick={() => handleViewVilla(villa.id)}
+                                                    className="w-full sm:w-auto px-6 py-3 bg-forest-dark text-white text-xs font-bold uppercase tracking-widest hover:bg-forest transition-colors rounded-sm text-center"
+                                                >
+                                                    {t('home.viewDetails')}
+                                                </button>
                                             </div>
-                                            <button
-                                                onClick={() => handleViewVilla(villa.id)}
-                                                className="px-6 py-2 bg-forest-dark text-white text-xs font-bold uppercase tracking-widest hover:bg-forest transition-colors rounded-sm"
-                                            >
-                                                {t('home.viewDetails')}
-                                            </button>
                                         </div>
                                     </div>
                                 </ScaleIn>
