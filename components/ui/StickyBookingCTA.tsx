@@ -37,6 +37,7 @@ export function StickyBookingCTA({
                         href={whatsappLink}
                         target="_blank"
                         rel="noreferrer"
+                        aria-label="Chat on WhatsApp"
                         className="bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform flex items-center justify-center group"
                         title="Chat on WhatsApp"
                     >
@@ -46,6 +47,7 @@ export function StickyBookingCTA({
                     {/* Check Availability Button */}
                     <button
                         onClick={onBookClick}
+                        aria-label="Check Availability"
                         className="bg-forest-dark text-white px-6 py-4 rounded-full shadow-xl hover:bg-forest hover:scale-105 transition-all flex items-center gap-2 font-bold text-sm uppercase tracking-wider"
                     >
                         <Calendar size={20} />
@@ -64,6 +66,7 @@ export function StickyBookingCTA({
                         href={whatsappLink}
                         target="_blank"
                         rel="noreferrer"
+                        aria-label="Chat on WhatsApp"
                         className="flex-1 bg-[#25D366] text-white py-3 rounded-lg font-bold text-sm flex items-center justify-center gap-2 active:scale-95 transition-transform"
                     >
                         <MessageCircle size={18} />
@@ -72,6 +75,7 @@ export function StickyBookingCTA({
 
                     <button
                         onClick={onBookClick}
+                        aria-label="Book Now"
                         className="flex-1 bg-forest-dark text-white py-3 rounded-lg font-bold text-sm flex items-center justify-center gap-2 active:scale-95 transition-transform"
                     >
                         <Calendar size={18} />

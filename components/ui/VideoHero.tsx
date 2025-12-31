@@ -60,7 +60,8 @@ export const VideoHero: React.FC<VideoHeroProps> = ({
         ) : (
           <img
             src={fallbackImage}
-            alt="Taman Wisata Bougenville"
+            alt={headline || "Taman Wisata Bougenville"}
+            fetchPriority="high"
             className="w-full h-full object-cover animate-slow-zoom"
           />
         )}

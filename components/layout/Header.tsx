@@ -67,6 +67,7 @@ export function Header() {
                     <button
                         className="p-2 hover:bg-gray-100 rounded-full transition-colors"
                         onClick={() => setMobileOpen(true)}
+                        aria-label="Open menu"
                     >
                         <Menu size={24} className="text-gray-900" />
                     </button>

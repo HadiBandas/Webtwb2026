@@ -32,6 +32,7 @@ export function MobileMenu({ isOpen, onClose, onNavigate }: MobileMenuProps) {
                         <span className="font-serif text-lg font-bold text-forest-dark">Taman Wisata Bougenville</span>
                         <button
                             onClick={onClose}
+                            aria-label="Close menu"
                             className="p-2 hover:bg-gray-100 rounded-full transition-colors"
                         >
                             <X size={24} className="text-gray-900" />
