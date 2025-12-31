@@ -21,6 +21,7 @@ export function ContactPage() {
     };
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         trackPageView('/contact', 'Contact Us | Taman Wisata Bougenville');
     }, []);
 

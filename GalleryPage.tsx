@@ -73,6 +73,7 @@ export function GalleryPage() {
     ];
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         trackPageView('/gallery', 'Gallery | Taman Wisata Bougenville');
     }, []);
 

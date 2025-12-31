@@ -82,8 +82,11 @@ export function VillaDetailPage({ villaId }: VillaDetailPageProps) {
 
     const currentVilla = VILLAS.find(v => v.id === villaId);
 
-    // Load wishlist from localStorage on mount
+    // Load wishlist from localStorage on mount AND scroll to top
     useEffect(() => {
+        // Scroll to top when page loads
+        window.scrollTo(0, 0);
+
         const savedWishlist = localStorage.getItem('twb_wishlist');
         if (savedWishlist) {
             const wishlist = JSON.parse(savedWishlist);

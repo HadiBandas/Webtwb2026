@@ -257,14 +257,14 @@ function App() {
         </div>
 
         <nav className="flex flex-col gap-4 text-2xl font-serif font-bold px-6">
-          <button onClick={() => { navigate('home'); setIsMobileMenuOpen(false); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.home')}</button>
-          <button onClick={() => { navigate('villas'); setIsMobileMenuOpen(false); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.villas')}</button>
-          <button onClick={() => { navigate('resto'); setIsMobileMenuOpen(false); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.resto')}</button>
-          <button onClick={() => { navigate('facility'); setIsMobileMenuOpen(false); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.facility')}</button>
-          <button onClick={() => { navigate('gallery'); setIsMobileMenuOpen(false); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.gallery')}</button>
-          <button onClick={() => { navigate('offers'); setIsMobileMenuOpen(false); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.offers')}</button>
-          <button onClick={() => { navigate('membership'); setIsMobileMenuOpen(false); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.membership')}</button>
-          <button onClick={() => { navigate('about'); setIsMobileMenuOpen(false); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.about')}</button>
+          <button onClick={() => handleNavClick('home')} className="text-left hover:text-gold transition-colors py-2">{t('nav.home')}</button>
+          <button onClick={() => handleNavClick('villas')} className="text-left hover:text-gold transition-colors py-2">{t('nav.villas')}</button>
+          <button onClick={() => { navigate('resto'); setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.resto')}</button>
+          <button onClick={() => handleNavClick('facility')} className="text-left hover:text-gold transition-colors py-2">{t('nav.facility')}</button>
+          <button onClick={() => handleNavClick('gallery')} className="text-left hover:text-gold transition-colors py-2">{t('nav.gallery')}</button>
+          <button onClick={() => { navigate('offers'); setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.offers')}</button>
+          <button onClick={() => handleNavClick('membership')} className="text-left hover:text-gold transition-colors py-2">{t('nav.membership')}</button>
+          <button onClick={() => { navigate('about'); setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.about')}</button>
         </nav>
 
         <div className="mt-6 pt-6 px-6">

@@ -43,6 +43,7 @@ export function OffersPage({ onBookOffer }: OffersPageProps) {
     };
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         trackPageView('/offers', 'Offers | Taman Wisata Bougenville');
     }, []);
 

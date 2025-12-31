@@ -294,6 +294,7 @@ export function FAQPage() {
     }));
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         trackPageView('/faq', 'FAQ | Taman Wisata Bougenville');
     }, []);
 

@@ -40,6 +40,7 @@ export function BlogPage() {
     };
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         trackPageView('/blog', 'Blog | Taman Wisata Bougenville');
     }, []);
 

@@ -19,6 +19,7 @@ export function AboutPage() {
     };
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         trackPageView('/about', 'About Us | Taman Wisata Bougenville');
     }, []);
 
