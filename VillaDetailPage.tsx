@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useCurrency } from './hooks/useCurrency';
 import { Star, Users, Wifi, Coffee, Wind, Mountain, Heart, Share2, Grid3x3, BedDouble, Bath, Check, Clock, Info, Calendar, Tv, Utensils, Snowflake, Waves, Flame, Trees, Sofa, Car, Gamepad2, Flower2, Droplets, ChefHat } from 'lucide-react';
 import { ImageGalleryModal } from './components/features/ImageGalleryModal';
 import { BookingCard } from './components/features/BookingCard';
@@ -131,9 +132,8 @@ export function VillaDetailPage({ villaId }: VillaDetailPageProps) {
     // Generate multiple images for the gallery
     const images = Array(10).fill(currentVilla.image);
 
-    const formatPrice = (price: number) => {
-        return `Rp ${price.toLocaleString('id-ID')}`;
-    };
+    // Use currency hook for automatic conversion based on language
+    const { format: formatPrice } = useCurrency();
 
     const handleImageClick = (index: number) => {
         setGalleryStartIndex(index);

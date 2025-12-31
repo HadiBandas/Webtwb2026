@@ -11,14 +11,15 @@ import { StickyBookingBar } from './components/ui/StickyBookingBar';
 import { TrustBadges } from './components/ui/TrustBadges';
 import BookingForm from './components/BookingForm';
 
-// Import SEO components
 import { SEOHead } from './components/ui/SEOHead';
 import { OrganizationSchema, LocalBusinessSchema } from './components/ui/StructuredData';
 import { trackPageView } from './utils/analytics';
 import { optimizeImage } from './utils/imageOptimizer';
+import { useCurrency } from './hooks/useCurrency';
 
 export function HomePage() {
     const { t, i18n } = useTranslation();
+    const { format: formatPrice } = useCurrency();
     // Track current image index for each villa
     const [villaImageIndices, setVillaImageIndices] = useState<{ [key: string]: number }>({});
 
@@ -218,7 +219,7 @@ export function HomePage() {
                                         <div>
                                             <span className="text-xs text-gray-400 uppercase tracking-wider block mb-1">{t('home.fromPrice')}</span>
                                             <span className="text-forest-dark font-serif text-lg">
-                                                Rp {villa.priceWeekday?.toLocaleString('id-ID')}
+                                                {formatPrice(villa.priceWeekday || 0)}
                                             </span>
                                         </div>
                                         <button

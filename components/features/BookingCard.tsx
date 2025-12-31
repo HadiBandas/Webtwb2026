@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Star } from 'lucide-react';
 import { Button } from '../ui/Button';
+import { useCurrency } from '../../hooks/useCurrency';
 
 interface BookingCardProps {
     price: number;
@@ -14,6 +15,7 @@ import { useTranslation } from 'react-i18next';
 
 export function BookingCard({ price, rating = 4.9, reviews = 120, villaId, villaName }: BookingCardProps) {
     const { t } = useTranslation();
+    const { format } = useCurrency();
     const [checkIn, setCheckIn] = useState('');
     const [checkOut, setCheckOut] = useState('');
     const [guests, setGuests] = useState(2);
@@ -29,7 +31,7 @@ export function BookingCard({ price, rating = 4.9, reviews = 120, villaId, villa
         <div className="sticky top-24 bg-white border border-gray-200 rounded-lg p-6 shadow-lg">
             {/* Price Header */}
             <div className="flex items-baseline gap-2 mb-4">
-                <span className="text-2xl font-semibold">IDR {price.toLocaleString('id-ID')}</span>
+                <span className="text-2xl font-semibold">{format(price)}</span>
                 <span className="text-gray-600 text-sm">{t('common.perNight', '/ night')}</span>
             </div>
 

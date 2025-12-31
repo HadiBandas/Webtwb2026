@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Heart, Star } from 'lucide-react';
+import { useCurrency } from '../../hooks/useCurrency';
 
 interface VillaCardProps {
     villa: {
@@ -18,6 +19,7 @@ interface VillaCardProps {
 
 export function VillaCard({ villa, onBook }: VillaCardProps) {
     const [isWishlisted, setIsWishlisted] = useState(false);
+    const { format } = useCurrency();
 
     const handleCardClick = () => {
         // Navigate to villa detail page
@@ -100,7 +102,7 @@ export function VillaCard({ villa, onBook }: VillaCardProps) {
                 <div className="flex items-baseline gap-1">
                     <span className="text-sm text-gray-600">From</span>
                     <span className="text-base font-semibold text-gray-900">
-                        IDR {villa.price.toLocaleString('id-ID')}
+                        {format(villa.price)}
                     </span>
                     <span className="text-sm text-gray-600">/ night</span>
                 </div>
