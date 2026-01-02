@@ -66,7 +66,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
           zh: '拥有松林景观的最豪华别墅。',
           de: 'Luxuriöseste Villa mit Blick auf den Kiefernwald.'
         },
-        image: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=1600',
+        image: '/images/fh-hero.webp',
         type: 'direct',
         villaId: 'forest-house'
       },
@@ -79,7 +79,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
           zh: '带私人船只的湖畔别墅。',
           de: 'Villa am See mit privatem Boot.'
         },
-        image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1600',
+        image: '/images/mlh-hero.webp',
         type: 'direct',
         villaId: 'mooi-lake'
       },
@@ -92,7 +92,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
           zh: '美式农舍系列（Olinda, Emerald, Selby）。',
           de: 'Amerikanische Farmhouse-Kollektion (Olinda, Emerald, Selby).'
         },
-        image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1600',
+        image: '/images/emerald-atas-hero.webp',
         type: 'group',
         filterFn: (v) => v.cluster === 'Dandenong Villas'
       },
@@ -391,7 +391,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
         zh: '我们最豪华的别墅系列，配备一流的设施。包括森林别墅、莫伊湖、丹德农、普罗旺斯和河畔。',
         de: 'Unsere luxuriöseste Villenkollektion mit erstklassigen Einrichtungen. Beinhaltet Forest House, Mooi Lake, Dandenong, Provincial und Riverside.'
       },
-      image: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=1600',
+      image: '/images/fh-hero.webp',
     },
     log_home: {
       title: { id: 'Log Cabin', en: 'Log Cabin', zh: '原木小屋', de: 'Blockhütte' },
