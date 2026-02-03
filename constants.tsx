@@ -2025,7 +2025,16 @@ export const LOG_HOME_VILLAS: Villa[] = [
     priceWeekend: 7500000,
     priceHighSeason: 9000000,
     features: ['Ruang Keluarga', 'Dapur Lengkap', 'Dekat Mushola'],
-    image: 'https://images.unsplash.com/photo-1585543805890-6051f7829f98?q=80&w=800',
+    image: '/images/optimized/villas/villa-campaka/Hero Campaka.webp',
+    images: [
+      '/images/optimized/villas/villa-campaka/1.webp',
+      '/images/optimized/villas/villa-campaka/2.webp',
+      '/images/optimized/villas/villa-campaka/3.webp',
+      '/images/optimized/villas/villa-campaka/4.webp',
+      '/images/optimized/villas/villa-campaka/5.webp',
+      '/images/optimized/villas/villa-campaka/6.webp',
+      '/images/optimized/villas/villa-campaka/7.webp'
+    ],
     category: 'log_home',
     bedConfiguration: [
       { room: 1, beds: '1 king bed' },
@@ -2313,7 +2322,15 @@ export const LOG_HOME_VILLAS: Villa[] = [
     priceWeekend: 3000000,
     priceHighSeason: 3500000,
     features: ['Dekat Cafe Warung Linggih', 'Dekat Parkir', 'Compact'],
-    image: 'https://images.unsplash.com/photo-1586375300773-8384e3e4916f?q=80&w=800',
+    image: '/images/optimized/villas/villa-meranti/DSC03170WEB.webp',
+    images: [
+      '/images/optimized/villas/villa-meranti/1.webp',
+      '/images/optimized/villas/villa-meranti/2.webp',
+      '/images/optimized/villas/villa-meranti/3.webp',
+      '/images/optimized/villas/villa-meranti/4.webp',
+      '/images/optimized/villas/villa-meranti/5.webp',
+      '/images/optimized/villas/villa-meranti/6.webp'
+    ],
     category: 'log_home',
     bedConfiguration: [
       { room: 1, beds: '5 single bed di 1 ruangan' }
