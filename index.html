@@ -19,7 +19,7 @@
   " />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <!-- Note: frame-ancestors, X-Frame-Options, and Permissions-Policy must be set via HTTP headers on server (e.g., Vercel/Netlify config) -->
+
   <title>Taman Wisata Bougenville | Luxury Mountain Resort in Bandung</title>
   <meta name="description"
     content="Experience luxury in nature at Taman Wisata Bougenville. Exclusive villas, organic farm-to-table dining, and pristine nature experiences in Mount Puntang, Bandung - just 2 hours from Jakarta." />
@@ -45,50 +45,37 @@
   <meta name="twitter:description" content="Experience luxury in nature. Exclusive villas in Mount Puntang, Bandung." />
   <meta name="twitter:image" content="https://tamanwisatabougenville.com/images/og-image.jpg" />
 
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=%VITE_GA4_ID%"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  <!-- DNS Prefetch for external domains (Performance Optimization) -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
 
-    // Check if GA4 ID is available
-    const ga4Id = '%VITE_GA4_ID%';
-    if (ga4Id && ga4Id !== '' && !ga4Id.startsWith('%')) {
-      gtag('config', ga4Id, {
-        'send_page_view': true,
-        'anonymize_ip': true
-      });
-    }
-  </script>
-
-  <!-- Facebook Pixel (Optional) -->
-  <script>
-    const fbPixelId = '%VITE_FB_PIXEL_ID%';
-    if (fbPixelId && fbPixelId !== '' && !fbPixelId.startsWith('%')) {
-      !function (f, b, e, v, n, t, s) {
-        if (f.fbq) return; n = f.fbq = function () {
-          n.callMethod ?
-            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-        n.queue = []; t = b.createElement(e); t.async = !0;
-        t.src = v; s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-      }(window, document, 'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', fbPixelId);
-      fbq('track', 'PageView');
-    }
-  </script>
-
+  <!-- Preconnect for critical external resources -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;600&family=Noto+Sans:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
 
+  <!-- LCP Image Preload (CRITICAL for performance) -->
+  <link rel="preload" as="image" href="/images/home-page-hero.webp" type="image/webp" fetchpriority="high" />
+
+  <!-- Async Google Fonts Loading (Non-blocking) -->
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;600&family=Noto+Sans:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;600&family=Noto+Sans:wght@300;400;500;600&display=swap"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;600&family=Noto+Sans:wght@300;400;500;600&display=swap">
+  </noscript>
+
+  <!-- Critical CSS (inline for fastest FCP) -->
   <style>
+    /* Font fallback to prevent FOIT */
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
     /* Custom Scrollbar */
     ::-webkit-scrollbar {
       width: 6px;
@@ -143,41 +130,113 @@
       appearance: none;
       min-height: 48px;
     }
+
+    /* Loading skeleton for LCP optimization */
+    #root:empty {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #F5F1E8;
+    }
+
+    #root:empty::after {
+      content: '';
+      width: 40px;
+      height: 40px;
+      border: 3px solid #D4AF37;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
   </style>
-  <script type="importmap">
-{
-  "imports": {
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
-  }
-}
-</script>
+
   <meta name="theme-color" content="#1A3D2E">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" type="image/png" sizes="192x192" href="/logo192.png">
   <link rel="apple-touch-icon" href="/logo192.png">
   <link rel="shortcut icon" href="/logo192.png">
-  <script>
-    // AGGRESSIVE SERVICE WORKER UNREGISTER
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.getRegistrations().then(function (registrations) {
-          for (let registration of registrations) {
-            console.log('Unregistering SW:', registration);
-            registration.unregister();
-          }
-        });
-      });
-    }
-  </script>
 </head>
 
 <body class="bg-cream text-forest-dark antialiased">
   <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
+
+  <!-- Third-Party Scripts (Deferred - Non-blocking) -->
+  <!-- Google Analytics 4 -->
+  <script>
+    // Defer analytics loading until after page load
+    window.addEventListener('load', function () {
+      // Wait 2 seconds after load to prioritize user experience
+      setTimeout(function () {
+        const ga4Id = '%VITE_GA4_ID%';
+        if (ga4Id && ga4Id !== '' && !ga4Id.startsWith('%')) {
+          // Load gtag.js dynamically
+          const script = document.createElement('script');
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=' + ga4Id;
+          script.async = true;
+          document.head.appendChild(script);
+
+          script.onload = function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', ga4Id, {
+              'send_page_view': true,
+              'anonymize_ip': true
+            });
+          };
+        }
+      }, 2000);
+    });
+  </script>
+
+  <!-- Facebook Pixel (Deferred) -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        const fbPixelId = '%VITE_FB_PIXEL_ID%';
+        if (fbPixelId && fbPixelId !== '' && !fbPixelId.startsWith('%')) {
+          !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+              n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+          }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', fbPixelId);
+          fbq('track', 'PageView');
+        }
+      }, 2500);
+    });
+  </script>
+
+  <!-- Service Worker Cleanup (Low Priority) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          navigator.serviceWorker.getRegistrations().then(function (registrations) {
+            for (let registration of registrations) {
+              registration.unregister();
+            }
+          });
+        }, 5000);
+      });
+    }
+  </script>
 </body>
 
 </html>
