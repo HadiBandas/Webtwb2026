@@ -135,7 +135,7 @@ export function AboutPage() {
                         <FadeIn className="relative" direction="left">
                             <div className="absolute -top-8 -left-8 w-full h-full border border-gold/30 rounded-sm -z-10 hidden md:block"></div>
                             <img
-                                src="/images/membership/Stasiun Malabar.webp"
+                                src="/images/membership/Stasiun-Malabar.webp"
                                 alt="Mount Puntang Heritage"
                                 className="w-full h-[500px] md:h-[700px] object-cover rounded-sm shadow-2xl"
                             />
