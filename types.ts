@@ -59,6 +59,7 @@ export interface Villa {
   // Keep existing fields
   features: string[];
   image: string;
+  images?: string[]; // Gallery images for the villa
   badge?: string;
   description: LocalizedString;
   longDescription?: LocalizedString;

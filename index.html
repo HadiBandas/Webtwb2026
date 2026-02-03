@@ -5,6 +5,21 @@
   <!-- Basic Meta Tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <!-- Security Headers (only ones that work via meta tag) -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://aistudiocdn.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https: blob:;
+    connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://api.frankfurter.app;
+    base-uri 'self';
+    form-action 'self' https://wa.me;
+  " />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <!-- Note: frame-ancestors, X-Frame-Options, and Permissions-Policy must be set via HTTP headers on server (e.g., Vercel/Netlify config) -->
   <title>Taman Wisata Bougenville | Luxury Mountain Resort in Bandung</title>
   <meta name="description"
     content="Experience luxury in nature at Taman Wisata Bougenville. Exclusive villas, organic farm-to-table dining, and pristine nature experiences in Mount Puntang, Bandung - just 2 hours from Jakarta." />
@@ -146,15 +161,15 @@
   <link rel="apple-touch-icon" href="/logo192.png">
   <link rel="shortcut icon" href="/logo192.png">
   <script>
+    // AGGRESSIVE SERVICE WORKER UNREGISTER
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .then(registration => {
-            console.log('SW registered: ', registration);
-          })
-          .catch(registrationError => {
-            console.log('SW registration failed: ', registrationError);
-          });
+        navigator.serviceWorker.getRegistrations().then(function (registrations) {
+          for (let registration of registrations) {
+            console.log('Unregistering SW:', registration);
+            registration.unregister();
+          }
+        });
       });
     }
   </script>

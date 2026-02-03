@@ -61,7 +61,7 @@ const FacilityPage: React.FC<FacilityPageProps> = ({ onNavigateToGallery }) => {
       <PageHero
         title={t('facility.title')}
         subtitle={t('facility.subtitle')}
-        backgroundImage="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=2070"
+        backgroundImage="/images/facilities/Stargazing.png"
         overlay="dark"
       />
 

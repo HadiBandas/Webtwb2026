@@ -79,7 +79,19 @@ export async function fetchExchangeRates(): Promise<ExchangeRates | null> {
             }
         } catch { }
 
-        return null;
+        // Static fallback rates (approximate as of Jan 2026)
+        // 1 IDR ≈ 0.0000625 USD, 0.0000589 EUR, 0.000455 CNY
+        console.warn('[Currency] Using static fallback rates');
+        return {
+            rates: {
+                USD: 0.0000625,  // ~16,000 IDR = 1 USD
+                EUR: 0.0000589,  // ~17,000 IDR = 1 EUR  
+                CNY: 0.000455,   // ~2,200 IDR = 1 CNY
+            },
+            base: 'IDR',
+            date: new Date().toISOString().split('T')[0],
+            timestamp: Date.now(),
+        };
     }
 }
 

@@ -104,7 +104,7 @@
         "historyDesc3": "Gunung Puntang bukan sekadar tempat. Ini adalah saksi sejarah, penjaga tradisi, dan rumah bagi generasi yang merawat hutan pinus purba ini dengan sepenuh hati.",
         "responsibilityLabel": "Tanggung Jawab Kami",
         "responsibilityTitle": "Komitmen Kami pada Alam",
-        "responsibilityDesc": "Sebagai resort di jantung pegunungan, kami memiliki tanggung jawab untuk melindungi ekosistem yang menopang keindahan ini. Bougenville berpegang pada prinsip \"leave no trace\" dan mendedikasikan 30% dari lahan untuk konservasi hutan.",
+        "responsibilityDesc": "Sebagai resort di jantung pegunungan, kami memiliki tanggung jawab untuk melindungi ekosistem yang menopang keindahan ini. Bougenville berpegang pada prinsip \"leave no trace\" dan berkomitmen penuh pada pelestarian alam.",
         "statRenewable": "Energi Terbarukan",
         "statWaste": "Kebijakan Limbah",
         "statCommunity": "Utamakan Komunitas",
@@ -143,7 +143,7 @@
             "placeholders": {
                 "name": "Nama Anda",
                 "email": "email@contoh.com",
-                "phone": "+62 812 3456 7890",
+                "phone": "+62 811 910 2003",
                 "message": "Tulis pesan Anda di sini..."
             },
             "validation": {
@@ -252,17 +252,89 @@
     },
     "location": {
         "title": "Lokasi Kami",
-        "subtitle": "Terletak di jantung Gunung Puntang, hanya 2 jam dari Jakarta. Rasakan ketenangan alam.",
+        "subtitle": "Tempat perlindungan pegunungan Anda menanti di tengah mekarnya bougenville dan pemandangan Gunung Puntang. Mudah diakses dari Bandara Bandung dan stasiun utama.",
         "getDirections": "Petunjuk Arah",
         "yourJourney": "Perjalanan Anda",
         "travelTimesTitle": "Waktu Perjalanan & Petunjuk Arah",
-        "directions": "Petunjuk Arah",
-        "fromJakarta": "Dari Jakarta",
-        "fromBandung": "Dari Bandung",
         "mapSectionLabel": "Peta Lokasi",
         "ourLocation": "Lokasi Kami",
         "nearbyLabel": "Wisata Sekitar",
-        "nearbyTitle": "Tempat Wisata Terdekat"
+        "nearbyTitle": "Tempat Wisata Terdekat",
+        "info": {
+            "title": "Informasi Penting",
+            "address": "Alamat",
+            "gps": "Koordinat GPS",
+            "road": "Kondisi Jalan",
+            "roadDesc": "Jalan beraspal, cocok untuk semua kendaraan (Sedan, SUV, Bus Medium/Elf). 3km terakhir adalah jalan pegunungan yang indah.",
+            "signal": "Sinyal Seluler",
+            "signalDesc": "Sinyal 4G kuat untuk Telkomsel dan XL. Wi-Fi gratis tersedia di area resort.",
+            "parking": "Parkir",
+            "parkingDesc": "Area parkir luas tersedia untuk mobil dan bus medium.",
+            "transport": "Transportasi Umum",
+            "transportDesc": "Dari Bandung (Terminal Leuwipanjang), naik bus ke Banjaran, lalu Angkot ke Cimaung/Puntang."
+        },
+        "routes": {
+            "airport": {
+                "from": "Bandara Bandung (Husein Sastranegara)",
+                "via": "Jl. Soekarno-Hatta → Soreang",
+                "time": "45-60 Menit",
+                "distance": "35 km",
+                "steps": [
+                    "Keluar bandara ke arah selatan menuju Jl. Husein Sastranegara ke arah kota.",
+                    "Masuk ke Jl. Soekarno-Hatta ke selatan, lanjutkan ke Jl. Soreang.",
+                    "Lewati kota Banjaran, ikuti petunjuk arah Gunung Puntang ke Campaka Mulya, Cimaung."
+                ],
+                "note": "Perkiraan waktu: 45-60 menit | Jarak: 35 km. Jalan beraspal dengan tikungan—hati-hati dengan lalu lintas."
+            },
+            "whoosh": {
+                "from": "Stasiun Whoosh Padalarang",
+                "via": "Tol Padaleunyi → Tol Soroja",
+                "time": "40-50 Menit",
+                "distance": "32 km",
+                "steps": [
+                    "Dari stasiun, masuk Tol Padaleunyi menuju Cileunyi/Bandung.",
+                    "Ambil jalan keluar ke Tol Soroja (Soreang-Pasir Koja).",
+                    "Keluar Soreang, menuju Banjaran - Cimaung."
+                ],
+                "note": "Rute tercepat via jalan tol. Ideal untuk pengunjung dari Jakarta menggunakan Kereta Cepat."
+            },
+            "station": {
+                "from": "Stasiun Bandung (Kereta)",
+                "via": "Jl. Moh. Toha → Banjaran",
+                "time": "50-70 Menit",
+                "distance": "30 km",
+                "steps": [
+                    "Dari stasiun, menuju selatan ke Jl. Oto Iskandar Dinata.",
+                    "Lanjutkan ke Jl. Moh. Toha, lalu lurus ke Banjaran.",
+                    "Ikuti petunjuk arah ke Gunung Puntang/Bougenville di persimpangan Cimaung."
+                ],
+                "note": "Rute melewati lalu lintas kota. Sebaiknya berangkat pagi atau sore hari."
+            },
+            "jakarta": {
+                "from": "Jakarta (via Tol Soroja)",
+                "via": "Tol Cipularang → Tol Soroja",
+                "time": "2-2.5 Jam",
+                "distance": "160 km",
+                "steps": [
+                    "Ambil Tol Cipularang menuju Bandung.",
+                    "Masuk ke Tol Soroja (Soreang-Pasir Koja) di simpang susun Pasir Koja.",
+                    "Keluar Soreang (akhir tol), belok kanan ke Banjaran, lurus ke Cimaung."
+                ],
+                "note": "Akses tol langsung membuat perjalanan lancar. Keluar Soreang hanya 30-40 menit dari resort."
+            },
+            "city": {
+                "from": "Pusat Kota Bandung",
+                "via": "Jl. Moh. Toha → Dayeuhkolot",
+                "time": "50-60 Menit",
+                "distance": "28 km",
+                "steps": [
+                    "Menuju selatan di Jl. Moh. Toha via area Dayeuhkolot.",
+                    "Lanjutkan lurus sampai persimpangan pasar Banjaran.",
+                    "Lanjutkan lurus ke arah Pangalengan, belok kiri ke Gunung Puntang."
+                ],
+                "note": "Rute standar. Bisa padat saat jam sibuk di sekitar Dayeuhkolot."
+            }
+        }
     },
     "blog": {
         "title": "Blog & Berita",
@@ -438,5 +510,134 @@
         "checkAvailability": "Cek Ketersediaan",
         "bookNow": "Pesan Sekarang",
         "whatsappMessage": "Halo! Saya ingin melakukan reservasi di Taman Wisata Bougenville."
+    },
+    "bookingPage": {
+        "seo": {
+            "title": "Reservasi | Taman Wisata Bougenville",
+            "description": "Reservasi villa eksklusif di Taman Wisata Bougenville. Pesan langsung via WhatsApp atau platform OTA favorit Anda."
+        },
+        "heroTitle": "Reservasi Villa",
+        "heroSubtitle": "Pesan villa impian Anda di Taman Wisata Bougenville dengan mudah",
+        "trust": {
+            "rating": "4.9/5 Rating Tamu",
+            "secure": "Reservasi Aman",
+            "response": "Respon < 1 Jam",
+            "guests": "5000+ Tamu Puas"
+        },
+        "methodsLabel": "Cara Pemesanan",
+        "methodsTitle": "Pilih Cara Reservasi Anda",
+        "methodsDesc": "Kami menyediakan beberapa opsi pemesanan untuk kemudahan Anda. Booking langsung via WhatsApp untuk layanan personal atau gunakan platform OTA pilihan.",
+        "recommended": "Direkomendasikan",
+        "whatsappTitle": "Pesan Langsung via WhatsApp",
+        "whatsappDesc": "Dapatkan layanan personal dari tim reservasi kami. Konsultasikan kebutuhan Anda dan dapatkan penawaran terbaik.",
+        "whatsappMessage": "Halo, saya tertarik untuk reservasi villa di Taman Wisata Bougenville. Saya menemukan informasi dari website Anda.",
+        "chatNow": "Chat Sekarang",
+        "responseTime": "Rata-rata waktu respon: < 1 jam (08:00 - 21:00 WIB)",
+        "specialists": {
+            "subtitle": "Tim Reservasi",
+            "title": "Hubungi Spesialis Kami",
+            "desc": "Tim reservasi kami siap membantu Anda menemukan villa yang sempurna untuk kebutuhan Anda.",
+            "role": "Spesialis Reservasi",
+            "chatWith": "Chat {{name}}",
+            "messages": {
+                "jaka": "Halo Kak Jaka, saya tertarik untuk reservasi di Taman Wisata Bougenville. Saya menemukan info dari website.",
+                "iis": "Halo Kak Iis, saya ingin bertanya tentang ketersediaan villa. Saya lihat dari website Bougenville.",
+                "teten": "Halo Kak Teten, saya mau cek ketersediaan villa untuk tanggal tertentu. Info dari website."
+            }
+        },
+        "otaLabel": "Platform Partner",
+        "otaTitle": "Pesan via Platform OTA",
+        "otaDesc": "Temukan kami di platform travel online favorit Anda untuk perbandingan harga dan kemudahan pembayaran.",
+        "viewOn": "Lihat di",
+        "otaNote": "Harga dapat berbeda di setiap platform. Hubungi kami langsung untuk penawaran terbaik.",
+        "whyDirectLabel": "Keuntungan",
+        "whyDirectTitle": "Mengapa Pesan Langsung?",
+        "benefit1": {
+            "title": "Harga Terbaik",
+            "desc": "Dapatkan harga khusus dan penawaran eksklusif yang tidak tersedia di platform lain."
+        },
+        "benefit2": {
+            "title": "Fleksibilitas Maksimal",
+            "desc": "Kebijakan pembatalan yang lebih fleksibel dan kemudahan perubahan jadwal."
+        },
+        "benefit3": {
+            "title": "Layanan Personal",
+            "desc": "Konsultasi langsung dengan tim kami untuk menyesuaikan pengalaman menginap Anda."
+        },
+        "villasLabel": "Pilih Villa",
+        "villasTitle": "Koleksi Villa Kami",
+        "payment": {
+            "label": "Metode Pembayaran",
+            "title": "Pembayaran Mudah & Aman",
+            "desc": "Kami menerima berbagai metode pembayaran untuk kemudahan transaksi Anda.",
+            "transfer": "Transfer Bank",
+            "ewallet": "E-Wallet",
+            "card": "Kartu Kredit",
+            "qris": "QRIS",
+            "note": "Pembayaran dikonfirmasi setelah reservasi disetujui oleh tim kami."
+        },
+        "ctaTitle": "Siap Memesan?",
+        "ctaDesc": "Tim reservasi kami siap membantu Anda merencanakan liburan impian di Taman Wisata Bougenville.",
+        "ctaButton": "Hubungi Kami Sekarang"
+    },
+    "terms": {
+        "title": "Syarat & Ketentuan",
+        "subtitle": "Syarat dan Ketentuan layanan kami",
+        "lastUpdated": "Terakhir diperbarui",
+        "sections": [
+            {
+                "title": "1. Ketentuan Umum",
+                "content": "<p>Dengan mengakses dan menggunakan situs web serta layanan Taman Wisata Bougenville, Anda menyetujui untuk terikat oleh Syarat dan Ketentuan ini. Jika Anda tidak setuju dengan bagian mana pun dari ketentuan ini, mohon untuk tidak menggunakan layanan kami.</p>"
+            },
+            {
+                "title": "2. Reservasi dan Pembayaran",
+                "content": "<ul><li>Semua reservasi bergantung pada ketersediaan kamar/villa.</li><li>Pembayaran uang muka (down payment) mungkin diperlukan untuk mengamankan pesanan Anda.</li><li>Pelunasan pembayaran harus dilakukan sesuai dengan instruksi yang diberikan saat konfirmasi reservasi.</li><li>Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya, namun tidak akan mempengaruhi reservasi yang telah dikonfirmasi.</li></ul>"
+            },
+            {
+                "title": "3. Pembatalan dan Pengembalian Dana",
+                "content": "<ul><li>Kebijakan pembatalan bervariasi tergantung pada jenis tarif dan promosi yang dipesan. Silakan merujuk pada konfirmasi pesanan Anda untuk detail spesifik.</li><li>Pembatalan yang dilakukan dalam waktu tertentu sebelum kedatangan mungkin dikenakan biaya pembatalan.</li><li>Pengembalian dana (jika berlaku) akan diproses sesuai dengan metode pembayaran asli dalam waktu yang wajar.</li></ul>"
+            },
+            {
+                "title": "4. Peraturan Tamu",
+                "content": "<ul><li>Tamu wajib menjaga ketertiban dan ketenangan demi kenyamanan tamu lain.</li><li>Dilarang melakukan kegiatan ilegal, membawa obat-obatan terlarang, atau senjata berbahaya ke area resort.</li><li>Kerusakan properti yang disebabkan oleh tamu akan dikenakan biaya penggantian.</li><li>Waktu Check-in adalah 14:00 WIB dan Check-out adalah 12:00 WIB, kecuali disepakati lain.</li></ul>"
+            },
+            {
+                "title": "5. Tanggung Jawab",
+                "content": "<p>Taman Wisata Bougenville tidak bertanggung jawab atas kehilangan atau kerusakan barang berharga milik tamu yang tidak dititipkan di kotak deposit keamanan (jika tersedia) atau kelalaian pribadi tamu. Kami juga tidak bertanggung jawab atas cedera yang disebabkan oleh kelalaian tamu atau pelanggaran peraturan keselamatan resort.</p>"
+            },
+            {
+                "title": "6. Hukum yang Mengatur",
+                "content": "<p>Syarat dan Ketentuan ini diatur oleh dan ditafsirkan sesuai dengan hukum Republik Indonesia. Setiap sengketa yang timbul akan diselesaikan di yurisdiksi pengadilan Indonesia.</p>"
+            }
+        ]
+    },
+    "privacy": {
+        "title": "Kebijakan Privasi",
+        "subtitle": "Komitmen kami untuk melindungi data Anda",
+        "lastUpdated": "Terakhir diperbarui",
+        "intro": {
+            "title": "1. Pendahuluan",
+            "content": "<p>Selamat datang di Taman Wisata Bougenville. Kami menghargai privasi Anda dan berkomitmen untuk melindungi informasi pribadi Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi Anda ketika Anda mengunjungi situs web kami atau menggunakan layanan kami.</p>"
+        },
+        "collection": {
+            "title": "2. Informasi yang Kami Kumpulkan",
+            "content": "<p>Kami dapat mengumpulkan informasi berikut:</p><ul><li><strong>Informasi Pribadi:</strong> Nama, alamat email, nomor telepon, dan informasi identitas lainnya yang Anda berikan saat melakukan reservasi atau menghubungi kami.</li><li><strong>Informasi Reservasi:</strong> Tanggal menginap, preferensi kamar, dan permintaan khusus.</li><li><strong>Informasi Teknis:</strong> Alamat IP, jenis browser, dan data penggunaan situs web (cookies) untuk meningkatkan pengalaman pengguna.</li></ul>"
+        },
+        "use": {
+            "title": "3. Penggunaan Informasi",
+            "content": "<p>Kami menggunakan informasi Anda untuk:</p><ul><li>Memproses reservasi dan pembayaran Anda.</li><li>Menghubungi Anda terkait konfirmasi pesanan atau perubahan layanan.</li><li>Mengirimkan informasi promosi atau buletin (jika Anda berlangganan).</li><li>Meningkatkan kualitas layanan dan situs web kami.</li></ul>"
+        },
+        "protection": {
+            "title": "4. Perlindungan Data",
+            "content": "<p>Kami menerapkan langkah-langkah keamanan teknis dan organisasi yang sesuai untuk melindungi data pribadi Anda dari akses yang tidak sah, penggunaan yang salah, kehilangan, atau kerusakan.</p>"
+        },
+        "sharing": {
+            "title": "5. Berbagi Informasi",
+            "content": "<p>Kami tidak menjual atau menyewakan informasi pribadi Anda kepada pihak ketiga. Kami hanya membagikan informasi jika diperlukan oleh hukum atau untuk penyedia layanan pihak ketiga yang membantu operasional kami (misalnya, pemrosesan pembayaran), dengan kewajiban kerahasiaan yang ketat.</p>"
+        },
+        "contact": {
+            "title": "6. Hubungi Kami",
+            "content": "<p>Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, silakan hubungi kami di:<br />Email: booking@tamanwisatabougenville.com<br />Telepon: +62 811 910 2003</p>"
+        }
     }
 }

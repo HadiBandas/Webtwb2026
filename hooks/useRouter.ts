@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 
-type ViewState = 'home' | 'villas' | 'resto' | 'facility' | 'gallery' | 'villa-detail' | 'offers' | 'about' | 'location' | 'contact' | 'faq' | 'blog' | 'membership' | 'privacy' | 'terms';
+type ViewState = 'home' | 'villas' | 'resto' | 'facility' | 'gallery' | 'villa-detail' | 'offers' | 'about' | 'location' | 'contact' | 'faq' | 'blog' | 'membership' | 'privacy' | 'terms' | 'booking';
 
 export function useRoute(initialView: ViewState = 'home') {
     const [view, setView] = useState<ViewState>(initialView);
@@ -89,6 +89,6 @@ export function useRoute(initialView: ViewState = 'home') {
 }
 
 function isValidView(view: string): view is ViewState {
-    const validViews = ['home', 'villas', 'resto', 'facility', 'gallery', 'villa-detail', 'offers', 'about', 'location', 'contact', 'faq', 'blog', 'membership', 'privacy', 'terms', 'sustainability'];
+    const validViews = ['home', 'villas', 'resto', 'facility', 'gallery', 'villa-detail', 'offers', 'about', 'location', 'contact', 'faq', 'blog', 'membership', 'privacy', 'terms', 'sustainability', 'booking'];
     return validViews.includes(view);
 }

@@ -164,7 +164,7 @@
         "historyDesc3": "Puntang山不仅仅是一个地方。它是历史的见证者，传统的守护者，也是世世代代全心呵护这片古老松林的人们的家园。",
         "responsibilityLabel": "我们的责任",
         "responsibilityTitle": "我们对自然的承诺",
-        "responsibilityDesc": "作为一个位于山区腹地的度假村，我们有责任保护支撑这份美丽的生态系统。Bougenville秉持\"不留痕迹\"原则，并将30%的土地用于森林保护。",
+        "responsibilityDesc": "作为一个位于山区腹地的度假村，我们有责任保护支撑这份美丽的生态系统。Bougenville秉持\"不留痕迹\"原则，并完全致力于自然保护。",
         "statRenewable": "可再生能源",
         "statWaste": "废物政策",
         "statCommunity": "社区优先"
@@ -300,10 +300,89 @@
     },
     "location": {
         "title": "我们的位置",
-        "subtitle": "位于泰山中心,距离雅加达仅2小时车程。体验大自然的宁静。",
-        "directions": "路线指引",
-        "fromJakarta": "从雅加达",
-        "fromBandung": "从万隆"
+        "subtitle": "您的山地避难所等待着您，盛开的三角梅和蓬当山的美景尽收眼底。从万隆机场和主要车站可轻松抵达。",
+        "getDirections": "获取路线",
+        "yourJourney": "您的旅程",
+        "travelTimesTitle": "行程时间和路线",
+        "mapSectionLabel": "地图位置",
+        "ourLocation": "我们的位置",
+        "nearbyLabel": "附近景点",
+        "nearbyTitle": "附近景点",
+        "info": {
+            "title": "重要信息",
+            "address": "地址",
+            "gps": "GPS坐标",
+            "road": "路况",
+            "roadDesc": "铺面道路，适合所有车辆（轿车、SUV、中型巴士/Elf）。最后3公里是风景优美的山路。",
+            "signal": "移动信号",
+            "signalDesc": "Telkomsel和XL有很强的4G信号。度假村区提供免费Wi-Fi。",
+            "parking": "停车场",
+            "parkingDesc": "提供宽敞的停车区，适合轿车和中型巴士。",
+            "transport": "公共交通",
+            "transportDesc": "从万隆（Leuwipanjang总站）乘巴士到Banjaran，然后乘Angkot到Cimaung/Puntang。"
+        },
+        "routes": {
+            "airport": {
+                "from": "万隆机场 (Husein Sastranegara)",
+                "via": "Jl. Soekarno-Hatta → Soreang",
+                "time": "45-60 分钟",
+                "distance": "35 公里",
+                "steps": [
+                    "从机场南出口进入 Jl. Husein Sastranegara 往市区方向。",
+                    "汇入 Jl. Soekarno-Hatta 向南，继续前往 Jl. Soreang。",
+                    "经过 Banjaran 镇，按照 Jl. Gunung Puntang 指示牌前往 Campaka Mulya, Cimaung。"
+                ],
+                "note": "预计时间：45-60分钟 | 距离：35公里。铺面道路多弯——注意交通。"
+            },
+            "whoosh": {
+                "from": "Whoosh Padalarang 站",
+                "via": "Tol Padaleunyi → Tol Soroja",
+                "time": "40-50 分钟",
+                "distance": "32 公里",
+                "steps": [
+                    "从车站进入 Tol Padaleunyi 往 Cileunyi/Bandung 方向。",
+                    "从 Tol Soroja (Soreang-Pasir Koja) 出口下。",
+                    "出 Soreang，前往 Banjaran - Cimaung。"
+                ],
+                "note": "经由收费公路的最快路线。适合从雅加达乘坐高铁的游客。"
+            },
+            "station": {
+                "from": "万隆火车站",
+                "via": "Jl. Moh. Toha → Banjaran",
+                "time": "50-70 分钟",
+                "distance": "30 公里",
+                "steps": [
+                    "从车站向南前往 Jl. Oto Iskandar Dinata。",
+                    "继续前往 Jl. Moh. Toha，然后直行至 Banjaran。",
+                    "在 Cimaung 十字路口跟随指示牌前往 Gunung Puntang/Bougenville。"
+                ],
+                "note": "路线穿过城市交通。最好在清晨或傍晚出行。"
+            },
+            "jakarta": {
+                "from": "雅加达 (经由 Tol Soroja)",
+                "via": "Tol Cipularang → Tol Soroja",
+                "time": "2-2.5 小时",
+                "distance": "160 公里",
+                "steps": [
+                    "走 Tol Cipularang 往万隆方向。",
+                    "在 Pasir Koja 枢纽汇入 Tol Soroja (Soreang-Pasir Koja)。",
+                    "出 Soreang（收费公路终点），右转至 Banjaran，直行至 Cimaung。"
+                ],
+                "note": "直接收费公路通道使旅程顺畅。出 Soreang 距离度假村仅30-40分钟。"
+            },
+            "city": {
+                "from": "万隆市中心",
+                "via": "Jl. Moh. Toha → Dayeuhkolot",
+                "time": "50-60 分钟",
+                "distance": "28 公里",
+                "steps": [
+                    "经 Dayeuhkolot 区域沿 Jl. Moh. Toha 向南。",
+                    "继续直行至 Banjaran 市场十字路口。",
+                    "继续直行往 Pangalengan 方向，左转前往 Gunung Puntang。"
+                ],
+                "note": "标准路线。Dayeuhkolot 周围的高峰时段可能会很拥堵。"
+            }
+        }
     },
     "blog": {
         "title": "博客与新闻",
@@ -443,5 +522,134 @@
         "checkAvailability": "检查可用性",
         "bookNow": "立即预订",
         "whatsappMessage": "您好！我想在布根维尔旅游公园预订。"
+    },
+    "bookingPage": {
+        "seo": {
+            "title": "预订 | 布根维尔旅游公园",
+            "description": "在布根维尔旅游公园预订您的专属别墅。通过WhatsApp或您喜爱的OTA平台直接预订。"
+        },
+        "heroTitle": "预订您的别墅",
+        "heroSubtitle": "轻松预订您在布根维尔旅游公园的梦想别墅",
+        "trust": {
+            "rating": "4.9/5 客人评分",
+            "secure": "安全预订",
+            "response": "1小时内回复",
+            "guests": "5000+ 满意客人"
+        },
+        "methodsLabel": "预订方式",
+        "methodsTitle": "选择您的预订方式",
+        "methodsDesc": "我们提供多种预订方式供您选择。通过WhatsApp直接预订获得个性化服务，或使用您喜爱的OTA平台。",
+        "recommended": "推荐",
+        "whatsappTitle": "通过WhatsApp直接预订",
+        "whatsappDesc": "从我们的预订团队获得个性化服务。讨论您的需求并获得最佳优惠。",
+        "whatsappMessage": "您好，我有兴趣在布根维尔旅游公园预订别墅。我在您的网站上看到了信息。",
+        "chatNow": "立即聊天",
+        "responseTime": "平均回复时间：1小时内（08:00 - 21:00 WIB）",
+        "specialists": {
+            "subtitle": "预订团队",
+            "title": "联系我们的专家",
+            "desc": "我们的预订团队随时为您找到适合您需求的完美别墅。",
+            "role": "预订专家",
+            "chatWith": "联系 {{name}}",
+            "messages": {
+                "jaka": "嗨 Jaka，我有兴趣在布根维尔旅游公园预订。我在网站上看到了信息。",
+                "iis": "嗨 Iis，我想咨询别墅的空房情况。我看了你们的网站。",
+                "teten": "嗨 Teten，我想查询特定日期的别墅空房情况。信息来自网站。"
+            }
+        },
+        "otaLabel": "合作平台",
+        "otaTitle": "通过OTA平台预订",
+        "otaDesc": "在您喜爱的在线旅游平台上找到我们，方便比较价格和付款。",
+        "viewOn": "查看",
+        "otaNote": "各平台价格可能有所不同。直接联系我们获得最佳优惠。",
+        "whyDirectLabel": "优势",
+        "whyDirectTitle": "为什么直接预订？",
+        "benefit1": {
+            "title": "最优价格保证",
+            "desc": "获得其他平台没有的特别价格和独家优惠。"
+        },
+        "benefit2": {
+            "title": "最大灵活性",
+            "desc": "更灵活的取消政策和轻松的日程更改。"
+        },
+        "benefit3": {
+            "title": "个性化服务",
+            "desc": "直接与我们的团队沟通，定制您的住宿体验。"
+        },
+        "villasLabel": "选择别墅",
+        "villasTitle": "我们的别墅系列",
+        "payment": {
+            "label": "支付方式",
+            "title": "简单安全的支付",
+            "desc": "我们接受多种支付方式，为您提供便利。",
+            "transfer": "银行转账",
+            "ewallet": "电子钱包",
+            "card": "信用卡",
+            "qris": "QRIS",
+            "note": "付款需在我们团队确认预订后进行。"
+        },
+        "ctaTitle": "准备预订？",
+        "ctaDesc": "我们的预订团队随时为您规划在布根维尔旅游公园的梦想假期。",
+        "ctaButton": "立即联系我们"
+    },
+    "terms": {
+        "title": "服务条款",
+        "subtitle": "我们服务的条款和条件",
+        "lastUpdated": "最后更新",
+        "sections": [
+            {
+                "title": "1. 一般条款",
+                "content": "<p>访问和使用 Taman Wisata Bougenville 网站及服务，即表示您同意遵守这些条款和条件。如果您不同意这些条款的任何部分，请不要使用我们的服务。</p>"
+            },
+            {
+                "title": "2. 预订与付款",
+                "content": "<ul><li>所有预订均视房间/别墅供应情况而定。</li><li>可能需要支付定金以锁定您的预订。</li><li>全额付款必须按照预订确认时的指示完成。</li><li>价格如有更改，恕不另行通知，但不会影响已确认的预订。</li></ul>"
+            },
+            {
+                "title": "3. 取消与退款",
+                "content": "<ul><li>取消政策因预订的房价计划和促销活动而异。具体详情请参阅您的预订确认信息。</li><li>在抵达前特定时间内取消预订可能会产生取消费用。</li><li>退款（如适用）将在合理的时间内通过原付款方式处理。</li></ul>"
+            },
+            {
+                "title": "4. 住客规则",
+                "content": "<ul><li>为了其他客人的舒适，住客必须保持秩序和安静。</li><li>严禁在度假村内进行非法活动、携带违禁药物或危险武器。</li><li>由住客造成的财产损失将收取赔偿费用。</li><li>入住时间为 14:00 WIB，退房时间为 12:00 WIB，除非另有约定。</li></ul>"
+            },
+            {
+                "title": "5. 责任",
+                "content": "<p>Taman Wisata Bougenville 对未存放在保险箱（如有）中的贵重物品丢失或损坏，或因住客疏忽造成的损失概不负责。我们也对因住客疏忽或违反度假村安全规定造成的伤害不承担责任。</p>"
+            },
+            {
+                "title": "6. 适用法律",
+                "content": "<p>这些条款和条件受印度尼西亚共和国法律管辖并据其解释。任何争议均应在印度尼西亚法院管辖范围内解决。</p>"
+            }
+        ]
+    },
+    "privacy": {
+        "title": "隐私政策",
+        "subtitle": "我们致力于保护您的数据",
+        "lastUpdated": "最后更新",
+        "intro": {
+            "title": "1. 简介",
+            "content": "<p>欢迎来到 Taman Wisata Bougenville。我们重视您的隐私，并致力于保护您的个人信息。本隐私政策解释了当您访问我们的网站或使用我们的服务时，我们如何收集、使用和保护您的信息。</p>"
+        },
+        "collection": {
+            "title": "2. 我们收集的信息",
+            "content": "<p>我们可能会收集以下信息：</p><ul><li><strong>个人信息：</strong> 您在预订或联系我们时提供的姓名、电子邮件地址、电话号码和其他身份信息。</li><li><strong>预订信息：</strong> 入住日期、房间偏好和特殊要求。</li><li><strong>技术信息：</strong> IP 地址、浏览器类型和网站使用数据 (cookies) 以改善用户体验。</li></ul>"
+        },
+        "use": {
+            "title": "3. 信息的使用",
+            "content": "<p>我们将您的信息用于：</p><ul><li>处理您的预订和付款。</li><li>这就预订确认或服务变更与您联系。</li><li>发送促销信息或时事通讯（如果您已选择接收）。</li><li>提高我们的服务和网站质量。</li></ul>"
+        },
+        "protection": {
+            "title": "4. 数据保护",
+            "content": "<p>我们采取适当的技术和组织安全措施，以保护您的个人数据免遭未经授权的访问、滥用、丢失或损坏。</p>"
+        },
+        "sharing": {
+            "title": "5. 信息共享",
+            "content": "<p>我们不会将您的个人信息出售或出租给第三方。我们仅在法律要求或与协助我们运营的第三方服务提供商（例如付款处理）共享信息时，才会在严格的保密义务下共享信息。</p>"
+        },
+        "contact": {
+            "title": "6. 联系我们",
+            "content": "<p>如果您对本隐私政策有任何疑问，请联系我们：<br />电子邮件: booking@tamanwisatabougenville.com<br />电话: +62 811 910 2003</p>"
+        }
     }
 }

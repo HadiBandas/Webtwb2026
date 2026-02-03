@@ -256,8 +256,8 @@ export const dataService = {
             siteName: 'Taman Wisata Bougenville',
             siteDescription: 'Luxury Nature Resort',
             contactEmail: 'info@bougenville.com',
-            contactPhone: '+62 812 3456 7890',
-            whatsappNumber: '+62 812 3456 7890',
+            contactPhone: '+62 811 910 2003',
+            whatsappNumber: '+62 811 910 2003',
             socialMedia: {},
             booking: {
                 maxAdvanceDays: 90,

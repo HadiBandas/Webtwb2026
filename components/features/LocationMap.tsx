@@ -7,8 +7,8 @@ interface LocationMapProps {
 }
 
 const DEFAULT_LOCATION = {
-    address: 'Jl. Gunung Puntang, Ciwidey, Bandung Regency, West Java 40973',
-    coordinates: { lat: -7.1872, lng: 107.4083 }, // Gunung Puntang area
+    address: 'Jl. Gn. Puntang, Campakamulya, Kec. Cimaung, Kabupaten Bandung, Jawa Barat 40374',
+    coordinates: { lat: -7.1111615, lng: 107.601865 }, // Taman Wisata Bougenville
 };
 
 export function LocationMap({ address = DEFAULT_LOCATION.address, coordinates = DEFAULT_LOCATION.coordinates }: LocationMapProps) {

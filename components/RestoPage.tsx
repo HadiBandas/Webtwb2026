@@ -43,7 +43,7 @@ const RestoPage: React.FC<RestoPageProps> = ({ lang, onNavigateToActivity, onNav
             "postalCode": "40228",
             "addressCountry": "ID"
           },
-          "telephone": "+6281224178271",
+          "telephone": "+628119102003",
           "url": "https://bougenville.com/resto"
         }}
       />
@@ -53,7 +53,7 @@ const RestoPage: React.FC<RestoPageProps> = ({ lang, onNavigateToActivity, onNav
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src={optimizeImage("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070", 1920)}
+            src={optimizeImage("/images/resto/fullmenu.webp", 1920)}
             alt="Bale Puntang Restaurant"
             className="w-full h-full object-cover animate-ken-burns"
             width="1920"
@@ -91,7 +91,7 @@ const RestoPage: React.FC<RestoPageProps> = ({ lang, onNavigateToActivity, onNav
             <FadeIn className="order-2 lg:order-1 relative" direction="left">
               <div className="absolute -bottom-8 -left-8 w-full h-full border border-gold/30 rounded-sm -z-10 hidden md:block"></div>
               <img
-                src={optimizeImage("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600", 800)}
+                src={optimizeImage("/images/resto/BP-Luar.webp", 800)}
                 alt="Bale Puntang Restaurant Interior"
                 className="w-full h-[500px] md:h-[700px] object-cover rounded-sm shadow-2xl"
                 loading="lazy"
@@ -130,7 +130,7 @@ const RestoPage: React.FC<RestoPageProps> = ({ lang, onNavigateToActivity, onNav
             <FadeIn className="relative" direction="right">
               <div className="absolute -top-8 -right-8 w-full h-full border border-gold/30 rounded-sm -z-10 hidden md:block"></div>
               <img
-                src={optimizeImage("https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1600", 800)}
+                src={optimizeImage("/images/resto/woku.webp", 800)}
                 alt="Fresh Local Ingredients"
                 className="w-full h-[500px] md:h-[700px] object-cover rounded-sm shadow-2xl"
                 loading="lazy"
@@ -149,7 +149,7 @@ const RestoPage: React.FC<RestoPageProps> = ({ lang, onNavigateToActivity, onNav
             <FadeIn className="order-2 lg:order-1 relative" direction="left">
               <div className="absolute -bottom-8 -left-8 w-full h-full border border-gold/30 rounded-sm -z-10 hidden md:block"></div>
               <img
-                src={optimizeImage("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1600", 800)}
+                src={optimizeImage("/images/resto/Facade.webp", 800)}
                 alt="Bale Puntang Evening Ambiance"
                 className="w-full h-[500px] md:h-[700px] object-cover rounded-sm shadow-2xl"
                 loading="lazy"
@@ -211,7 +211,7 @@ const RestoPage: React.FC<RestoPageProps> = ({ lang, onNavigateToActivity, onNav
                 {t('resto.cta.discover')}
               </p>
               <a
-                href="https://wa.me/6281224178271?text=Halo, saya ingin melihat menu lengkap Bale Puntang"
+                href="https://wa.me/628119102003?text=Halo, saya ingin melihat menu lengkap Bale Puntang"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 border-b border-gray-900 pb-1 text-gray-900 text-sm uppercase tracking-[0.2em] hover:text-forest hover:border-forest transition-colors group"
@@ -275,13 +275,13 @@ const RestoPage: React.FC<RestoPageProps> = ({ lang, onNavigateToActivity, onNav
                 </div>
                 <h4 className="font-serif text-xl text-gray-900 mb-3">{t('resto.reservation.reservationTitle')}</h4>
                 <a
-                  href="tel:+6281224178271"
+                  href="tel:+628119102003"
                   className="text-gray-600 text-sm hover:text-forest block mb-1 transition-colors"
                 >
-                  +62 812 3456 7890
+                  +62 811 910 2003
                 </a>
                 <a
-                  href="https://wa.me/6281224178271?text=Halo, saya ingin reservasi meja di Bale Puntang"
+                  href="https://wa.me/628119102003?text=Halo, saya ingin reservasi meja di Bale Puntang"
                   target="_blank"
                   rel="noreferrer"
                   className="text-forest text-sm font-medium hover:underline"
@@ -315,7 +315,7 @@ const RestoPage: React.FC<RestoPageProps> = ({ lang, onNavigateToActivity, onNav
             {t('resto.cta.subtitle')}
           </p>
           <a
-            href="https://wa.me/6281224178271?text=Halo Bale Puntang, saya ingin reservasi meja"
+            href="https://wa.me/628119102003?text=Halo Bale Puntang, saya ingin reservasi meja"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-4 bg-gray-900 text-white px-12 py-5 text-sm uppercase tracking-[0.2em] font-medium hover:bg-forest transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"

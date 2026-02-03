@@ -48,7 +48,7 @@ export function PageHero({
             ) : backgroundImage ? (
                 <div
                     className="absolute inset-0 w-full h-full bg-cover bg-center animate-ken-burns"
-                    style={{ backgroundImage: `url(${backgroundImage})` }}
+                    style={{ backgroundImage: `url("${backgroundImage}")` }}
                 />
             ) : (
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-forest-dark via-forest to-forest-dark" />

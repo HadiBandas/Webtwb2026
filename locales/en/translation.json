@@ -102,7 +102,7 @@
         "historyDesc3": "Mount Puntang is not just a place. It is a witness to history, a guardian of tradition, and home to generations who care for this ancient pine forest with all their hearts.",
         "responsibilityLabel": "Our Responsibility",
         "responsibilityTitle": "Our Commitment to Nature",
-        "responsibilityDesc": "As a resort in the heart of the mountains, we have a responsibility to protect the ecosystem that sustains this beauty. Bougenville adheres to the \"leave no trace\" principle and dedicates 30% of the land to forest conservation.",
+        "responsibilityDesc": "As a resort in the heart of the mountains, we have a responsibility to protect the ecosystem that sustains this beauty. Bougenville adheres to the \"leave no trace\" principle and is fully committed to nature preservation.",
         "statRenewable": "Renewable Energy",
         "statWaste": "Waste Policy",
         "statCommunity": "Community First",
@@ -141,7 +141,7 @@
             "placeholders": {
                 "name": "John Doe",
                 "email": "john@example.com",
-                "phone": "+62 812 3456 7890",
+                "phone": "+62 811 910 2003",
                 "message": "Tell us about your inquiry..."
             },
             "validation": {
@@ -261,17 +261,89 @@
     },
     "location": {
         "title": "Find Us",
-        "subtitle": "Your mountain sanctuary awaits. Only 2 hours from Jakarta.",
+        "subtitle": "Your mountain sanctuary awaits amid blooming bougenville and Gunung Puntang views. Easily accessible from Bandung Airport and key stations.",
         "getDirections": "Get Directions",
         "yourJourney": "Your Journey",
         "travelTimesTitle": "Travel Times & Directions",
-        "directions": "Directions",
-        "fromJakarta": "From Jakarta",
-        "fromBandung": "From Bandung",
         "mapSectionLabel": "Map Location",
         "ourLocation": "Our Location",
         "nearbyLabel": "Nearby Attractions",
-        "nearbyTitle": "Nearby Attractions"
+        "nearbyTitle": "Nearby Attractions",
+        "info": {
+            "title": "Important Information",
+            "address": "Address",
+            "gps": "GPS Coordinates",
+            "road": "Road Conditions",
+            "roadDesc": "Paved road, suitable for all vehicles (Sedan, SUV, Bus Medium/Elf). Last 3km is a scenic mountain road.",
+            "signal": "Mobile Signal",
+            "signalDesc": "Strong 4G signal for Telkomsel and XL. Complimentary Wi-Fi available in resort area.",
+            "parking": "Parking",
+            "parkingDesc": "Spacious parking area available for cars and medium buses.",
+            "transport": "Public Transport",
+            "transportDesc": "From Bandung (Leuwipanjang Terminal), take bus to Banjaran, then Angkot to Cimaung/Puntang."
+        },
+        "routes": {
+            "airport": {
+                "from": "Bandung Airport (Husein Sastranegara)",
+                "via": "Jl. Soekarno-Hatta → Soreang",
+                "time": "45-60 Mins",
+                "distance": "35 km",
+                "steps": [
+                    "Exit airport south onto Jl. Husein Sastranegara towards city.",
+                    "Merge onto Jl. Soekarno-Hatta south, continue to Jl. Soreang.",
+                    "Pass Banjaran town, follow Jl. Gunung Puntang signs to Campaka Mulya, Cimaung."
+                ],
+                "note": "Estimated time: 45-60 mins | Distance: 35 km. Paved roads with curves—watch for traffic."
+            },
+            "whoosh": {
+                "from": "Whoosh Padalarang Station",
+                "via": "Tol Padaleunyi → Tol Soroja",
+                "time": "40-50 Mins",
+                "distance": "32 km",
+                "steps": [
+                    "From station, enter Tol Padaleunyi towards Cileunyi/Bandung.",
+                    "Take exit to Tol Soroja (Soreang-Pasir Koja).",
+                    "Exit Soreang, head towards Banjaran - Cimaung."
+                ],
+                "note": "Fastest route via toll road. Ideal for visitors from Jakarta using High Speed Train."
+            },
+            "station": {
+                "from": "Bandung Station (Train)",
+                "via": "Jl. Moh. Toha → Banjaran",
+                "time": "50-70 Mins",
+                "distance": "30 km",
+                "steps": [
+                    "From station, head south to Jl. Oto Iskandar Dinata.",
+                    "Continue to Jl. Moh. Toha, then straight to Banjaran.",
+                    "Follow signs to Gunung Puntang/Bougenville at Cimaung intersection."
+                ],
+                "note": "Route passes through city traffic. Best to travel early morning or late afternoon."
+            },
+            "jakarta": {
+                "from": "Jakarta (via Tol Soroja)",
+                "via": "Tol Cipularang → Tol Soroja",
+                "time": "2-2.5 Hours",
+                "distance": "160 km",
+                "steps": [
+                    "Take Tol Cipularang towards Bandung.",
+                    "Merge onto Tol Soroja (Soreang-Pasir Koja) at Pasir Koja interchange.",
+                    "Exit Soreang (end of toll), turn right to Banjaran, straight to Cimaung."
+                ],
+                "note": "Direct toll access makes the journey smooth. Exit Soreang is only 30-40 mins from resort."
+            },
+            "city": {
+                "from": "Bandung City Center",
+                "via": "Jl. Moh. Toha → Dayeuhkolot",
+                "time": "50-60 Mins",
+                "distance": "28 km",
+                "steps": [
+                    "Head south on Jl. Moh. Toha via Dayeuhkolot area.",
+                    "Continue straight until Banjaran market intersection.",
+                    "Continue straight towards Pangalengan, turn left to Gunung Puntang."
+                ],
+                "note": "Standard route. Can be busy during rush hours around Dayeuhkolot."
+            }
+        }
     },
     "blog": {
         "title": "Blog & News",
@@ -447,5 +519,134 @@
         "checkAvailability": "Check Availability",
         "bookNow": "Book Now",
         "whatsappMessage": "Hello! I would like to make a reservation at Taman Wisata Bougenville."
+    },
+    "bookingPage": {
+        "seo": {
+            "title": "Booking | Taman Wisata Bougenville",
+            "description": "Reserve your exclusive villa at Taman Wisata Bougenville. Book directly via WhatsApp or your favorite OTA platform."
+        },
+        "heroTitle": "Book Your Villa",
+        "heroSubtitle": "Reserve your dream villa at Taman Wisata Bougenville with ease",
+        "trust": {
+            "rating": "4.9/5 Guest Rating",
+            "secure": "Secure Booking",
+            "response": "Response < 1 Hour",
+            "guests": "5000+ Happy Guests"
+        },
+        "methodsLabel": "Booking Options",
+        "methodsTitle": "Choose Your Booking Method",
+        "methodsDesc": "We offer multiple booking options for your convenience. Book directly via WhatsApp for personal service or use your preferred OTA platform.",
+        "recommended": "Recommended",
+        "whatsappTitle": "Book Directly via WhatsApp",
+        "whatsappDesc": "Get personal service from our reservation team. Discuss your needs and get the best offers.",
+        "whatsappMessage": "Hello, I'm interested in booking a villa at Taman Wisata Bougenville. I found the information on your website.",
+        "chatNow": "Chat Now",
+        "responseTime": "Average response time: < 1 hour (08:00 - 21:00 WIB)",
+        "specialists": {
+            "subtitle": "Reservation Team",
+            "title": "Contact Our Specialists",
+            "desc": "Our reservation team is ready to help you find the perfect villa for your needs.",
+            "role": "Reservation Specialist",
+            "chatWith": "Chat {{name}}",
+            "messages": {
+                "jaka": "Hi Jaka, I'm interested in making a reservation at Taman Wisata Bougenville. I found the info on your website.",
+                "iis": "Hi Iis, I'd like to inquire about villa availability. I saw your website.",
+                "teten": "Hi Teten, I want to check villa availability for specific dates. Info from the website."
+            }
+        },
+        "otaLabel": "Partner Platforms",
+        "otaTitle": "Book via OTA Platforms",
+        "otaDesc": "Find us on your favorite online travel platforms for price comparison and easy payment.",
+        "viewOn": "View on",
+        "otaNote": "Prices may vary across platforms. Contact us directly for the best offers.",
+        "whyDirectLabel": "Benefits",
+        "whyDirectTitle": "Why Book Direct?",
+        "benefit1": {
+            "title": "Best Price Guarantee",
+            "desc": "Get special rates and exclusive offers not available on other platforms."
+        },
+        "benefit2": {
+            "title": "Maximum Flexibility",
+            "desc": "More flexible cancellation policies and easy schedule changes."
+        },
+        "benefit3": {
+            "title": "Personal Service",
+            "desc": "Consult directly with our team to customize your stay experience."
+        },
+        "villasLabel": "Choose a Villa",
+        "villasTitle": "Our Villa Collection",
+        "payment": {
+            "label": "Payment Methods",
+            "title": "Easy & Secure Payment",
+            "desc": "We accept various payment methods for your convenience.",
+            "transfer": "Bank Transfer",
+            "ewallet": "E-Wallet",
+            "card": "Credit Card",
+            "qris": "QRIS",
+            "note": "Payment is confirmed after your reservation is approved by our team."
+        },
+        "ctaTitle": "Ready to Book?",
+        "ctaDesc": "Our reservation team is ready to help you plan your dream vacation at Taman Wisata Bougenville.",
+        "ctaButton": "Contact Us Now"
+    },
+    "terms": {
+        "title": "Terms of Service",
+        "subtitle": "Terms and Conditions of our service",
+        "lastUpdated": "Last updated",
+        "sections": [
+            {
+                "title": "1. General Terms",
+                "content": "<p>By accessing and using the Taman Wisata Bougenville website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please do not use our services.</p>"
+            },
+            {
+                "title": "2. Reservations and Payment",
+                "content": "<ul><li>All reservations are subject to room/villa availability.</li><li>A down payment may be required to secure your booking.</li><li>Full payment must be settled according to the instructions provided at booking confirmation.</li><li>Prices are subject to change without prior notice, but will not affect confirmed reservations.</li></ul>"
+            },
+            {
+                "title": "3. Cancellation and Refunds",
+                "content": "<ul><li>Cancellation policies vary depending on the rate plan and promotion booked. Please refer to your booking confirmation for specific details.</li><li>Cancellations made within a certain period prior to arrival may incur a cancellation fee.</li><li>Refunds (if applicable) will be processed to the original payment method within a reasonable timeframe.</li></ul>"
+            },
+            {
+                "title": "4. Guest Rules",
+                "content": "<ul><li>Guests are required to maintain order and quiet for the comfort of other guests.</li><li>Illegal activities, carrying illegal drugs, or dangerous weapons are strictly prohibited on resort premises.</li><li>Property damage caused by guests will be subject to replacement costs.</li><li>Check-in time is 14:00 WIB and Check-out is 12:00 WIB, unless agreed otherwise.</li></ul>"
+            },
+            {
+                "title": "5. Liability",
+                "content": "<p>Taman Wisata Bougenville is not liable for loss or damage to guest valuables not stored in safety deposit boxes (if available) or due to guest negligence. We are also not liable for injuries caused by guest negligence or violation of resort safety rules.</p>"
+            },
+            {
+                "title": "6. Governing Law",
+                "content": "<p>These Terms and Conditions are governed by and construed in accordance with the laws of the Republic of Indonesia. Any disputes arising shall be resolved in the jurisdiction of Indonesian courts.</p>"
+            }
+        ]
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "subtitle": "Our commitment to protecting your data",
+        "lastUpdated": "Last updated",
+        "intro": {
+            "title": "1. Introduction",
+            "content": "<p>Welcome to Taman Wisata Bougenville. We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and protect your information when you visit our website or use our services.</p>"
+        },
+        "collection": {
+            "title": "2. Information We Collect",
+            "content": "<p>We may collect the following information:</p><ul><li><strong>Personal Information:</strong> Name, email address, phone number, and other identity information you provide when making a reservation or contacting us.</li><li><strong>Reservation Information:</strong> Dates of stay, room preferences, and special requests.</li><li><strong>Technical Information:</strong> IP address, browser type, and website usage data (cookies) to improve user experience.</li></ul>"
+        },
+        "use": {
+            "title": "3. Use of Information",
+            "content": "<p>We use your information to:</p><ul><li>Process your reservations and payments.</li><li>Contact you regarding booking confirmations or service changes.</li><li>Send promotional information or newsletters (if you opted in).</li><li>Improve the quality of our services and website.</li></ul>"
+        },
+        "protection": {
+            "title": "4. Data Protection",
+            "content": "<p>We implement appropriate technical and organizational security measures to protect your personal data against unauthorized access, misuse, loss, or damage.</p>"
+        },
+        "sharing": {
+            "title": "5. Information Sharing",
+            "content": "<p>We do not sell or rent your personal information to third parties. We only share information if required by law or with third-party service providers who assist our operations (e.g., payment processing), under strict confidentiality obligations.</p>"
+        },
+        "contact": {
+            "title": "6. Contact Us",
+            "content": "<p>If you have any questions about this Privacy Policy, please contact us at:<br />Email: booking@tamanwisatabougenville.com<br />Phone: +62 811 910 2003</p>"
+        }
     }
 }

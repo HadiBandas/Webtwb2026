@@ -26,7 +26,7 @@ export function MembershipPage() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         const text = `*Request to Join Bougenville Circle*\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nCity: ${formData.location}\nPreference: ${formData.villaPreference}\nOccasion: ${formData.occasion}`;
-        window.open(`https://wa.me/6281224178271?text=${encodeURIComponent(text)}`, '_blank');
+        window.open(`https://wa.me/628119102003?text=${encodeURIComponent(text)}`, '_blank');
     };
 
     return (
@@ -40,7 +40,7 @@ export function MembershipPage() {
             <div className="relative h-screen flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src={optimizeImage("https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=2560", 2560)}
+                        src={optimizeImage("/images/membership/membership-hero.jpg", 2560)}
                         alt="Mist over mountains"
                         className="w-full h-full object-cover scale-105 animate-slow-zoom"
                     />
@@ -74,7 +74,7 @@ export function MembershipPage() {
                         <div className="w-full md:w-1/2">
                             <div className="aspect-[4/5] relative overflow-hidden rounded-sm">
                                 <img
-                                    src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1200"
+                                    src="/images/membership/invitation-privilege.jpg"
                                     alt="Luxury Detail"
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
                                 />

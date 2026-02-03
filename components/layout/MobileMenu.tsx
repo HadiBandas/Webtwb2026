@@ -73,7 +73,7 @@ export function MobileMenu({ isOpen, onClose, onNavigate }: MobileMenuProps) {
 
                         <div className="mt-6 text-center text-sm text-gray-500">
                             <p>Jl. Gunung Puntang, Bandung</p>
-                            <p>+62 812 3456 7890</p>
+                            <p>+62 811 910 2003</p>
                         </div>
                     </motion.div>
                 </motion.div>

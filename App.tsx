@@ -13,25 +13,27 @@ import BookingForm from './components/BookingForm';
 import { LanguageSwitcher } from './components/ui/LanguageSwitcher';
 import { Logo } from './components/ui/Logo';
 import { Loading } from './components/ui/Loading';
-import { HomePage } from './HomePage';
+import { HomePage } from './pages/HomePage';
 import { Footer } from './components/ui/Footer';
 
 // Lazy load other pages
 const VillasPage = React.lazy(() => import('./components/VillasPage'));
 const RestoPage = React.lazy(() => import('./components/RestoPage'));
 const FacilityPage = React.lazy(() => import('./components/FacilityPage'));
-const GalleryPage = React.lazy(() => import('./GalleryPage').then(module => ({ default: module.GalleryPage })));
-const VillaDetailPage = React.lazy(() => import('./VillaDetailPage').then(module => ({ default: module.VillaDetailPage })));
-const OffersPage = React.lazy(() => import('./OffersPage').then(module => ({ default: module.OffersPage })));
-const AboutPage = React.lazy(() => import('./AboutPage').then(module => ({ default: module.AboutPage })));
-const LocationPage = React.lazy(() => import('./LocationPage').then(module => ({ default: module.LocationPage })));
-const ContactPage = React.lazy(() => import('./ContactPage').then(module => ({ default: module.ContactPage })));
-const FAQPage = React.lazy(() => import('./FAQPage').then(module => ({ default: module.FAQPage })));
-const BlogPage = React.lazy(() => import('./BlogPage').then(module => ({ default: module.BlogPage })));
-const SustainabilityPage = React.lazy(() => import('./SustainabilityPage').then(module => ({ default: module.SustainabilityPage })));
+const GalleryPage = React.lazy(() => import('./pages/GalleryPage').then(module => ({ default: module.GalleryPage })));
+const VillaDetailPage = React.lazy(() => import('./pages/VillaDetailPage').then(module => ({ default: module.VillaDetailPage })));
+const OffersPage = React.lazy(() => import('./pages/OffersPage').then(module => ({ default: module.OffersPage })));
+const AboutPage = React.lazy(() => import('./pages/AboutPage').then(module => ({ default: module.AboutPage })));
+const LocationPage = React.lazy(() => import('./pages/LocationPage').then(module => ({ default: module.LocationPage })));
+const ContactPage = React.lazy(() => import('./pages/ContactPage').then(module => ({ default: module.ContactPage })));
+const FAQPage = React.lazy(() => import('./pages/FAQPage').then(module => ({ default: module.FAQPage })));
+const BlogPage = React.lazy(() => import('./pages/BlogPage').then(module => ({ default: module.BlogPage })));
+const SustainabilityPage = React.lazy(() => import('./pages/SustainabilityPage').then(module => ({ default: module.SustainabilityPage })));
 const MembershipPage = React.lazy(() => import('./components/MembershipPage').then(module => ({ default: module.MembershipPage })));
-const PrivacyPage = React.lazy(() => import('./PrivacyPage').then(module => ({ default: module.PrivacyPage })));
-const TermsPage = React.lazy(() => import('./TermsPage').then(module => ({ default: module.TermsPage })));
+const PrivacyPage = React.lazy(() => import('./pages/PrivacyPage').then(module => ({ default: module.PrivacyPage })));
+const TermsPage = React.lazy(() => import('./pages/TermsPage').then(module => ({ default: module.TermsPage })));
+const BookingPage = React.lazy(() => import('./pages/BookingPage').then(module => ({ default: module.BookingPage })));
+
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -145,6 +147,8 @@ function App() {
         return <PrivacyPage />;
       case 'terms':
         return <TermsPage />;
+      case 'booking':
+        return <BookingPage />;
       case 'home':
         return <HomePage />;
       default:
@@ -174,7 +178,7 @@ function App() {
               { id: 'resto', key: 'nav.resto' },
               { id: 'facility', key: 'nav.facility' },
               { id: 'gallery', key: 'nav.gallery' },
-              { id: 'offers', key: 'nav.offers' },
+
               { id: 'membership', key: 'nav.membership' },
               { id: 'about', key: 'nav.about' }
             ].map((item) => (
@@ -195,7 +199,7 @@ function App() {
               isScrolled={isScrolled} isHomePage={view === 'home'}
             />
             <button
-              onClick={() => scrollToBooking()}
+              onClick={() => navigate('booking')}
               className={`px-6 py-2.5 text-xs font-bold uppercase tracking-widest transition-all ${isScrolled || view !== 'home'
                 ? 'bg-forest-dark text-white hover:bg-forest-green'
                 : 'bg-white text-forest-dark hover:bg-gray-100'
@@ -276,14 +280,14 @@ function App() {
           <button onClick={() => { navigate('resto'); setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.resto')}</button>
           <button onClick={() => handleNavClick('facility')} className="text-left hover:text-gold transition-colors py-2">{t('nav.facility')}</button>
           <button onClick={() => handleNavClick('gallery')} className="text-left hover:text-gold transition-colors py-2">{t('nav.gallery')}</button>
-          <button onClick={() => { navigate('offers'); setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.offers')}</button>
+
           <button onClick={() => handleNavClick('membership')} className="text-left hover:text-gold transition-colors py-2">{t('nav.membership')}</button>
           <button onClick={() => { navigate('about'); setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-left hover:text-gold transition-colors py-2">{t('nav.about')}</button>
         </nav>
 
         <div className="mt-6 pt-6 px-6">
           <button
-            onClick={() => { scrollToBooking(); setIsMobileMenuOpen(false); }}
+            onClick={() => { navigate('booking'); setIsMobileMenuOpen(false); }}
             className="w-full bg-gold text-forest-dark py-4 font-bold uppercase tracking-widest text-sm hover:bg-white transition-colors rounded-sm"
           >
             {t('nav.bookNow')}
@@ -300,12 +304,12 @@ function App() {
 
       {/* --- FOOTER --- */}
       {/* --- FOOTER --- */}
-      <Footer navigate={navigate} />
+      <Footer navigate={navigate} isHomePage={view === 'home'} />
 
       {/* Floating WA Button - Hidden on pages with their own sticky CTAs */}
       {!['about', 'blog', 'faq', 'contact', 'offers', 'location'].includes(view) && (
         <a
-          href="https://wa.me/6281224178271"
+          href="https://wa.me/628119102003"
           target="_blank"
           rel="noreferrer"
           aria-label="Chat with us on WhatsApp"

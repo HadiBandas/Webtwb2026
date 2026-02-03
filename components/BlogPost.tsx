@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { BLOG_POSTS } from '../data/blogPosts';
 import { SEO } from './SEO';
 import { optimizeImage } from '../utils/imageOptimizer';
+import DOMPurify from 'dompurify';
 
 interface BlogPostProps {
     postId: string;
@@ -95,7 +96,7 @@ export function BlogPost({ postId, onBack }: BlogPostProps) {
 
                 <div
                     className="prose prose-lg prose-headings:font-serif prose-headings:font-light prose-a:text-forest-dark prose-img:rounded-xl mx-auto text-gray-600 font-light leading-loose"
-                    dangerouslySetInnerHTML={{ __html: getContent(post.content) }}
+                    dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(getContent(post.content)) }}
                 />
 
                 <div className="mt-16 pt-8 border-t border-gray-100">

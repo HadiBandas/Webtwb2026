@@ -53,15 +53,7 @@ export const TrustBadges: React.FC<TrustBadgesProps> = ({ variant = 'inline' }) 
                         <p className="text-xs uppercase tracking-widest text-forest-dark/60 font-medium">{t('trust.guests')}</p>
                     </div>
 
-                    {/* Divider (Desktop) */}
-                    <div className="hidden md:block w-px h-12 bg-forest-dark/10"></div>
 
-                    {/* Item 3: Featured In */}
-                    <div className="flex flex-col items-center text-center">
-                        <Award size={24} className="text-gold mb-3 opacity-80" />
-                        <div className="font-serif text-xl md:text-2xl text-forest-dark mb-2 mt-1">{t('trust.media')}</div>
-                        <p className="text-[10px] uppercase tracking-widest text-forest-dark/40 font-bold">{t('trust.featured')}</p>
-                    </div>
 
                 </div>
             </div>

@@ -1,19 +1,26 @@
 
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Mountain, Facebook, Instagram, Youtube, Twitter, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Mountain, Facebook, Instagram, Youtube, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { Logo } from './Logo';
 
 interface FooterProps {
     navigate: (page: string) => void;
+    isHomePage?: boolean;
 }
 
-export function Footer({ navigate }: FooterProps) {
+export function Footer({ navigate, isHomePage = false }: FooterProps) {
     const { t } = useTranslation();
     const currentYear = new Date().getFullYear();
 
+    const socialLinks = [
+        { icon: Facebook, href: 'https://www.facebook.com/tamanwisatabougenvillebdg/?locale=id_ID' },
+        { icon: Instagram, href: 'https://www.instagram.com/tamanwisatabougenville/' },
+        { icon: Youtube, href: 'https://www.youtube.com/@tamanwisatabougenville' }
+    ];
+
     return (
-        <footer className="bg-forest-dark text-white/80 pt-24 pb-12 border-t border-white/10">
+        <footer className={`bg-forest-dark text-white/80 pt-24 pb-12 border-t border-white/10 ${isHomePage ? 'lg:pb-32' : ''}`}>
             <div className="container mx-auto px-6 md:px-8">
 
                 <div className="flex flex-col lg:flex-row justify-between gap-16 mb-20">
@@ -25,8 +32,14 @@ export function Footer({ navigate }: FooterProps) {
                             {t('footer.tagline')}
                         </p>
                         <div className="flex gap-4">
-                            {[Facebook, Instagram, Youtube, Twitter].map((Icon, i) => (
-                                <a key={i} href="#" className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-gold hover:border-gold hover:text-forest-dark transition-all duration-300 group">
+                            {socialLinks.map(({ icon: Icon, href }, i) => (
+                                <a
+                                    key={i}
+                                    href={href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-gold hover:border-gold hover:text-forest-dark transition-all duration-300 group"
+                                >
                                     <Icon size={18} />
                                 </a>
                             ))}
@@ -100,14 +113,14 @@ export function Footer({ navigate }: FooterProps) {
                                 <Phone size={18} className="text-gold mt-1 shrink-0" />
                                 <div className="flex flex-col">
                                     <span className="text-xs uppercase tracking-wider mb-1 text-white/40">{t('footer.reception', 'Reception')}</span>
-                                    <span className="hover:text-white transition-colors cursor-pointer">+62 812 3456 7890</span>
+                                    <span className="hover:text-white transition-colors cursor-pointer">+62 811 910 2003</span>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 text-white/60">
                                 <Mail size={18} className="text-gold mt-1 shrink-0" />
                                 <div className="flex flex-col">
                                     <span className="text-xs uppercase tracking-wider mb-1 text-white/40">{t('footer.inquiries', 'Inquiries')}</span>
-                                    <span className="hover:text-white transition-colors cursor-pointer">reservation@bougenville.com</span>
+                                    <span className="hover:text-white transition-colors cursor-pointer">booking@tamanwisatabougenville.com</span>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 text-white/60">
@@ -139,7 +152,7 @@ export function Footer({ navigate }: FooterProps) {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-white/10 pt-8 pb-24 lg:pb-0 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40 uppercase tracking-widest">
-                    <p className="text-center md:text-left">&copy; {currentYear} Taman Wisata Bougenville. All Rights Reserved.</p>
+                    <p className="text-center md:text-left">&copy; 2020 - {currentYear} Taman Wisata Bougenville. All Rights Reserved.</p>
                     <div className="flex gap-6">
                         <button onClick={() => navigate('privacy')} className="hover:text-white transition-colors py-2">{t('footer.privacyPolicy')}</button>
                         <button onClick={() => navigate('terms')} className="hover:text-white transition-colors py-2">{t('footer.termsOfService')}</button>

@@ -105,7 +105,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
           zh: '法国乡村风格别墅（Gordes, Roussillon, Lourmarin）。',
           de: 'Villen im französischen Landhausstil (Gordes, Roussillon, Lourmarin).'
         },
-        image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1600',
+        image: '/images/villas/roussillon/DSC07004WEB.jpg',
         type: 'group',
         filterFn: (v) => v.cluster === 'Provincial Villas'
       },
@@ -118,7 +118,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
           zh: '河畔别墅（Hana, Blomst, Fiore）。',
           de: 'Villen am Flussufer (Hana, Blomst, Fiore).'
         },
-        image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=1600',
+        image: '/images/villas/riverside-hana/Rsv-11kompres.WEB.jpg',
         type: 'group',
         filterFn: (v) => v.cluster === 'Riverside Villas'
       }
@@ -133,7 +133,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
           zh: '浪漫豪华型小屋。',
           de: 'Romantische Deluxe-Hütten.'
         },
-        image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=800',
+        image: '/images/villas/jacaranda/AWB_4595WEB.jpg',
         type: 'group',
         filterFn: (v) => v.badge === 'Deluxe Type'
       },
@@ -146,7 +146,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
           zh: '带河流通道的浪漫行政小屋。',
           de: 'Romantische Executive-Hütten mit Flusszugang.'
         },
-        image: 'https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=800',
+        image: '/images/villas/agaphantus/agaphantuss.jpgWEB.jpg',
         type: 'group',
         filterFn: (v) => v.badge === 'Executive Type'
       }
@@ -161,7 +161,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
           zh: '原木家居综合体（Campaka, Suren, Pinus, Puspa, Meranti）。',
           de: 'Blockhaus-Komplex (Campaka, Suren, Pinus, Puspa, Meranti).'
         },
-        image: 'https://images.unsplash.com/photo-1542718610-a1d656d1884c?q=80&w=1600',
+        image: '/images/villas/villa-pinus/pinus.1WEB.jpg',
         type: 'group',
         filterFn: (v) => v.category === 'log_home'
       }
@@ -380,7 +380,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
         zh: '探索我们旨在提供难忘住宿体验的高级别墅完整系列。',
         de: 'Entdecken Sie unsere komplette Kollektion von Premium-Villen, die für ein unvergessliches Aufenthaltserlebnis konzipiert sind.'
       },
-      image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070',
+      image: '/images/villas/forest-house/DSC00370WEB.jpg',
     },
     luxury: {
       title: { id: 'Luxury Collection', en: 'Luxury Collection', zh: '豪华系列', de: 'Luxuskollektion' },
@@ -402,7 +402,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
         zh: '体验入住与大自然融为一体的正宗木制别墅的温暖。非常适合大家庭。',
         de: 'Erleben Sie die Wärme eines Aufenthalts in einer authentischen Holzvilla, die mit der Natur verschmilzt. Perfekt für große Familien.'
       },
-      image: 'https://images.unsplash.com/photo-1542718610-a1d656d1884c?q=80&w=1600',
+      image: '/images/villas/villa-pinus/pinus-3(1)WEB.jpg',
     },
     couple: {
       title: { id: 'Couples Retreat', en: 'Couples Retreat', zh: '情侣度假', de: 'Pärchenurlaub' },
@@ -413,7 +413,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
         zh: '专为情侣设计的私密别墅。豪华型和行政型可供选择。',
         de: 'Intime Villen, die speziell für Paare entworfen wurden. Auswahl an Deluxe- und Executive-Typen.'
       },
-      image: 'https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=1600',
+      image: '/images/villas/abutilon/AWB_4760WEB.jpg',
     }
   };
 

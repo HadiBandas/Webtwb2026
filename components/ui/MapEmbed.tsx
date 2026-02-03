@@ -10,19 +10,21 @@ export interface MapEmbedProps {
 }
 
 export function MapEmbed({
-    latitude = -7.1167,
-    longitude = 107.6333,
-    address = 'Jl. Gn. Puntang, Bandung, West Java, Indonesia',
-    googleMapsUrl = 'https://maps.google.com/?q=Gunung+Puntang+Bandung',
-    embedUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.128003025725!2d107.59929007499817!3d-7.11116149289234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6894c112337e61%3A0x419a9e315767c74!2sTaman%20Wisata%20Bougenville!5e0!3m2!1sid!2sid!4v1764727296351!5m2!1sid!2sid'
+    latitude = -7.1111615,
+    longitude = 107.601865,
+    address = 'Jl. Gn. Puntang, Campakamulya, Kec. Cimaung, Kabupaten Bandung, Jawa Barat 40374',
+    googleMapsUrl = 'https://www.google.com/maps/place/Taman+Wisata+Bougenville/@-7.1111615,107.601865,17z',
+    embedUrl
 }: MapEmbedProps) {
+    // Generate embed URL from coordinates if not provided
+    const finalEmbedUrl = embedUrl || `https://maps.google.com/maps?q=${latitude},${longitude}&hl=en&z=14&output=embed`;
 
     return (
         <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
             {/* Map Embed */}
             <div className="relative h-96 bg-gray-100">
                 <iframe
-                    src={embedUrl}
+                    src={finalEmbedUrl}
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

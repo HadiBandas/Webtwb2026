@@ -70,7 +70,7 @@ export const StickyBookingBar: React.FC<StickyBookingBarProps> = ({
         const villaInfo = villaName ? `. Saya tertarik dengan ${villaName}` : '';
 
         const message = encodeURIComponent(baseMessage + dateInfo + guestInfo + villaInfo);
-        window.open(`https://wa.me/6281224178271?text=${message}`, '_blank');
+        window.open(`https://wa.me/628119102003?text=${message}`, '_blank');
     };
 
     // Get minimum date (today)

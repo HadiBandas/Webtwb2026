@@ -47,7 +47,7 @@ export const OrganizationSchema = () => {
             latitude: -7.0983,
             longitude: 107.5144,
         },
-        telephone: '+62-812-3456-7890',
+        telephone: '+62-811-910-2003',
         sameAs: [
             'https://www.facebook.com/tamanwisatabougenville',
             'https://www.instagram.com/tamanwisatabougenville',
@@ -69,7 +69,7 @@ export const LocalBusinessSchema = () => {
             `${import.meta.env.VITE_SITE_URL || 'https://tamanwisatabougenville.com'}/logo512.png`
         ],
         url: import.meta.env.VITE_SITE_URL || 'https://tamanwisatabougenville.com',
-        telephone: '+62-812-3456-7890',
+        telephone: '+62-811-910-2003',
         priceRange: 'Rp 500.000 - Rp 2.000.000',
         description: 'Luxury mountain resort in Gg. Puntang offering exclusive villas, river-side glamping, and organic dining.',
         address: {
