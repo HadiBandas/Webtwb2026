@@ -7,7 +7,7 @@ export const Loading: React.FC = () => {
             <div className="relative flex flex-col items-center">
                 {/* Clean Logo Animation - Larger & Pop Up */}
                 <div className="animate-fade-up">
-                    <Logo className="w-64 md:w-80 h-auto" />
+                    <Logo className="w-[480px] md:w-[600px] h-auto" />
                 </div>
 
                 {/* Subtle loading indicator below */}

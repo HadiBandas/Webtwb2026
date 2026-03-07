@@ -112,7 +112,7 @@ export const VILLA_SEO_CONFIG: Record<string, {
             'villa acara keluarga bandung',
             'villa reuni bandung'
         ],
-        titleTemplate: 'Emerald - Villa Gathering Bandung | Dandenong Villas | Taman Wisata Bougenville',
+        titleTemplate: 'Emerald - Villa Gathering Bandung | Emerald Villas | Taman Wisata Bougenville',
         descriptionTemplate: 'Emerald Villa, villa gathering di Bandung dengan kapasitas besar. Cocok untuk acara keluarga, reuni, atau corporate event. Lokasi strategis di Gunung Puntang!'
     },
     'selby': {

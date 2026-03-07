@@ -251,9 +251,7 @@ export function HomePage() {
             </section >
 
             {/* Trust Badges */}
-            < TrustBadges />
-
-
+            <TrustBadges />
 
             {/* Experiences Grid */}
             < section className="py-20 md:py-28 bg-gray-50" >

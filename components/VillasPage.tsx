@@ -87,14 +87,27 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
         id: 'dandenong',
         name: 'Dandenong Villas',
         description: {
-          id: 'Koleksi villa American Farmhouse (Olinda, Emerald, Selby).',
-          en: 'American Farmhouse collection (Olinda, Emerald, Selby).',
-          zh: '美式农舍系列（Olinda, Emerald, Selby）。',
-          de: 'Amerikanische Farmhouse-Kollektion (Olinda, Emerald, Selby).'
+          id: 'Koleksi villa American Farmhouse (Olinda, Selby).',
+          en: 'American Farmhouse collection (Olinda, Selby).',
+          zh: '美式农舍系列（Olinda, Selby）。',
+          de: 'Amerikanische Farmhouse-Kollektion (Olinda, Selby).'
         },
         image: '/images/emerald-atas-hero.webp',
         type: 'group',
         filterFn: (v) => v.cluster === 'Dandenong Villas'
+      },
+      {
+        id: 'emerald',
+        name: 'Emerald Villas',
+        description: {
+          id: 'Villa American Farmhouse 2 unit (Atas & Bawah), cocok untuk gathering.',
+          en: 'American Farmhouse villas in 2 units (Upper & Lower), great for gatherings.',
+          zh: '美式农舍两套单元（上层与下层），适合聚会。',
+          de: 'Amerikanische Farmhouse-Villen in 2 Einheiten (Oben & Unten), ideal für Veranstaltungen.'
+        },
+        image: '/images/emerald-atas-hero.webp',
+        type: 'group',
+        filterFn: (v) => v.cluster === 'Emerald Villas'
       },
       {
         id: 'provincial',
@@ -372,7 +385,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
 
   const categoryContent = {
     all: {
-      title: { id: 'Koleksi Villa Kami', en: 'Our Villa Collection', zh: '我们的别墅系列', de: 'Unsere Villenkollektion' },
+      title: { id: 'Koleksi Villa Kami', en: 'Our Villas Collection', zh: '我们的别墅系列', de: 'Unsere Villenkollektion' },
       subtitle: { id: 'Temukan Akomodasi Sempurna Anda', en: 'Discover Your Perfect Accommodation', zh: '发现您的完美住宿', de: 'Entdecken Sie Ihre perfekte Unterkunft' },
       description: {
         id: 'Jelajahi koleksi lengkap villa premium kami yang dirancang untuk memberikan pengalaman menginap tak terlupakan.',
@@ -386,10 +399,10 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
       title: { id: 'Luxury Collection', en: 'Luxury Collection', zh: '豪华系列', de: 'Luxuskollektion' },
       subtitle: { id: 'Kemewahan & Kenyamanan', en: 'Luxury & Comfort', zh: '豪华与舒适', de: 'Luxus & Komfort' },
       description: {
-        id: 'Koleksi villa termewah kami dengan fasilitas premium. Termasuk Forest House, Mooi Lake, Dandenong, Provincial, dan Riverside.',
-        en: 'Our most luxurious villa collection with premium facilities. Includes Forest House, Mooi Lake, Dandenong, Provincial, and Riverside.',
-        zh: '我们最豪华的别墅系列，配备一流的设施。包括森林别墅、莫伊湖、丹德农、普罗旺斯和河畔。',
-        de: 'Unsere luxuriöseste Villenkollektion mit erstklassigen Einrichtungen. Beinhaltet Forest House, Mooi Lake, Dandenong, Provincial und Riverside.'
+        id: 'Koleksi villa termewah kami dengan fasilitas premium. Termasuk Forest House, Mooi Lake, Emerald, Dandenong, Provincial, dan Riverside.',
+        en: 'Our most luxurious villa collection with premium facilities. Includes Forest House, Mooi Lake, Emerald, Dandenong, Provincial, and Riverside.',
+        zh: '我们最豪华的别墅系列，配备一流的设施。包括森林别墅、莫伊湖、翡翠、丹德农、普罗旺斯和河畔。',
+        de: 'Unsere luxuriöseste Villenkollektion mit erstklassigen Einrichtungen. Beinhaltet Forest House, Mooi Lake, Emerald, Dandenong, Provincial und Riverside.'
       },
       image: '/images/fh-hero.webp',
     },
@@ -519,7 +532,17 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
 
 // Helper Component for Villa Card (Reused)
 const VillaCard: React.FC<{ villa: any }> = ({ villa }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = (i18n.language?.split('-')[0] || 'id') as 'id' | 'en' | 'zh' | 'de';
+
+  // Get localized villa name if available, else fallback to plain name
+  const getVillaName = () => {
+    if (villa.localizedName) {
+      return villa.localizedName[lang] || villa.localizedName['en'] || villa.name;
+    }
+    return villa.name;
+  };
+
   // Helper to format capacity display
   const getCapacityDisplay = (capacity: string) => {
     // If capacity string already contains "Pax" or "orang", just use it but maybe replace "orang" with "Pax" for consistency
@@ -557,11 +580,11 @@ const VillaCard: React.FC<{ villa: any }> = ({ villa }) => {
         <div className="flex justify-between items-start mb-4">
           <div>
             <h3 className="font-serif text-xl md:text-2xl text-gray-900 mb-1 group-hover:text-forest transition-colors">
-              {villa.name}
+              {getVillaName()}
             </h3>
             <div className="flex items-center gap-2 text-sm text-gray-500 font-light">
               <MapPin size={14} className="text-gold" />
-              <span>Gunung Puntang, Bandung</span>
+              <span>{t('home.location')}</span>
             </div>
           </div>
           <div className="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded text-xs font-medium text-gray-600">

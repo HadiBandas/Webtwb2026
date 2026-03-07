@@ -52,7 +52,7 @@ export function Header() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ type: 'spring', stiffness: 300 }}
             >
-                <Logo className="h-14 w-auto" />
+                <Logo className="w-[180px] md:w-[260px] lg:w-[340px] h-auto transition-all duration-300 transform origin-left hover:scale-105" />
                 <nav className="hidden md:flex gap-6 items-center">
                     <Button variant="ghost" size="sm" onClick={() => handleNavigate('villas')}>Villas</Button>
                     <Button variant="ghost" size="sm" onClick={() => handleNavigate('resto')}>Dining</Button>

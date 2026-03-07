@@ -269,14 +269,20 @@ export const MOOI_LAKE_VILLAS: Villa[] = [
 ];
 
 // ===================================================================
-// DANDENONG VILLAS (American Farmhouse)
+// EMERALD VILLAS
 // ===================================================================
 
-export const DANDENONG_VILLAS: Villa[] = [
+export const EMERALD_VILLAS: Villa[] = [
   {
     id: 'emerald-02',
     name: 'Emerald 02 (Unit Atas)',
-    cluster: 'Dandenong Villas',
+    localizedName: {
+      id: 'Emerald 02 (Unit Atas)',
+      en: 'Emerald 02 (Upper Unit)',
+      zh: 'Emerald 02 (上层单元)',
+      de: 'Emerald 02 (Obere Einheit)'
+    },
+    cluster: 'Emerald Villas',
     capacity: '7 orang',
     bedrooms: 2,
     area: 134.67,
@@ -352,7 +358,13 @@ export const DANDENONG_VILLAS: Villa[] = [
   {
     id: 'emerald-01',
     name: 'Emerald 01 (Unit Bawah)',
-    cluster: 'Dandenong Villas',
+    localizedName: {
+      id: 'Emerald 01 (Unit Bawah)',
+      en: 'Emerald 01 (Lower Unit)',
+      zh: 'Emerald 01 (下层单元)',
+      de: 'Emerald 01 (Untere Einheit)'
+    },
+    cluster: 'Emerald Villas',
     capacity: '7 orang',
     bedrooms: 2,
     area: 135.33,
@@ -424,7 +436,14 @@ export const DANDENONG_VILLAS: Villa[] = [
       zh: '????????,???????? ???????,???????',
       de: 'Villa im amerikanischen Farmhouse-Stil mit direktem Gartenzugang. Komfortable untere Einheit f�r Familien.'
     }
-  },
+  }
+];
+
+// ===================================================================
+// DANDENONG VILLAS (American Farmhouse)
+// ===================================================================
+
+export const DANDENONG_VILLAS: Villa[] = [
   {
     id: 'olinda',
     name: 'Olinda Villa',
@@ -2243,6 +2262,7 @@ export const LOG_HOME_VILLAS: Villa[] = [
 export const VILLAS: Villa[] = [
   ...FOREST_HOUSE_VILLAS,
   ...MOOI_LAKE_VILLAS,
+  ...EMERALD_VILLAS,
   ...DANDENONG_VILLAS,
   ...PROVINCIAL_VILLAS,
   ...RIVERSIDE_VILLAS,

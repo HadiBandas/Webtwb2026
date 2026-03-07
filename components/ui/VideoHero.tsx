@@ -72,6 +72,17 @@ export const VideoHero: React.FC<VideoHeroProps> = ({
       {/* Luxury Minimalist Content */}
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto w-full">
 
+        {/* Large Brand Logo - above headline, visible on first load */}
+        <FadeIn delay={0.1} direction="down" distance={20}>
+          <div className="flex justify-center mb-8">
+            <img
+              src="/images/logo-twb.png"
+              alt="Taman Wisata Bougenville"
+              className="h-20 sm:h-24 md:h-32 lg:h-36 w-auto object-contain brightness-0 invert opacity-90 drop-shadow-xl"
+            />
+          </div>
+        </FadeIn>
+
         {/* Refined Headline - More Breathing Room */}
         <div className="mb-8">
           <TextReveal

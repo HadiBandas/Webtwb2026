@@ -16,7 +16,8 @@ export interface Translation {
 
 export interface Villa {
   id: string;
-  name: string;
+  name: string; // Fallback name (usually Indonesian)
+  localizedName?: LocalizedString; // Translated name per language
   capacity: string;
   bedrooms: number;
   area: number; // Area in square meters (m2)

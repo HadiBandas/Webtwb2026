@@ -190,6 +190,7 @@ export function MembershipPage() {
                                     >
                                         <option value="Forest House Puntang">Forest House Puntang</option>
                                         <option value="Mooi Lake House Puntang">Mooi Lake House Puntang</option>
+                                        <option value="Emerald Villas">Emerald Villas</option>
                                         <option value="Dandenong Villas">Dandenong Villas</option>
                                         <option value="Provincial Villas">Provincial Villas</option>
                                         <option value="Riverside Villas">Riverside Villas</option>
