@@ -155,7 +155,7 @@ export const FOREST_HOUSE_VILLAS: Villa[] = [
         { id: 'Trekking/ hiking', en: 'Trekking/ hiking', zh: '徒步旅行', de: 'Trekking / Wandern' },
         { id: '2 kolam renang air dingin (umum)', en: '2 Cold water swimming pools (public)', zh: '2个冷水游泳池（公共）', de: '2 Kaltwasser-Schwimmbäder (öffentlich)' },
         { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '空中步道', de: 'Skywalk' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
         { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' }
       ]
     },
@@ -164,7 +164,7 @@ export const FOREST_HOUSE_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Jalan naik turun tangga (sekitar 300 m dari area parkir)', en: 'Stairs access (about 300 m from parking area)', zh: '楼梯通道（距停车场约300米）', de: 'Treppenzugang (ca. 300 m vom Parkplatz)' },
+        { id: 'Jalan naik turun tangga (sekitar 300 m dari area parkir)', en: 'Stairs access (about 300 m from parking area)', zh: '需爬楼梯（距停车场约300米）', de: 'Treppenzugang (ca. 300 m vom Parkplatz)' },
         { id: 'Estimasi waktu tempuh sekitar 1-2 jam dari pusat kota Bandung (melalui Tol Soroja dan keluar di Exit Tol Soreang, kemudian mengambil arah Banjaran-Pangalengan).', en: 'Estimated travel time about 1-2 hours from Bandung city center (via Soroja Toll and exit at Soreang Toll Exit, then take direction to Banjaran-Pangalengan).', zh: '预计从万隆市中心出发约需1-2小时（经Soroja收费站，在Soreang收费站出口下，然后往Banjaran-Pangalengan方向行驶）。', de: 'Geschätzte Reisezeit ca. 1-2 Stunden vom Stadtzentrum Bandung (über Soroja-Maut und Ausfahrt Soreang, dann Richtung Banjaran-Pangalengan).' },
         { id: 'Harga belum termasuk Tax 10%', en: 'Price excludes 10% Tax', zh: '价格不含10%税', de: 'Preis exklusive 10% Steuer' }
       ]
@@ -227,7 +227,7 @@ export const MOOI_LAKE_VILLAS: Villa[] = [
         { id: '2 Kamar mandi & toilet', en: '2 Bathrooms & toilets', zh: '2个浴室和卫生间', de: '2 Badezimmer & Toiletten' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
 
         { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Cemilan premium', en: 'Premium snacks', zh: '优质小吃', de: 'Premium-Snacks' }
@@ -235,11 +235,11 @@ export const MOOI_LAKE_VILLAS: Villa[] = [
       natural: [
         { id: 'Danau & perahu privat', en: 'Private lake & boat', zh: '私人湖泊和船', de: 'Privater See & Boot' },
         { id: 'Children playground', en: 'Children playground', zh: '儿童游乐场', de: 'Kinderspielplatz' },
-        { id: 'Trekking/ hiking', en: 'Trekking/hiking', zh: '徒步旅行', de: 'Trekking/Wandern' },
+        { id: 'Trekking/ hiking', en: 'Trekking/hiking', zh: '徒步/远足', de: 'Trekking / Wandern' },
         { id: '2 kolam renang air dingin (umum)', en: '2 Cold water swimming pools (public)', zh: '2??????(??)', de: '2 Kaltwasser-Schwimmb�der (�ffentlich)' },
         { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '空中步道', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
         { id: 'Taman bunga', en: 'Flower garden', zh: '花园', de: 'Blumengarten' }
       ]
     },
@@ -250,21 +250,11 @@ export const MOOI_LAKE_VILLAS: Villa[] = [
       specialNotes: [
         { id: 'Jalan naik turun tangga (sekitar 300 m dari area parkir)', en: 'Stairs access (about 300m from parking area)', zh: '楼梯通道（距停车场约300米）', de: 'Treppenzugang (ca. 300m vom Parkplatz)' },
         { id: 'Estimasi waktu tempuh sekitar 1-2 jam dari pusat kota Bandung (melalui Tol Soroja dan keluar di Exit Tol Soreang, kemudian mengambil arah Banjaran-Pangalengan).', en: 'Estimated travel time about 1-2 hours from Bandung city center (via Soroja Toll and exit at Soreang Toll Exit, then take direction to Banjaran-Pangalengan).', zh: '?????????1-2??(??Soroja???,?Soreang??????,????Banjaran-Pangalengan??)?', de: 'Gesch�tzte Fahrzeit ca. 1-2 Stunden vom Stadtzentrum Bandung (�ber Soroja Maut und Ausfahrt bei Soreang Maut-Ausfahrt, dann Richtung Banjaran-Pangalengan).' },
-        { id: 'Harga belum termasuk Tax 10%', en: 'Price excludes 10% tax', zh: '价格不含10%税', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Harga belum termasuk Tax 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
-    description: {
-      id: 'Villa mewah privat dengan pemandangan danau langsung. Kapasitas untuk 9 orang, sudah termasuk fasilitas menginap lengkap.',
-      en: 'Luxurious private villa with direct lake views. Capacity for 9 people, includes complete stay facilities.',
-      zh: '??????,???????? ???9?,??????????',
-      de: 'Luxuri�se Privatvilla mit direktem Seeblick. Kapazit�t f�r 9 Personen, inklusive kompletter Aufenthaltsm�glichkeiten.'
-    },
-    longDescription: {
-      id: 'Villa mewah privat dengan pemandangan danau langsung, berada di dalam kawasan Taman Wisata Bougenville. Kapasitas untuk 9 orang, sudah termasuk fasilitas menginap lengkap diantaranya sarapan dan makan malam plus cemilan premium.',
-      en: 'Luxurious private villa with direct lake views, located within the Taman Wisata Bougenville area. Capacity for 9 people, includes complete stay facilities including breakfast and dinner plus premium snacks.',
-      zh: '??????,???????,?? Taman Wisata Bougenville ???? ???9?,?????????,?????????????????',
-      de: 'Luxuri�se Privatvilla mit direktem Seeblick im Gebiet Taman Wisata Bougenville. Kapazit�t f�r 9 Personen, inklusive kompletter Aufenthaltsm�glichkeiten wie Fr�hst�ck, Mittag- und Abendessen sowie Premium-Snacks.'
-    }
+    description: { id: 'Villa mewah privat dengan pemandangan danau langsung. Kapasitas untuk 9 orang, sudah termasuk fasilitas menginap lengkap.', en: 'Luxurious private villa with direct lake views. Capacity for 9 people, includes complete stay facilities.', zh: '豪华私人别墅，可直接欣赏湖景。 可容纳9人，包含完整的住宿设施。', de: 'Luxuriöse Privatvilla mit direktem Seeblick. Kapazität für 9 Personen, inklusive kompletter Aufenthaltsmöglichkeiten.' },
+    longDescription: { id: 'Villa mewah privat dengan pemandangan danau langsung, berada di dalam kawasan Taman Wisata Bougenville. Kapasitas untuk 9 orang, sudah termasuk fasilitas menginap lengkap diantaranya sarapan dan makan malam plus cemilan premium.', en: 'Luxurious private villa with direct lake views, located within the Taman Wisata Bougenville area. Capacity for 9 people, includes complete stay facilities including breakfast and dinner plus premium snacks.', zh: '豪华私人别墅，可直接欣赏湖景，位于Taman Wisata Bougenville区域内。可容纳9人，包含完整的住宿设施，包括早餐、晚餐和优质小吃。', de: 'Luxuriöse Privatvilla mit direktem Seeblick im Gebiet Taman Wisata Bougenville. Kapazität für 9 Personen, inklusive kompletter Aufenthaltsmöglichkeiten wie Frühstück, Mittag- und Abendessen sowie Premium-Snacks.' }
   }
 ];
 
@@ -310,32 +300,32 @@ export const EMERALD_VILLAS: Villa[] = [
     ],
     facilities: {
       room: [
-        { id: '2 kamar tidur', en: '2 Bedrooms', zh: '2???', de: '2 Schlafzimmer' },
-        { id: '2 toilet', en: '2 Toilets', zh: '2????', de: '2 Toiletten' }
+        { id: '2 kamar tidur', en: '2 Bedrooms', zh: '2间卧室', de: '2 Schlafzimmer' },
+        { id: '2 toilet', en: '2 Toilets', zh: '2个洗手间', de: '2 Toiletten' }
       ],
       amenities: [
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' },
-        { id: 'Smart TV', en: 'Smart TV', zh: '????', de: 'Smart TV' },
-        { id: 'Wifi', en: 'Wifi', zh: '????', de: 'WLAN' },
-        { id: 'Kulkas', en: 'Refrigerator', zh: '??', de: 'K�hlschrank' },
-        { id: 'Microwave', en: 'Microwave', zh: '???', de: 'Mikrowelle' },
-        { id: 'Mesin kopi', en: 'Coffee machine', zh: '???', de: 'Kaffeemaschine' },
-        { id: 'Kompor listrik', en: 'Electric stove', zh: '??', de: 'Elektroherd' },
-        { id: 'Dispenser', en: 'Water dispenser', zh: '???', de: 'Wasserspender' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
+        { id: 'Smart TV', en: 'Smart TV', zh: '智能电视', de: 'Smart TV' },
+        { id: 'Wifi', en: 'Wifi', zh: '无线网络', de: 'WLAN' },
+        { id: 'Kulkas', en: 'Refrigerator', zh: '冰箱', de: 'Kühlschrank' },
+        { id: 'Microwave', en: 'Microwave', zh: '微波炉', de: 'Mikrowelle' },
+        { id: 'Mesin kopi', en: 'Coffee machine', zh: '咖啡机', de: 'Kaffeemaschine' },
+        { id: 'Kompor listrik', en: 'Electric stove', zh: '电炉', de: 'Elektroherd' },
+        { id: 'Dispenser', en: 'Water dispenser', zh: '饮水机', de: 'Wasserspender' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
-        { id: 'Welcome fruits', en: 'Welcome fruits', zh: '????', de: 'Begr��ungsfr�chte' },
-        { id: 'Air mineral', en: 'Mineral water', zh: '???', de: 'Mineralwasser' },
-        { id: 'Kopi kapsul, teh, dan gula', en: 'Capsule coffee, tea, and sugar', zh: '????,???', de: 'Kapselkaffee, Tee und Zucker' }
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
+        { id: 'Welcome fruits', en: 'Welcome fruits', zh: '迎宾水果', de: 'Begrüßungsfrüchte' },
+        { id: 'Air mineral', en: 'Mineral water', zh: '矿泉水', de: 'Mineralwasser' },
+        { id: 'Kopi kapsul, teh, dan gula', en: 'Capsule coffee, tea, and sugar', zh: '胶囊咖啡、茶和糖', de: 'Kapselkaffee, Tee und Zucker' }
       ],
       natural: [
-        { id: 'Playground', en: 'Playground', zh: '???', de: 'Spielplatz' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: '2 kolam renang umum', en: '2 Public swimming pools', zh: '2??????', de: '2 �ffentliche Schwimmb�der' },
-        { id: 'Area bermain di sungai', en: 'River play area', zh: '?????', de: 'Flussspielbereich' }
+        { id: 'Playground', en: 'Playground', zh: '游乐场', de: 'Spielplatz' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: '2 kolam renang umum', en: '2 Public swimming pools', zh: '2个公共游泳池', de: '2 Öffentliche Schwimmbäder' },
+        { id: 'Area bermain di sungai', en: 'River play area', zh: '河流戏水区', de: 'Flussspielbereich' }
       ]
     },
     policies: {
@@ -343,17 +333,12 @@ export const EMERALD_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak menyediakan dan/atau menggunakan ekstra bed', en: 'Does not provide and/or use extra bed', zh: '????/?????', de: 'Kein Zustellbett verf�gbar' },
-        { id: 'Tidak dapat menampung kapasitas lebih dari 7 orang', en: 'Cannot accommodate more than 7 people', zh: '??????7?', de: 'Kann nicht mehr als 7 Personen beherbergen' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak menyediakan dan/atau menggunakan ekstra bed', en: 'Does not provide and/or use extra bed', zh: '不提供和/或不使用加床', de: 'Kein Zustellbett verfügbar' },
+        { id: 'Tidak dapat menampung kapasitas lebih dari 7 orang', en: 'Cannot accommodate more than 7 people', zh: '最多只能容纳7人', de: 'Kann nicht mehr als 7 Personen beherbergen' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
-    description: {
-      id: 'Villa bergaya American Farmhouse dengan pemandangan pegunungan yang menakjubkan. Unit atas dengan balkon luas.',
-      en: 'American Farmhouse style villa with stunning mountain views. Upper unit with spacious balcony.',
-      zh: '????????,???????? ????????????',
-      de: 'Villa im amerikanischen Farmhouse-Stil mit atemberaubendem Bergblick. Obere Einheit mit gro�em Balkon.'
-    }
+    description: { id: 'Villa bergaya American Farmhouse dengan pemandangan pegunungan yang menakjubkan. Unit atas dengan balkon luas.', en: 'American Farmhouse style villa with stunning mountain views. Upper unit with spacious balcony.', zh: '美式农舍风格别墅，享有迷人的山景。带宽敞阳台的上层单元。', de: 'Villa im amerikanischen Farmhouse-Stil mit atemberaubendem Bergblick. Obere Einheit mit großem Balkon.' }
   },
   {
     id: 'emerald-01',
@@ -392,32 +377,32 @@ export const EMERALD_VILLAS: Villa[] = [
     ],
     facilities: {
       room: [
-        { id: '2 kamar tidur', en: '2 Bedrooms', zh: '2???', de: '2 Schlafzimmer' },
-        { id: '2 toilet', en: '2 Toilets', zh: '2????', de: '2 Toiletten' }
+        { id: '2 kamar tidur', en: '2 Bedrooms', zh: '2间卧室', de: '2 Schlafzimmer' },
+        { id: '2 toilet', en: '2 Toilets', zh: '2个洗手间', de: '2 Toiletten' }
       ],
       amenities: [
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' },
-        { id: 'Smart TV', en: 'Smart TV', zh: '????', de: 'Smart TV' },
-        { id: 'Wifi', en: 'Wifi', zh: '????', de: 'WLAN' },
-        { id: 'Kulkas', en: 'Refrigerator', zh: '??', de: 'K�hlschrank' },
-        { id: 'Microwave', en: 'Microwave', zh: '???', de: 'Mikrowelle' },
-        { id: 'Mesin kopi', en: 'Coffee machine', zh: '???', de: 'Kaffeemaschine' },
-        { id: 'Kompor listrik', en: 'Electric stove', zh: '??', de: 'Elektroherd' },
-        { id: 'Dispenser', en: 'Water dispenser', zh: '???', de: 'Wasserspender' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
+        { id: 'Smart TV', en: 'Smart TV', zh: '智能电视', de: 'Smart TV' },
+        { id: 'Wifi', en: 'Wifi', zh: '无线网络', de: 'WLAN' },
+        { id: 'Kulkas', en: 'Refrigerator', zh: '冰箱', de: 'Kühlschrank' },
+        { id: 'Microwave', en: 'Microwave', zh: '微波炉', de: 'Mikrowelle' },
+        { id: 'Mesin kopi', en: 'Coffee machine', zh: '咖啡机', de: 'Kaffeemaschine' },
+        { id: 'Kompor listrik', en: 'Electric stove', zh: '电炉', de: 'Elektroherd' },
+        { id: 'Dispenser', en: 'Water dispenser', zh: '饮水机', de: 'Wasserspender' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
-        { id: 'Welcome fruits', en: 'Welcome fruits', zh: '????', de: 'Begr��ungsfr�chte' },
-        { id: 'Air mineral', en: 'Mineral water', zh: '???', de: 'Mineralwasser' },
-        { id: 'Kopi kapsul, teh, dan gula', en: 'Capsule coffee, tea, and sugar', zh: '????,???', de: 'Kapselkaffee, Tee und Zucker' }
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
+        { id: 'Welcome fruits', en: 'Welcome fruits', zh: '迎宾水果', de: 'Begrüßungsfrüchte' },
+        { id: 'Air mineral', en: 'Mineral water', zh: '矿泉水', de: 'Mineralwasser' },
+        { id: 'Kopi kapsul, teh, dan gula', en: 'Capsule coffee, tea, and sugar', zh: '胶囊咖啡、茶和糖', de: 'Kapselkaffee, Tee und Zucker' }
       ],
       natural: [
-        { id: 'Playground', en: 'Playground', zh: '???', de: 'Spielplatz' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: '2 kolam renang umum', en: '2 Public swimming pools', zh: '2??????', de: '2 �ffentliche Schwimmb�der' },
-        { id: 'Area bermain di sungai', en: 'River play area', zh: '?????', de: 'Flussspielbereich' }
+        { id: 'Playground', en: 'Playground', zh: '游乐场', de: 'Spielplatz' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: '2 kolam renang umum', en: '2 Public swimming pools', zh: '2个公共游泳池', de: '2 Öffentliche Schwimmbäder' },
+        { id: 'Area bermain di sungai', en: 'River play area', zh: '河流戏水区', de: 'Flussspielbereich' }
       ]
     },
     policies: {
@@ -425,17 +410,12 @@ export const EMERALD_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak menyediakan dan/atau menggunakan ekstra bed', en: 'Does not provide and/or use extra bed', zh: '????/?????', de: 'Kein Zustellbett verf�gbar' },
-        { id: 'Tidak dapat menampung kapasitas lebih dari 7 orang', en: 'Cannot accommodate more than 7 people', zh: '??????7?', de: 'Kann nicht mehr als 7 Personen beherbergen' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak menyediakan dan/atau menggunakan ekstra bed', en: 'Does not provide and/or use extra bed', zh: '不提供和/或不使用加床', de: 'Kein Zustellbett verfügbar' },
+        { id: 'Tidak dapat menampung kapasitas lebih dari 7 orang', en: 'Cannot accommodate more than 7 people', zh: '最多只能容纳7人', de: 'Kann nicht mehr als 7 Personen beherbergen' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
-    description: {
-      id: 'Villa bergaya American Farmhouse dengan akses langsung ke taman. Unit bawah yang nyaman untuk keluarga.',
-      en: 'American Farmhouse style villa with direct garden access. Comfortable lower unit for families.',
-      zh: '????????,???????? ???????,???????',
-      de: 'Villa im amerikanischen Farmhouse-Stil mit direktem Gartenzugang. Komfortable untere Einheit f�r Familien.'
-    }
+    description: { id: 'Villa bergaya American Farmhouse dengan akses langsung ke taman. Unit bawah yang nyaman untuk keluarga.', en: 'American Farmhouse style villa with direct garden access. Comfortable lower unit for families.', zh: '美式农舍风格别墅，可直接通往花园。适合家庭的舒适下层单元。', de: 'Villa im amerikanischen Farmhouse-Stil mit direktem Gartenzugang. Komfortable untere Einheit für Familien.' }
   }
 ];
 
@@ -444,8 +424,7 @@ export const EMERALD_VILLAS: Villa[] = [
 // ===================================================================
 
 export const DANDENONG_VILLAS: Villa[] = [
-  {
-    id: 'olinda',
+  { id: 'olinda',
     name: 'Olinda Villa',
     cluster: 'Dandenong Villas',
     capacity: '12 orang',
@@ -460,14 +439,14 @@ export const DANDENONG_VILLAS: Villa[] = [
     features: ['Spacious Living', 'Large Garden', 'Jacuzzi'],
     image: '/images/villas/olinda/hero.jpg',
     images: [
-      '/images/villas/olinda/DSC01065.WEB.jpg',
+      '/images/villas/olinda/jacuzzi.webp',
       '/images/villas/olinda/DSC00382WEB.jpg',
       '/images/villas/olinda/DSC00446WEB.jpg',
       '/images/villas/olinda/DSC00629WEB.jpg',
       '/images/villas/olinda/DSC00630WEB.jpg',
       '/images/villas/olinda/DSC00789WEB.jpg',
       '/images/villas/olinda/DSC00931WEB.jpg',
-      '/images/villas/olinda/jacuzzi.webp'
+
     ],
     bedConfiguration: [
       { room: 1, beds: '1 king bed (180 x 200)' },
@@ -476,42 +455,42 @@ export const DANDENONG_VILLAS: Villa[] = [
     ],
     facilities: {
       room: [
-        { id: 'Ruang tamu', en: 'Living room', zh: '??', de: 'Wohnzimmer' },
-        { id: 'Meja makan', en: 'Dining table', zh: '??', de: 'Esstisch' },
-        { id: 'Dapur', en: 'Kitchen', zh: '??', de: 'K�che' },
-        { id: '3 Kamar tidur', en: '3 Bedrooms', zh: '3???', de: '3 Schlafzimmer' },
-        { id: 'Teras', en: 'Terrace', zh: '??', de: 'Terrasse' }
+        { id: 'Ruang tamu', en: 'Living room', zh: '客厅', de: 'Wohnzimmer' },
+        { id: 'Meja makan', en: 'Dining table', zh: '餐桌', de: 'Esstisch' },
+        { id: 'Dapur', en: 'Kitchen', zh: '厨房', de: 'Küche' },
+        { id: '3 Kamar tidur', en: '3 Bedrooms', zh: '3间卧室', de: '3 Schlafzimmer' },
+        { id: 'Teras', en: 'Terrace', zh: '露台', de: 'Terrasse' }
       ],
       amenities: [
-        { id: '2 Toilet & kamar mandi', en: '2 Toilets & bathrooms', zh: '2???????', de: '2 Toiletten & Badezimmer' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' },
-        { id: 'Smart TV/ TV kabel', en: 'Smart TV/ Cable TV', zh: '????/????', de: 'Smart TV / Kabelfernsehen' },
-        { id: 'Wi-Fi', en: 'Wi-Fi', zh: '????', de: 'WLAN' },
-        { id: 'Jacuzzi', en: 'Jacuzzi', zh: '????', de: 'Whirlpool' },
-        { id: 'Kulkas', en: 'Refrigerator', zh: '??', de: 'K�hlschrank' },
-        { id: 'Microwave', en: 'Microwave', zh: '???', de: 'Mikrowelle' },
-        { id: 'ketel listrik', en: 'Electric kettle', zh: '????', de: 'Wasserkocher' },
-        { id: 'kompor listrik', en: 'Electric stove', zh: '??', de: 'Elektroherd' },
-        { id: 'Dispenser', en: 'Water dispenser', zh: '???', de: 'Wasserspender' },
-        { id: 'Sabun', en: 'Soap', zh: '??', de: 'Seife' },
-        { id: 'Shampoo', en: 'Shampoo', zh: '???', de: 'Shampoo' },
-        { id: 'Sikat & pasta gigi', en: 'Toothbrush & toothpaste', zh: '?????', de: 'Zahnb�rste & Zahnpasta' },
-        { id: 'Handuk', en: 'Towel', zh: '??', de: 'Handtuch' }
+        { id: '2 Toilet & kamar mandi', en: '2 Toilets & bathrooms', zh: '2个洗手间与浴室', de: '2 Toiletten & Badezimmer' },
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
+        { id: 'Smart TV/ TV kabel', en: 'Smart TV/ Cable TV', zh: '智能电视/有线电视', de: 'Smart TV / Kabelfernsehen' },
+        { id: 'Wi-Fi', en: 'Wi-Fi', zh: '无线网络', de: 'WLAN' },
+        { id: 'Jacuzzi', en: 'Jacuzzi', zh: '按摩浴缸', de: 'Whirlpool' },
+        { id: 'Kulkas', en: 'Refrigerator', zh: '冰箱', de: 'Kühlschrank' },
+        { id: 'Microwave', en: 'Microwave', zh: '微波炉', de: 'Mikrowelle' },
+        { id: 'ketel listrik', en: 'Electric kettle', zh: '电热水壶', de: 'Wasserkocher' },
+        { id: 'kompor listrik', en: 'Electric stove', zh: '电炉', de: 'Elektroherd' },
+        { id: 'Dispenser', en: 'Water dispenser', zh: '饮水机', de: 'Wasserspender' },
+        { id: 'Sabun', en: 'Soap', zh: '肥皂', de: 'Seife' },
+        { id: 'Shampoo', en: 'Shampoo', zh: '洗发水', de: 'Shampoo' },
+        { id: 'Sikat & pasta gigi', en: 'Toothbrush & toothpaste', zh: '牙刷和牙膏', de: 'Zahnbürste & Zahnpasta' },
+        { id: 'Handuk', en: 'Towel', zh: '毛巾', de: 'Handtuch' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Kopi, teh, gula, creamer', en: 'Coffee, tea, sugar, creamer', zh: '??,?,?,??', de: 'Kaffee, Tee, Zucker, Sahne' },
-        { id: 'Air mineral', en: 'Mineral water', zh: '???', de: 'Mineralwasser' }
+        { id: 'Air mineral', en: 'Mineral water', zh: '矿泉水', de: 'Mineralwasser' }
       ],
       natural: [
-        { id: 'Jacuzzi private', en: 'Private Jacuzzi', zh: '??????', de: 'Privater Whirlpool' },
-        { id: 'Kolam renang', en: 'Swimming pool', zh: '???', de: 'Schwimmbad' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai', en: 'River', zh: '??', de: 'Fluss' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' }
+        { id: 'Jacuzzi private', en: 'Private Jacuzzi', zh: '私人按摩浴缸', de: 'Privater Whirlpool' },
+        { id: 'Kolam renang', en: 'Swimming pool', zh: '游泳池', de: 'Schwimmbad' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai', en: 'River', zh: '河流', de: 'Fluss' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' }
       ]
     },
     policies: {
@@ -519,20 +498,14 @@ export const DANDENONG_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Jalan naik turun tangga (sekitar 150 m dari area parkir)', en: 'Stairs access (about 150 m from parking area)', zh: '????(?????150?)', de: 'Treppenzugang (ca. 150 m vom Parkplatz)' },
-        { id: 'Estimasi waktu tempuh sekitar 1-2 jam dari pusat kota Bandung', en: 'Estimated travel time about 1-2 hours from Bandung city center', zh: '????????????1-2??', de: 'Gesch�tzte Reisezeit ca. 1-2 Stunden vom Stadtzentrum Bandung' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Jalan naik turun tangga (sekitar 150 m dari area parkir)', en: 'Stairs access (about 150 m from parking area)', zh: '需爬楼梯（距停车场约150米）', de: 'Treppenzugang (ca. 150 m vom Parkplatz)' },
+        { id: 'Estimasi waktu tempuh sekitar 1-2 jam dari pusat kota Bandung', en: 'Estimated travel time about 1-2 hours from Bandung city center', zh: '从万隆市中心出发，预计车程约1-2小时', de: 'Geschätzte Reisezeit ca. 1-2 Stunden vom Stadtzentrum Bandung' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
-    description: {
-      id: 'Villa luas dengan kapasitas besar dan Jacuzzi pribadi. Cocok untuk gathering keluarga besar.',
-      en: 'Spacious villa with large capacity and private Jacuzzi. Perfect for large family gatherings.',
-      zh: '?????,???,????????? ???????????',
-      de: 'Ger�umige Villa mit gro�er Kapazit�t und privatem Jacuzzi. Perfekt f�r gro�e Familientreffen.'
-    }
+    description: { id: 'Villa luas dengan kapasitas besar dan Jacuzzi pribadi. Cocok untuk gathering keluarga besar.', en: 'Spacious villa with large capacity and private Jacuzzi. Perfect for large family gatherings.', zh: '宽敞的别墅，容量大，配有私人按摩浴缸。非常适合大型家庭聚会。', de: 'Geräumige Villa mit großer Kapazität und privatem Jacuzzi. Perfekt für große Familientreffen.' }
   },
-  {
-    id: 'selby',
+  { id: 'selby',
     name: 'Selby Villa',
     cluster: 'Dandenong Villas',
     capacity: '4 orang',
@@ -562,37 +535,37 @@ export const DANDENONG_VILLAS: Villa[] = [
     ],
     facilities: {
       room: [
-        { id: 'Ruang tamu', en: 'Living room', zh: '??', de: 'Wohnzimmer' },
+        { id: 'Ruang tamu', en: 'Living room', zh: '客厅', de: 'Wohnzimmer' },
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Dapur', en: 'Kitchen', zh: '??', de: 'K�che' },
-        { id: 'Teras', en: 'Terrace', zh: '??', de: 'Terrasse' }
+        { id: 'Dapur', en: 'Kitchen', zh: '厨房', de: 'Küche' },
+        { id: 'Teras', en: 'Terrace', zh: '露台', de: 'Terrasse' }
       ],
       amenities: [
-        { id: 'Toilet & kamar mandi', en: 'Toilet & bathroom', zh: '??????', de: 'Toilette & Badezimmer' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' },
-        { id: 'Smart TV/ TV kabel', en: 'Smart TV/ Cable TV', zh: '????/????', de: 'Smart TV / Kabelfernsehen' },
-        { id: 'Wi-Fi', en: 'Wi-Fi', zh: '????', de: 'WLAN' },
-        { id: 'Kulkas', en: 'Refrigerator', zh: '??', de: 'K�hlschrank' },
-        { id: 'Microwave', en: 'Microwave', zh: '???', de: 'Mikrowelle' },
-        { id: 'Dispenser', en: 'Water dispenser', zh: '???', de: 'Wasserspender' },
-        { id: 'Sabun', en: 'Soap', zh: '??', de: 'Seife' },
-        { id: 'Shampoo', en: 'Shampoo', zh: '???', de: 'Shampoo' },
-        { id: 'Sikat & pasta gigi', en: 'Toothbrush & toothpaste', zh: '?????', de: 'Zahnb�rste & Zahnpasta' },
-        { id: 'Handuk', en: 'Towel', zh: '??', de: 'Handtuch' }
+        { id: 'Toilet & kamar mandi', en: 'Toilet & bathroom', zh: '洗手间与浴室', de: 'Toilette & Badezimmer' },
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
+        { id: 'Smart TV/ TV kabel', en: 'Smart TV/ Cable TV', zh: '智能电视/有线电视', de: 'Smart TV / Kabelfernsehen' },
+        { id: 'Wi-Fi', en: 'Wi-Fi', zh: '无线网络', de: 'WLAN' },
+        { id: 'Kulkas', en: 'Refrigerator', zh: '冰箱', de: 'Kühlschrank' },
+        { id: 'Microwave', en: 'Microwave', zh: '微波炉', de: 'Mikrowelle' },
+        { id: 'Dispenser', en: 'Water dispenser', zh: '饮水机', de: 'Wasserspender' },
+        { id: 'Sabun', en: 'Soap', zh: '肥皂', de: 'Seife' },
+        { id: 'Shampoo', en: 'Shampoo', zh: '洗发水', de: 'Shampoo' },
+        { id: 'Sikat & pasta gigi', en: 'Toothbrush & toothpaste', zh: '牙刷和牙膏', de: 'Zahnbürste & Zahnpasta' },
+        { id: 'Handuk', en: 'Towel', zh: '毛巾', de: 'Handtuch' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
-        { id: 'Kopi, gula, teh, creamer', en: 'Coffee, sugar, tea, creamer', zh: '??,?,?,??', de: 'Kaffee, Zucker, Tee, Sahne' },
-        { id: 'Air mineral', en: 'Mineral water', zh: '???', de: 'Mineralwasser' }
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
+        { id: 'Kopi, gula, teh, creamer', en: 'Coffee, sugar, tea, creamer', zh: '咖啡、糖、茶、奶精', de: 'Kaffee, Zucker, Tee, Sahne' },
+        { id: 'Air mineral', en: 'Mineral water', zh: '矿泉水', de: 'Mineralwasser' }
       ],
       natural: [
-        { id: 'Kolam renang', en: 'Swimming pool', zh: '???', de: 'Schwimmbad' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai', en: 'River', zh: '??', de: 'Fluss' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' }
+        { id: 'Kolam renang', en: 'Swimming pool', zh: '游泳池', de: 'Schwimmbad' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai', en: 'River', zh: '河流', de: 'Fluss' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' }
       ]
     },
     policies: {
@@ -600,17 +573,12 @@ export const DANDENONG_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Jalan naik turun tangga (sekitar 150 m dari area parkir)', en: 'Stairs access (about 150 m from parking area)', zh: '????(?????150?)', de: 'Treppenzugang (ca. 150 m vom Parkplatz)' },
-        { id: 'Estimasi waktu tempuh sekitar 1-2 jam dari pusat kota Bandung', en: 'Estimated travel time about 1-2 hours from Bandung city center', zh: '????????????1-2??', de: 'Gesch�tzte Reisezeit ca. 1-2 Stunden vom Stadtzentrum Bandung' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Jalan naik turun tangga (sekitar 150 m dari area parkir)', en: 'Stairs access (about 150 m from parking area)', zh: '需爬楼梯（距停车场约150米）', de: 'Treppenzugang (ca. 150 m vom Parkplatz)' },
+        { id: 'Estimasi waktu tempuh sekitar 1-2 jam dari pusat kota Bandung', en: 'Estimated travel time about 1-2 hours from Bandung city center', zh: '从万隆市中心出发，预计车程约1-2小时', de: 'Geschätzte Reisezeit ca. 1-2 Stunden vom Stadtzentrum Bandung' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
-    description: {
-      id: 'Villa cozy untuk keluarga kecil. Suasana tenang dengan pemandangan taman.',
-      en: 'Cozy villa for small families. Quiet atmosphere with garden views.',
-      zh: '??????????? ????,???????',
-      de: 'Gem�tliche Villa f�r kleine Familien. Ruhige Atmosph�re mit Gartenblick.'
-    }
+    description: { id: 'Villa cozy untuk keluarga kecil. Suasana tenang dengan pemandangan taman.', en: 'Cozy villa for small families. Quiet atmosphere with garden views.', zh: '适合小家庭的舒适别墅。环境安静，享有花园景致。', de: 'Gemütliche Villa für kleine Familien. Ruhige Atmosphäre mit Gartenblick.' }
   }
 ];
 
@@ -619,8 +587,7 @@ export const DANDENONG_VILLAS: Villa[] = [
 // ===================================================================
 
 export const PROVINCIAL_VILLAS: Villa[] = [
-  {
-    id: 'villa-gordes',
+  { id: 'villa-gordes',
     name: 'Villa Gordes (Hijau)',
     cluster: 'Provincial Villas',
     capacity: '4 orang',
@@ -651,37 +618,37 @@ export const PROVINCIAL_VILLAS: Villa[] = [
     ],
     facilities: {
       room: [
-        { id: 'Ruang tamu', en: 'Living room', zh: '??', de: 'Wohnzimmer' },
+        { id: 'Ruang tamu', en: 'Living room', zh: '客厅', de: 'Wohnzimmer' },
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Toilet & kamar mandi', en: 'Toilet & bathroom', zh: '??????', de: 'Toilette & Badezimmer' },
-        { id: 'Teras', en: 'Terrace', zh: '??', de: 'Terrasse' }
+        { id: 'Toilet & kamar mandi', en: 'Toilet & bathroom', zh: '洗手间与浴室', de: 'Toilette & Badezimmer' },
+        { id: 'Teras', en: 'Terrace', zh: '露台', de: 'Terrasse' }
       ],
       amenities: [
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' },
-        { id: 'Smart TV/ TV kabel', en: 'Smart TV/ Cable TV', zh: '????/????', de: 'Smart TV / Kabelfernsehen' },
-        { id: 'Wi-Fi', en: 'Wi-Fi', zh: '????', de: 'WLAN' },
-        { id: 'Air mineral & dispenser', en: 'Mineral water & dispenser', zh: '???????', de: 'Mineralwasser & Spender' },
-        { id: 'Kopi, creamer, gula, teh', en: 'Coffee, creamer, sugar, tea', zh: '??,??,?,?', de: 'Kaffee, Sahne, Zucker, Tee' },
-        { id: 'Kopi kapsul', en: 'Capsule coffee', zh: '????', de: 'Kapselkaffee' },
-        { id: 'Coffee maker', en: 'Coffee maker', zh: '???', de: 'Kaffeemaschine' },
-        { id: 'Teko listrik', en: 'Electric kettle', zh: '????', de: 'Wasserkocher' },
-        { id: 'Sabun', en: 'Soap', zh: '??', de: 'Seife' },
-        { id: 'Shampoo', en: 'Shampoo', zh: '???', de: 'Shampoo' },
-        { id: 'Sikat & pasta gigi', en: 'Toothbrush & toothpaste', zh: '?????', de: 'Zahnb�rste & Zahnpasta' },
-        { id: 'Handuk', en: 'Towel', zh: '??', de: 'Handtuch' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
+        { id: 'Smart TV/ TV kabel', en: 'Smart TV/ Cable TV', zh: '智能电视/有线电视', de: 'Smart TV / Kabelfernsehen' },
+        { id: 'Wi-Fi', en: 'Wi-Fi', zh: '无线网络', de: 'WLAN' },
+        { id: 'Air mineral & dispenser', en: 'Mineral water & dispenser', zh: '矿泉水和饮水机', de: 'Mineralwasser & Spender' },
+        { id: 'Kopi, creamer, gula, teh', en: 'Coffee, creamer, sugar, tea', zh: '咖啡、奶精、糖、茶', de: 'Kaffee, Sahne, Zucker, Tee' },
+        { id: 'Kopi kapsul', en: 'Capsule coffee', zh: '胶囊咖啡', de: 'Kapselkaffee' },
+        { id: 'Coffee maker', en: 'Coffee maker', zh: '咖啡壶', de: 'Kaffeemaschine' },
+        { id: 'Teko listrik', en: 'Electric kettle', zh: '电热水壶', de: 'Wasserkocher' },
+        { id: 'Sabun', en: 'Soap', zh: '肥皂', de: 'Seife' },
+        { id: 'Shampoo', en: 'Shampoo', zh: '洗发水', de: 'Shampoo' },
+        { id: 'Sikat & pasta gigi', en: 'Toothbrush & toothpaste', zh: '牙刷和牙膏', de: 'Zahnbürste & Zahnpasta' },
+        { id: 'Handuk', en: 'Towel', zh: '毛巾', de: 'Handtuch' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' }
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' }
       ],
       natural: [
-        { id: 'Kolam renang', en: 'Swimming pool', zh: '???', de: 'Schwimmbad' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai', en: 'River', zh: '??', de: 'Fluss' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Taman', en: 'Garden', zh: '??', de: 'Garten' }
+        { id: 'Kolam renang', en: 'Swimming pool', zh: '游泳池', de: 'Schwimmbad' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai', en: 'River', zh: '河流', de: 'Fluss' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Taman', en: 'Garden', zh: '花园', de: 'Garten' }
       ]
     },
     policies: {
@@ -689,20 +656,14 @@ export const PROVINCIAL_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Jalan naik turun tangga (sekitar 300 m dari area parkir)', en: 'Stairs access (about 300 m from parking area)', zh: '????(?????300?)', de: 'Treppenzugang (ca. 300 m vom Parkplatz)' },
-        { id: 'Estimasi waktu tempuh sekitar 1-2 jam dari pusat kota Bandung', en: 'Estimated travel time about 1-2 hours from Bandung city center', zh: '????????????1-2??', de: 'Gesch�tzte Reisezeit ca. 1-2 Stunden vom Stadtzentrum Bandung' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Jalan naik turun tangga (sekitar 300 m dari area parkir)', en: 'Stairs access (about 300 m from parking area)', zh: '需爬楼梯（距停车场约300米）', de: 'Treppenzugang (ca. 300 m vom Parkplatz)' },
+        { id: 'Estimasi waktu tempuh sekitar 1-2 jam dari pusat kota Bandung', en: 'Estimated travel time about 1-2 hours from Bandung city center', zh: '从万隆市中心出发，预计车程约1-2小时', de: 'Geschätzte Reisezeit ca. 1-2 Stunden vom Stadtzentrum Bandung' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
-    description: {
-      id: 'Villa dengan sentuhan pedesaan Prancis. Nuansa hijau yang menenangkan.',
-      en: 'Villa with a touch of French countryside. Soothing green nuances.',
-      zh: '???????????? ??????????',
-      de: 'Villa mit einem Hauch von franz�sischer Landschaft. Beruhigende gr�ne Nuancen.'
-    }
+    description: { id: 'Villa dengan sentuhan pedesaan Prancis. Nuansa hijau yang menenangkan.', en: 'Villa with a touch of French countryside. Soothing green nuances.', zh: '带有法国乡村风情的别墅。令人放松的绿色色调。', de: 'Villa mit einem Hauch von französischer Landschaft. Beruhigende grüne Nuancen.' }
   },
-  {
-    id: 'villa-roussillon',
+  { id: 'villa-roussillon',
     name: 'Villa Roussillon (Abu-abu)',
     cluster: 'Provincial Villas',
     capacity: '5 orang',
@@ -732,37 +693,37 @@ export const PROVINCIAL_VILLAS: Villa[] = [
     ],
     facilities: {
       room: [
-        { id: 'Ruang tamu', en: 'Living room', zh: '??', de: 'Wohnzimmer' },
+        { id: 'Ruang tamu', en: 'Living room', zh: '客厅', de: 'Wohnzimmer' },
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Toilet & kamar mandi', en: 'Toilet & bathroom', zh: '??????', de: 'Toilette & Badezimmer' },
-        { id: 'Teras', en: 'Terrace', zh: '??', de: 'Terrasse' }
+        { id: 'Toilet & kamar mandi', en: 'Toilet & bathroom', zh: '洗手间与浴室', de: 'Toilette & Badezimmer' },
+        { id: 'Teras', en: 'Terrace', zh: '露台', de: 'Terrasse' }
       ],
       amenities: [
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' },
-        { id: 'Smart TV/ TV kabel', en: 'Smart TV/ Cable TV', zh: '????/????', de: 'Smart TV / Kabelfernsehen' },
-        { id: 'Wi-Fi', en: 'Wi-Fi', zh: '????', de: 'WLAN' },
-        { id: 'Air mineral & dispenser', en: 'Mineral water & dispenser', zh: '???????', de: 'Mineralwasser & Spender' },
-        { id: 'Kopi, creamer, gula, teh', en: 'Coffee, creamer, sugar, tea', zh: '??,??,?,?', de: 'Kaffee, Sahne, Zucker, Tee' },
-        { id: 'Kopi kapsul', en: 'Capsule coffee', zh: '????', de: 'Kapselkaffee' },
-        { id: 'Coffee maker', en: 'Coffee maker', zh: '???', de: 'Kaffeemaschine' },
-        { id: 'Teko listrik', en: 'Electric kettle', zh: '????', de: 'Wasserkocher' },
-        { id: 'Sabun', en: 'Soap', zh: '??', de: 'Seife' },
-        { id: 'Shampoo', en: 'Shampoo', zh: '???', de: 'Shampoo' },
-        { id: 'Sikat & pasta gigi', en: 'Toothbrush & toothpaste', zh: '?????', de: 'Zahnb�rste & Zahnpasta' },
-        { id: 'Handuk', en: 'Towel', zh: '??', de: 'Handtuch' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
+        { id: 'Smart TV/ TV kabel', en: 'Smart TV/ Cable TV', zh: '智能电视/有线电视', de: 'Smart TV / Kabelfernsehen' },
+        { id: 'Wi-Fi', en: 'Wi-Fi', zh: '无线网络', de: 'WLAN' },
+        { id: 'Air mineral & dispenser', en: 'Mineral water & dispenser', zh: '矿泉水和饮水机', de: 'Mineralwasser & Spender' },
+        { id: 'Kopi, creamer, gula, teh', en: 'Coffee, creamer, sugar, tea', zh: '咖啡、奶精、糖、茶', de: 'Kaffee, Sahne, Zucker, Tee' },
+        { id: 'Kopi kapsul', en: 'Capsule coffee', zh: '胶囊咖啡', de: 'Kapselkaffee' },
+        { id: 'Coffee maker', en: 'Coffee maker', zh: '咖啡壶', de: 'Kaffeemaschine' },
+        { id: 'Teko listrik', en: 'Electric kettle', zh: '电热水壶', de: 'Wasserkocher' },
+        { id: 'Sabun', en: 'Soap', zh: '肥皂', de: 'Seife' },
+        { id: 'Shampoo', en: 'Shampoo', zh: '洗发水', de: 'Shampoo' },
+        { id: 'Sikat & pasta gigi', en: 'Toothbrush & toothpaste', zh: '牙刷和牙膏', de: 'Zahnbürste & Zahnpasta' },
+        { id: 'Handuk', en: 'Towel', zh: '毛巾', de: 'Handtuch' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' }
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' }
       ],
       natural: [
-        { id: 'Kolam renang', en: 'Swimming pool', zh: '???', de: 'Schwimmbad' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai', en: 'River', zh: '??', de: 'Fluss' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Taman', en: 'Garden', zh: '??', de: 'Garten' }
+        { id: 'Kolam renang', en: 'Swimming pool', zh: '游泳池', de: 'Schwimmbad' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai', en: 'River', zh: '河流', de: 'Fluss' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Taman', en: 'Garden', zh: '花园', de: 'Garten' }
       ]
     },
     policies: {
@@ -770,20 +731,14 @@ export const PROVINCIAL_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Jalan naik turun tangga (sekitar 300 m dari area parkir)', en: 'Stairs access (about 300 m from parking area)', zh: '????(?????300?)', de: 'Treppenzugang (ca. 300 m vom Parkplatz)' },
-        { id: 'Estimasi waktu tempuh sekitar 1-2 jam dari pusat kota Bandung', en: 'Estimated travel time about 1-2 hours from Bandung city center', zh: '????????????1-2??', de: 'Gesch�tzte Reisezeit ca. 1-2 Stunden vom Stadtzentrum Bandung' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Jalan naik turun tangga (sekitar 300 m dari area parkir)', en: 'Stairs access (about 300 m from parking area)', zh: '需爬楼梯（距停车场约300米）', de: 'Treppenzugang (ca. 300 m vom Parkplatz)' },
+        { id: 'Estimasi waktu tempuh sekitar 1-2 jam dari pusat kota Bandung', en: 'Estimated travel time about 1-2 hours from Bandung city center', zh: '从万隆市中心出发，预计车程约1-2小时', de: 'Geschätzte Reisezeit ca. 1-2 Stunden vom Stadtzentrum Bandung' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
-    description: {
-      id: 'Villa elegan dengan nuansa abu-abu klasik. Cocok untuk keluarga kecil.',
-      en: 'Elegant villa with classic gray nuances. Suitable for small families.',
-      zh: '?????,???????????? ??????',
-      de: 'Elegante Villa mit klassischen grauen Nuancen. Geeignet f�r kleine Familien.'
-    }
+    description: { id: 'Villa elegan dengan nuansa abu-abu klasik. Cocok untuk keluarga kecil.', en: 'Elegant villa with classic gray nuances. Suitable for small families.', zh: '典雅别墅，经典的灰色调。适合小家庭游玩。', de: 'Elegante Villa mit klassischen grauen Nuancen. Geeignet für kleine Familien.' }
   },
-  {
-    id: 'villa-lourmarin',
+  { id: 'villa-lourmarin',
     name: 'Villa Lourmarin (Coklat)',
     cluster: 'Provincial Villas',
     capacity: '6 orang',
@@ -814,37 +769,37 @@ export const PROVINCIAL_VILLAS: Villa[] = [
     ],
     facilities: {
       room: [
-        { id: 'Ruang tamu', en: 'Living room', zh: '??', de: 'Wohnzimmer' },
+        { id: 'Ruang tamu', en: 'Living room', zh: '客厅', de: 'Wohnzimmer' },
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Toilet & kamar mandi', en: 'Toilet & bathroom', zh: '??????', de: 'Toilette & Badezimmer' },
-        { id: 'Teras', en: 'Terrace', zh: '??', de: 'Terrasse' }
+        { id: 'Toilet & kamar mandi', en: 'Toilet & bathroom', zh: '洗手间与浴室', de: 'Toilette & Badezimmer' },
+        { id: 'Teras', en: 'Terrace', zh: '露台', de: 'Terrasse' }
       ],
       amenities: [
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' },
-        { id: 'Smart TV/ TV kabel', en: 'Smart TV/ Cable TV', zh: '????/????', de: 'Smart TV / Kabelfernsehen' },
-        { id: 'Wi-Fi', en: 'Wi-Fi', zh: '????', de: 'WLAN' },
-        { id: 'Air mineral & dispenser', en: 'Mineral water & dispenser', zh: '???????', de: 'Mineralwasser & Spender' },
-        { id: 'Kopi, creamer, gula, teh', en: 'Coffee, creamer, sugar, tea', zh: '??,??,?,?', de: 'Kaffee, Sahne, Zucker, Tee' },
-        { id: 'Kopi kapsul', en: 'Capsule coffee', zh: '????', de: 'Kapselkaffee' },
-        { id: 'Coffee maker', en: 'Coffee maker', zh: '???', de: 'Kaffeemaschine' },
-        { id: 'Teko listrik', en: 'Electric kettle', zh: '????', de: 'Wasserkocher' },
-        { id: 'Sabun', en: 'Soap', zh: '??', de: 'Seife' },
-        { id: 'Shampoo', en: 'Shampoo', zh: '???', de: 'Shampoo' },
-        { id: 'Sikat & pasta gigi', en: 'Toothbrush & toothpaste', zh: '?????', de: 'Zahnb�rste & Zahnpasta' },
-        { id: 'Handuk', en: 'Towel', zh: '??', de: 'Handtuch' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
+        { id: 'Smart TV/ TV kabel', en: 'Smart TV/ Cable TV', zh: '智能电视/有线电视', de: 'Smart TV / Kabelfernsehen' },
+        { id: 'Wi-Fi', en: 'Wi-Fi', zh: '无线网络', de: 'WLAN' },
+        { id: 'Air mineral & dispenser', en: 'Mineral water & dispenser', zh: '矿泉水和饮水机', de: 'Mineralwasser & Spender' },
+        { id: 'Kopi, creamer, gula, teh', en: 'Coffee, creamer, sugar, tea', zh: '咖啡、奶精、糖、茶', de: 'Kaffee, Sahne, Zucker, Tee' },
+        { id: 'Kopi kapsul', en: 'Capsule coffee', zh: '胶囊咖啡', de: 'Kapselkaffee' },
+        { id: 'Coffee maker', en: 'Coffee maker', zh: '咖啡壶', de: 'Kaffeemaschine' },
+        { id: 'Teko listrik', en: 'Electric kettle', zh: '电热水壶', de: 'Wasserkocher' },
+        { id: 'Sabun', en: 'Soap', zh: '肥皂', de: 'Seife' },
+        { id: 'Shampoo', en: 'Shampoo', zh: '洗发水', de: 'Shampoo' },
+        { id: 'Sikat & pasta gigi', en: 'Toothbrush & toothpaste', zh: '牙刷和牙膏', de: 'Zahnbürste & Zahnpasta' },
+        { id: 'Handuk', en: 'Towel', zh: '毛巾', de: 'Handtuch' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' }
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' }
       ],
       natural: [
-        { id: 'Kolam renang', en: 'Swimming pool', zh: '???', de: 'Schwimmbad' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai', en: 'River', zh: '??', de: 'Fluss' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Taman', en: 'Garden', zh: '??', de: 'Garten' }
+        { id: 'Kolam renang', en: 'Swimming pool', zh: '游泳池', de: 'Schwimmbad' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai', en: 'River', zh: '河流', de: 'Fluss' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Taman', en: 'Garden', zh: '花园', de: 'Garten' }
       ]
     },
     policies: {
@@ -852,24 +807,18 @@ export const PROVINCIAL_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Jalan naik turun tangga (sekitar 300 m dari area parkir)', en: 'Stairs access (about 300 m from parking area)', zh: '????(?????300?)', de: 'Treppenzugang (ca. 300 m vom Parkplatz)' },
-        { id: 'Estimasi waktu tempuh sekitar 1-2 jam dari pusat kota Bandung', en: 'Estimated travel time about 1-2 hours from Bandung city center', zh: '????????????1-2??', de: 'Gesch�tzte Reisezeit ca. 1-2 Stunden vom Stadtzentrum Bandung' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Jalan naik turun tangga (sekitar 300 m dari area parkir)', en: 'Stairs access (about 300 m from parking area)', zh: '需爬楼梯（距停车场约300米）', de: 'Treppenzugang (ca. 300 m vom Parkplatz)' },
+        { id: 'Estimasi waktu tempuh sekitar 1-2 jam dari pusat kota Bandung', en: 'Estimated travel time about 1-2 hours from Bandung city center', zh: '从万隆市中心出发，预计车程约1-2小时', de: 'Geschätzte Reisezeit ca. 1-2 Stunden vom Stadtzentrum Bandung' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
-    description: {
-      id: 'Villa hangat dengan nuansa coklat kayu. Kapasitas lebih besar untuk kenyamanan ekstra.',
-      en: 'Warm villa with wood brown nuances. Larger capacity for extra comfort.',
-      zh: '?????,?????????? ????,?????',
-      de: 'Warme Villa mit holzbraunen Nuancen. Gr��ere Kapazit�t f�r zus�tzlichen Komfort.'
-    }
+    description: { id: 'Villa hangat dengan nuansa coklat kayu. Kapasitas lebih besar untuk kenyamanan ekstra.', en: 'Warm villa with wood brown nuances. Larger capacity for extra comfort.', zh: '充满木质棕色暖意的别墅。容量较大，提供额外的舒适感。', de: 'Warme Villa mit holzbraunen Nuancen. Größere Kapazität für zusätzlichen Komfort.' }
   }
 ];
 
 // Couple Retreat
 export const RIVERSIDE_VILLAS: Villa[] = [
-  {
-    id: 'riverside-hana',
+  { id: 'riverside-hana',
     name: 'Villa Hana',
     cluster: 'Riverside Villas',
     capacity: '6 Pax',
@@ -900,33 +849,33 @@ export const RIVERSIDE_VILLAS: Villa[] = [
     ],
     facilities: {
       room: [
-        { id: 'Ruang keluarga', en: 'Family room', zh: '???', de: 'Familienzimmer' },
-        { id: 'Dapur dan ruang makan', en: 'Kitchen and dining room', zh: '?????', de: 'K�che und Esszimmer' },
-        { id: 'Toilet & kamar mandi di dalam villa', en: 'Toilet & bathroom inside villa', zh: '?????????', de: 'Toilette & Badezimmer in der Villa' },
-        { id: 'Toilet & kamar mandi di lobby villa', en: 'Toilet & bathroom in villa lobby', zh: '??????????', de: 'Toilette & Badezimmer in der Villenlobby' },
-        { id: 'Tempat api unggun & 1 ikat kayu bakar', en: 'Bonfire spot & 1 bundle of firewood', zh: '????1???', de: 'Lagerfeuerplatz & 1 B�ndel Brennholz' }
+        { id: 'Ruang keluarga', en: 'Family room', zh: '家庭房', de: 'Familienzimmer' },
+        { id: 'Dapur dan ruang makan', en: 'Kitchen and dining room', zh: '厨房与餐厅', de: 'Küche und Esszimmer' },
+        { id: 'Toilet & kamar mandi di dalam villa', en: 'Toilet & bathroom inside villa', zh: '别墅内洗手间及浴室', de: 'Toilette & Badezimmer in der Villa' },
+        { id: 'Toilet & kamar mandi di lobby villa', en: 'Toilet & bathroom in villa lobby', zh: '大堂内洗手间及浴室', de: 'Toilette & Badezimmer in der Villenlobby' },
+        { id: 'Tempat api unggun & 1 ikat kayu bakar', en: 'Bonfire spot & 1 bundle of firewood', zh: '篝火点和1捆木柴', de: 'Lagerfeuerplatz & 1 Bündel Brennholz' }
       ],
       amenities: [
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' },
-        { id: 'Smart TV', en: 'Smart TV', zh: '????', de: 'Smart TV' },
-        { id: 'Wifi', en: 'Wifi', zh: '????', de: 'WLAN' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
+        { id: 'Smart TV', en: 'Smart TV', zh: '智能电视', de: 'Smart TV' },
+        { id: 'Wifi', en: 'Wifi', zh: '无线网络', de: 'WLAN' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' }
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Trekking/hiking', en: 'Trekking/hiking', zh: '????', de: 'Trekking / Wandern' },
-        { id: 'Children playground', en: 'Children playground', zh: '?????', de: 'Kinderspielplatz' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Trekking/hiking', en: 'Trekking/hiking', zh: '徒步/远足', de: 'Trekking / Wandern' },
+        { id: 'Children playground', en: 'Children playground', zh: '儿童游乐场', de: 'Kinderspielplatz' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -934,20 +883,14 @@ export const RIVERSIDE_VILLAS: Villa[] = [
       checkOut: '10.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
-    description: {
-      id: 'Villa elegan dengan interior abu-abu bernuansa modern yang terletak tepat di samping sungai Cigeureuh.',
-      en: 'Elegant villa with modern grey interior located right next to the Cigeureuh river.',
-      zh: '?????,????????,?? Cigeureuh ???',
-      de: 'Elegante Villa mit modernem grauem Interieur direkt am Fluss Cigeureuh.'
-    }
+    description: { id: 'Villa elegan dengan interior abu-abu bernuansa modern yang terletak tepat di samping sungai Cigeureuh.', en: 'Elegant villa with modern grey interior located right next to the Cigeureuh river.', zh: '典雅别墅，拥有现代灰色内饰，紧靠Cigeureuh河边。', de: 'Elegante Villa mit modernem grauem Interieur direkt am Fluss Cigeureuh.' }
   },
-  {
-    id: 'riverside-fiore',
+  { id: 'riverside-fiore',
     name: 'Villa Fiore',
     cluster: 'Riverside Villas',
     capacity: '6 Pax',
@@ -978,33 +921,33 @@ export const RIVERSIDE_VILLAS: Villa[] = [
     ],
     facilities: {
       room: [
-        { id: 'Ruang keluarga', en: 'Family room', zh: '???', de: 'Familienzimmer' },
-        { id: 'Dapur dan ruang makan', en: 'Kitchen and dining room', zh: '?????', de: 'K�che und Esszimmer' },
-        { id: 'Toilet & kamar mandi di dalam villa', en: 'Toilet & bathroom inside villa', zh: '?????????', de: 'Toilette & Badezimmer in der Villa' },
-        { id: 'Toilet & kamar mandi di lobby villa', en: 'Toilet & bathroom in villa lobby', zh: '??????????', de: 'Toilette & Badezimmer in der Villenlobby' },
-        { id: 'Tempat api unggun & 1 ikat kayu bakar', en: 'Bonfire spot & 1 bundle of firewood', zh: '????1???', de: 'Lagerfeuerplatz & 1 B�ndel Brennholz' }
+        { id: 'Ruang keluarga', en: 'Family room', zh: '家庭房', de: 'Familienzimmer' },
+        { id: 'Dapur dan ruang makan', en: 'Kitchen and dining room', zh: '厨房与餐厅', de: 'Küche und Esszimmer' },
+        { id: 'Toilet & kamar mandi di dalam villa', en: 'Toilet & bathroom inside villa', zh: '别墅内洗手间及浴室', de: 'Toilette & Badezimmer in der Villa' },
+        { id: 'Toilet & kamar mandi di lobby villa', en: 'Toilet & bathroom in villa lobby', zh: '大堂内洗手间及浴室', de: 'Toilette & Badezimmer in der Villenlobby' },
+        { id: 'Tempat api unggun & 1 ikat kayu bakar', en: 'Bonfire spot & 1 bundle of firewood', zh: '篝火点和1捆木柴', de: 'Lagerfeuerplatz & 1 Bündel Brennholz' }
       ],
       amenities: [
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' },
-        { id: 'Smart TV', en: 'Smart TV', zh: '????', de: 'Smart TV' },
-        { id: 'Wifi', en: 'Wifi', zh: '????', de: 'WLAN' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
+        { id: 'Smart TV', en: 'Smart TV', zh: '智能电视', de: 'Smart TV' },
+        { id: 'Wifi', en: 'Wifi', zh: '无线网络', de: 'WLAN' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' }
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Trekking/hiking', en: 'Trekking/hiking', zh: '????', de: 'Trekking / Wandern' },
-        { id: 'Children playground', en: 'Children playground', zh: '?????', de: 'Kinderspielplatz' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Trekking/hiking', en: 'Trekking/hiking', zh: '徒步/远足', de: 'Trekking / Wandern' },
+        { id: 'Children playground', en: 'Children playground', zh: '儿童游乐场', de: 'Kinderspielplatz' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1012,9 +955,9 @@ export const RIVERSIDE_VILLAS: Villa[] = [
       checkOut: '10.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1024,8 +967,7 @@ export const RIVERSIDE_VILLAS: Villa[] = [
       de: 'Elegante Villa mit frischem gr�nem Interieur direkt am Fluss Cigeureuh.'
     }
   },
-  {
-    id: 'riverside-blomst',
+  { id: 'riverside-blomst',
     name: 'Villa Blomst',
     cluster: 'Riverside Villas',
     capacity: '6 Pax',
@@ -1055,33 +997,33 @@ export const RIVERSIDE_VILLAS: Villa[] = [
     ],
     facilities: {
       room: [
-        { id: 'Ruang keluarga', en: 'Family room', zh: '???', de: 'Familienzimmer' },
-        { id: 'Dapur dan ruang makan', en: 'Kitchen and dining room', zh: '?????', de: 'K�che und Esszimmer' },
-        { id: 'Toilet & kamar mandi di dalam villa', en: 'Toilet & bathroom inside villa', zh: '?????????', de: 'Toilette & Badezimmer in der Villa' },
-        { id: 'Toilet & kamar mandi di lobby villa', en: 'Toilet & bathroom in villa lobby', zh: '??????????', de: 'Toilette & Badezimmer in der Villenlobby' },
-        { id: 'Tempat api unggun & 1 ikat kayu bakar', en: 'Bonfire spot & 1 bundle of firewood', zh: '????1???', de: 'Lagerfeuerplatz & 1 B�ndel Brennholz' }
+        { id: 'Ruang keluarga', en: 'Family room', zh: '家庭房', de: 'Familienzimmer' },
+        { id: 'Dapur dan ruang makan', en: 'Kitchen and dining room', zh: '厨房与餐厅', de: 'Küche und Esszimmer' },
+        { id: 'Toilet & kamar mandi di dalam villa', en: 'Toilet & bathroom inside villa', zh: '别墅内洗手间及浴室', de: 'Toilette & Badezimmer in der Villa' },
+        { id: 'Toilet & kamar mandi di lobby villa', en: 'Toilet & bathroom in villa lobby', zh: '大堂内洗手间及浴室', de: 'Toilette & Badezimmer in der Villenlobby' },
+        { id: 'Tempat api unggun & 1 ikat kayu bakar', en: 'Bonfire spot & 1 bundle of firewood', zh: '篝火点和1捆木柴', de: 'Lagerfeuerplatz & 1 Bündel Brennholz' }
       ],
       amenities: [
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' },
-        { id: 'Smart TV', en: 'Smart TV', zh: '????', de: 'Smart TV' },
-        { id: 'Wifi', en: 'Wifi', zh: '????', de: 'WLAN' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
+        { id: 'Smart TV', en: 'Smart TV', zh: '智能电视', de: 'Smart TV' },
+        { id: 'Wifi', en: 'Wifi', zh: '无线网络', de: 'WLAN' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' }
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Trekking/hiking', en: 'Trekking/hiking', zh: '????', de: 'Trekking / Wandern' },
-        { id: 'Children playground', en: 'Children playground', zh: '?????', de: 'Kinderspielplatz' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Trekking/hiking', en: 'Trekking/hiking', zh: '徒步/远足', de: 'Trekking / Wandern' },
+        { id: 'Children playground', en: 'Children playground', zh: '儿童游乐场', de: 'Kinderspielplatz' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1089,9 +1031,9 @@ export const RIVERSIDE_VILLAS: Villa[] = [
       checkOut: '10.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1135,28 +1077,28 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Balkon', en: 'Balcony', zh: '??', de: 'Balkon' }
+        { id: 'Balkon', en: 'Balcony', zh: '阳台', de: 'Balkon' }
       ],
       amenities: [
         { id: 'Kamar mandi & toilet semi-outdoor', en: 'Semi-outdoor bathroom & toilet', zh: '?????????', de: 'Halb-offenes Badezimmer & Toilette' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Welcome fruit', en: 'Welcome fruit', zh: '????', de: 'Begr��ungsfr�chte' },
         { id: 'Coklat ferrero rocher', en: 'Ferrero Rocher chocolate', zh: '??????', de: 'Ferrero Rocher Schokolade' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1164,9 +1106,9 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1205,28 +1147,28 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Balkon', en: 'Balcony', zh: '??', de: 'Balkon' }
+        { id: 'Balkon', en: 'Balcony', zh: '阳台', de: 'Balkon' }
       ],
       amenities: [
         { id: 'Kamar mandi & toilet semi-outdoor', en: 'Semi-outdoor bathroom & toilet', zh: '?????????', de: 'Halb-offenes Badezimmer & Toilette' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Welcome fruit', en: 'Welcome fruit', zh: '????', de: 'Begr��ungsfr�chte' },
         { id: 'Coklat ferrero rocher', en: 'Ferrero Rocher chocolate', zh: '??????', de: 'Ferrero Rocher Schokolade' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1234,9 +1176,9 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1276,28 +1218,28 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Balkon', en: 'Balcony', zh: '??', de: 'Balkon' }
+        { id: 'Balkon', en: 'Balcony', zh: '阳台', de: 'Balkon' }
       ],
       amenities: [
         { id: 'Kamar mandi & toilet semi-outdoor', en: 'Semi-outdoor bathroom & toilet', zh: '?????????', de: 'Halb-offenes Badezimmer & Toilette' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Welcome fruit', en: 'Welcome fruit', zh: '????', de: 'Begr��ungsfr�chte' },
         { id: 'Coklat ferrero rocher', en: 'Ferrero Rocher chocolate', zh: '??????', de: 'Ferrero Rocher Schokolade' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1305,9 +1247,9 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1346,28 +1288,28 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Balkon', en: 'Balcony', zh: '??', de: 'Balkon' }
+        { id: 'Balkon', en: 'Balcony', zh: '阳台', de: 'Balkon' }
       ],
       amenities: [
         { id: 'Kamar mandi & toilet semi-outdoor', en: 'Semi-outdoor bathroom & toilet', zh: '?????????', de: 'Halb-offenes Badezimmer & Toilette' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Welcome fruit', en: 'Welcome fruit', zh: '????', de: 'Begr��ungsfr�chte' },
         { id: 'Coklat ferrero rocher', en: 'Ferrero Rocher chocolate', zh: '??????', de: 'Ferrero Rocher Schokolade' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1375,9 +1317,9 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1416,28 +1358,28 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Balkon', en: 'Balcony', zh: '??', de: 'Balkon' }
+        { id: 'Balkon', en: 'Balcony', zh: '阳台', de: 'Balkon' }
       ],
       amenities: [
         { id: 'Kamar mandi & toilet semi-outdoor', en: 'Semi-outdoor bathroom & toilet', zh: '?????????', de: 'Halb-offenes Badezimmer & Toilette' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Welcome fruit', en: 'Welcome fruit', zh: '????', de: 'Begr��ungsfr�chte' },
         { id: 'Coklat ferrero rocher', en: 'Ferrero Rocher chocolate', zh: '??????', de: 'Ferrero Rocher Schokolade' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1445,9 +1387,9 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1489,28 +1431,28 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Balkon', en: 'Balcony', zh: '??', de: 'Balkon' }
+        { id: 'Balkon', en: 'Balcony', zh: '阳台', de: 'Balkon' }
       ],
       amenities: [
         { id: 'Kamar mandi & toilet semi-outdoor', en: 'Semi-outdoor bathroom & toilet', zh: '?????????', de: 'Halb-offenes Badezimmer & Toilette' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Welcome fruit', en: 'Welcome fruit', zh: '????', de: 'Begr��ungsfr�chte' },
         { id: 'Coklat ferrero rocher', en: 'Ferrero Rocher chocolate', zh: '??????', de: 'Ferrero Rocher Schokolade' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1518,9 +1460,9 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1562,28 +1504,28 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Balkon', en: 'Balcony', zh: '??', de: 'Balkon' }
+        { id: 'Balkon', en: 'Balcony', zh: '阳台', de: 'Balkon' }
       ],
       amenities: [
         { id: 'Kamar mandi & toilet semi-outdoor', en: 'Semi-outdoor bathroom & toilet', zh: '?????????', de: 'Halb-offenes Badezimmer & Toilette' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Welcome fruit', en: 'Welcome fruit', zh: '????', de: 'Begr��ungsfr�chte' },
         { id: 'Coklat ferrero rocher', en: 'Ferrero Rocher chocolate', zh: '??????', de: 'Ferrero Rocher Schokolade' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1591,9 +1533,9 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1632,28 +1574,28 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Balkon', en: 'Balcony', zh: '??', de: 'Balkon' }
+        { id: 'Balkon', en: 'Balcony', zh: '阳台', de: 'Balkon' }
       ],
       amenities: [
         { id: 'Kamar mandi & toilet semi-outdoor', en: 'Semi-outdoor bathroom & toilet', zh: '?????????', de: 'Halb-offenes Badezimmer & Toilette' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Welcome fruit', en: 'Welcome fruit', zh: '????', de: 'Begr��ungsfr�chte' },
         { id: 'Coklat ferrero rocher', en: 'Ferrero Rocher chocolate', zh: '??????', de: 'Ferrero Rocher Schokolade' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1661,9 +1603,9 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1702,28 +1644,28 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Balkon', en: 'Balcony', zh: '??', de: 'Balkon' }
+        { id: 'Balkon', en: 'Balcony', zh: '阳台', de: 'Balkon' }
       ],
       amenities: [
         { id: 'Kamar mandi & toilet semi-outdoor', en: 'Semi-outdoor bathroom & toilet', zh: '?????????', de: 'Halb-offenes Badezimmer & Toilette' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Welcome fruit', en: 'Welcome fruit', zh: '????', de: 'Begr��ungsfr�chte' },
         { id: 'Coklat ferrero rocher', en: 'Ferrero Rocher chocolate', zh: '??????', de: 'Ferrero Rocher Schokolade' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1731,9 +1673,9 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1773,28 +1715,28 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Balkon', en: 'Balcony', zh: '??', de: 'Balkon' }
+        { id: 'Balkon', en: 'Balcony', zh: '阳台', de: 'Balkon' }
       ],
       amenities: [
         { id: 'Kamar mandi & toilet semi-outdoor', en: 'Semi-outdoor bathroom & toilet', zh: '?????????', de: 'Halb-offenes Badezimmer & Toilette' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Welcome fruit', en: 'Welcome fruit', zh: '????', de: 'Begr��ungsfr�chte' },
         { id: 'Coklat ferrero rocher', en: 'Ferrero Rocher chocolate', zh: '??????', de: 'Ferrero Rocher Schokolade' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1802,9 +1744,9 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1844,28 +1786,28 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Balkon', en: 'Balcony', zh: '??', de: 'Balkon' }
+        { id: 'Balkon', en: 'Balcony', zh: '阳台', de: 'Balkon' }
       ],
       amenities: [
         { id: 'Kamar mandi & toilet semi-outdoor', en: 'Semi-outdoor bathroom & toilet', zh: '?????????', de: 'Halb-offenes Badezimmer & Toilette' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Welcome fruit', en: 'Welcome fruit', zh: '????', de: 'Begr��ungsfr�chte' },
         { id: 'Coklat ferrero rocher', en: 'Ferrero Rocher chocolate', zh: '??????', de: 'Ferrero Rocher Schokolade' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1873,9 +1815,9 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1916,28 +1858,28 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Balkon', en: 'Balcony', zh: '??', de: 'Balkon' }
+        { id: 'Balkon', en: 'Balcony', zh: '阳台', de: 'Balkon' }
       ],
       amenities: [
         { id: 'Kamar mandi & toilet semi-outdoor', en: 'Semi-outdoor bathroom & toilet', zh: '?????????', de: 'Halb-offenes Badezimmer & Toilette' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Welcome fruit', en: 'Welcome fruit', zh: '????', de: 'Begr��ungsfr�chte' },
         { id: 'Coklat ferrero rocher', en: 'Ferrero Rocher chocolate', zh: '??????', de: 'Ferrero Rocher Schokolade' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -1945,9 +1887,9 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -1987,28 +1929,28 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Kamar tidur', en: 'Bedroom', zh: '??', de: 'Schlafzimmer' },
-        { id: 'Balkon', en: 'Balcony', zh: '??', de: 'Balkon' }
+        { id: 'Balkon', en: 'Balcony', zh: '阳台', de: 'Balkon' }
       ],
       amenities: [
         { id: 'Kamar mandi & toilet semi-outdoor', en: 'Semi-outdoor bathroom & toilet', zh: '?????????', de: 'Halb-offenes Badezimmer & Toilette' },
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' }
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' },
-        { id: 'Makan siang', en: 'Lunch', zh: '??', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '??', de: 'Abendessen' },
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
         { id: 'Welcome fruit', en: 'Welcome fruit', zh: '????', de: 'Begr��ungsfr�chte' },
         { id: 'Coklat ferrero rocher', en: 'Ferrero Rocher chocolate', zh: '??????', de: 'Ferrero Rocher Schokolade' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Gazebo' },
-        { id: 'Dermaga', en: 'Dock', zh: '??', de: 'Dock' },
-        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '?????', de: 'Nat�rlicher Fotospot' }
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
+        { id: 'Dermaga', en: 'Dock', zh: '码头', de: 'Dock' },
+        { id: 'Spot alam untuk berfoto', en: 'Natural photo spot', zh: '自然拍照点', de: 'Natürlicher Fotospot' }
       ]
     },
     policies: {
@@ -2016,9 +1958,9 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -2032,8 +1974,7 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
 
 // Log Home
 export const LOG_HOME_VILLAS: Villa[] = [
-  {
-    id: 'villa-campaka',
+  { id: 'villa-campaka',
     name: 'Villa Campaka',
     cluster: 'Nawa Bumi Villas',
     capacity: '12 Pax',
@@ -2063,29 +2004,29 @@ export const LOG_HOME_VILLAS: Villa[] = [
     ],
     facilities: {
       room: [
-        { id: 'Ruang keluarga', en: 'Living room', zh: '??', de: 'Wohnzimmer' },
+        { id: 'Ruang keluarga', en: 'Living room', zh: '客厅', de: 'Wohnzimmer' },
         { id: 'Dapur bersih dengan alat masak dan alat makan standar', en: 'Clean kitchen with standard cooking and dining utensils', zh: '??????????????', de: 'Saubere K�che mit Standard-Koch- und Essgeschirr' },
         { id: 'Balkon/ teras', en: 'Balcony/terrace', zh: '??/??', de: 'Balkon/Terrasse' },
-        { id: 'Spot api unggun & 1 ikat kayu bakar', en: 'Bonfire spot & 1 bundle of firewood', zh: '????1???', de: 'Lagerfeuerstelle & 1 B�ndel Brennholz' }
+        { id: 'Spot api unggun & 1 ikat kayu bakar', en: 'Bonfire spot & 1 bundle of firewood', zh: '篝火点和1捆木柴', de: 'Lagerfeuerplatz & 1 Bündel Brennholz' }
       ],
       amenities: [
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Warmwasserbereiter' },
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
         { id: 'TV', en: 'TV', zh: '??', de: 'Fernseher' },
-        { id: 'Wifi', en: 'Wifi', zh: 'Wifi', de: 'WLAN' },
-        { id: 'Water dispenser', en: 'Water dispenser', zh: '???', de: 'Wasserspender' },
-        { id: 'Sabun', en: 'Soap', zh: '??', de: 'Seife' },
-        { id: 'Shampoo', en: 'Shampoo', zh: '???', de: 'Shampoo' }
+        { id: 'Wifi', en: 'Wifi', zh: '无线网络', de: 'WLAN' },
+        { id: 'Water dispenser', en: 'Water dispenser', zh: '饮水机', de: 'Wasserspender' },
+        { id: 'Sabun', en: 'Soap', zh: '肥皂', de: 'Seife' },
+        { id: 'Shampoo', en: 'Shampoo', zh: '洗发水', de: 'Shampoo' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' }
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' }
       ],
       natural: [
-        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2??????', de: '2 Kaltwasser-Schwimmb�der' },
-        { id: 'Water playing', en: 'Water playing', zh: '???', de: 'Wasserspielbereich' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Pavillon' },
+        { id: '2 kolam renang air dingin', en: '2 Cold water swimming pools', zh: '2个冷水游泳池', de: '2 Kaltwasser-Schwimmbäder' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
         { id: 'Dermaga', en: 'Pier', zh: '??', de: 'Anlegestelle' },
         { id: 'Spot alam untuk berfoto', en: 'Natural photo spots', zh: '?????', de: 'Nat�rliche Fotospots' }
       ]
@@ -2095,10 +2036,10 @@ export const LOG_HOME_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '???????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
         { id: 'Tidak diperkenankan membawa makanan dari luar.', en: 'Outside food is not allowed.', zh: '???????', de: 'Speisen von au�erhalb sind nicht gestattet.' },
-        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '?????', de: 'Treppenzugang.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%?', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Jalan naik turun tangga.', en: 'Stairs access.', zh: '需爬楼梯。', de: 'Treppenzugang.' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -2139,26 +2080,26 @@ export const LOG_HOME_VILLAS: Villa[] = [
     facilities: {
       room: [
         { id: 'Balkon/ teras', en: 'Balcony/Terrace', zh: '??/??', de: 'Balkon/Terrasse' },
-        { id: 'Spot api unggun & 1 ikat kayu bakar', en: 'Bonfire spot & 1 bundle of firewood', zh: '????1???', de: 'Lagerfeuerplatz & 1 B�ndel Brennholz' }
+        { id: 'Spot api unggun & 1 ikat kayu bakar', en: 'Bonfire spot & 1 bundle of firewood', zh: '篝火点和1捆木柴', de: 'Lagerfeuerplatz & 1 Bündel Brennholz' }
       ],
       amenities: [
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' },
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
         { id: 'TV', en: 'TV', zh: '??', de: 'Fernseher' },
-        { id: 'Wifi', en: 'Wifi', zh: '????', de: 'W-lan' },
-        { id: 'Water dispenser', en: 'Water dispenser', zh: '???', de: 'Wasserspender' },
-        { id: 'Sabun', en: 'Soap', zh: '??', de: 'Seife' },
-        { id: 'Shampoo', en: 'Shampoo', zh: '???', de: 'Shampoo' }
+        { id: 'Wifi', en: 'Wifi', zh: '无线网络', de: 'WLAN' },
+        { id: 'Water dispenser', en: 'Water dispenser', zh: '饮水机', de: 'Wasserspender' },
+        { id: 'Sabun', en: 'Soap', zh: '肥皂', de: 'Seife' },
+        { id: 'Shampoo', en: 'Shampoo', zh: '洗发水', de: 'Shampoo' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' }
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' }
       ],
       natural: [
         { id: '2 kolam renang air dingin', en: '2 cold water pools', zh: '2????', de: '2 Kaltwasserpools' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Pavillon' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
         { id: 'Dermaga', en: 'Pier', zh: '??', de: 'Pier' },
         { id: 'Spot alam untuk berfoto', en: 'Nature photo spots', zh: '?????', de: 'Natur-Fotospots' }
       ]
@@ -2168,10 +2109,10 @@ export const LOG_HOME_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht erlaubt.' },
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
         { id: 'Tidak diperkenankan membawa makanan dari luar.', en: 'Outside food is not allowed.', zh: '????????', de: 'Das Mitbringen von Speisen von au�erhalb ist nicht gestattet.' },
         { id: 'Jalan naik turun tangga.', en: 'Path involves going up and down stairs.', zh: '?????????', de: 'Der Weg beinhaltet Treppensteigen.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%??', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
@@ -2215,26 +2156,26 @@ export const LOG_HOME_VILLAS: Villa[] = [
       room: [
         { id: 'Dapur bersih dengan alat masak dan alat makan standar', en: 'Clean kitchen with standard cooking and dining utensils', zh: '???????????????', de: 'Saubere K�che mit Standard-Koch- und Essgeschirr' },
         { id: 'Balkon/ teras', en: 'Balcony/Terrace', zh: '??/??', de: 'Balkon/Terrasse' },
-        { id: 'Spot api unggun & 1 ikat kayu bakar', en: 'Bonfire spot & 1 bundle of firewood', zh: '????1???', de: 'Lagerfeuerplatz & 1 B�ndel Brennholz' }
+        { id: 'Spot api unggun & 1 ikat kayu bakar', en: 'Bonfire spot & 1 bundle of firewood', zh: '篝火点和1捆木柴', de: 'Lagerfeuerplatz & 1 Bündel Brennholz' }
       ],
       amenities: [
-        { id: 'Water heater', en: 'Water heater', zh: '???', de: 'Wasserkocher' },
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
         { id: 'TV', en: 'TV', zh: '??', de: 'Fernseher' },
-        { id: 'Wifi', en: 'Wifi', zh: '????', de: 'W-lan' },
-        { id: 'Water dispenser', en: 'Water dispenser', zh: '???', de: 'Wasserspender' },
-        { id: 'Sabun', en: 'Soap', zh: '??', de: 'Seife' },
-        { id: 'Shampoo', en: 'Shampoo', zh: '???', de: 'Shampoo' }
+        { id: 'Wifi', en: 'Wifi', zh: '无线网络', de: 'WLAN' },
+        { id: 'Water dispenser', en: 'Water dispenser', zh: '饮水机', de: 'Wasserspender' },
+        { id: 'Sabun', en: 'Soap', zh: '肥皂', de: 'Seife' },
+        { id: 'Shampoo', en: 'Shampoo', zh: '洗发水', de: 'Shampoo' }
       ],
       meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '??', de: 'Fr�hst�ck' }
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' }
       ],
       natural: [
         { id: '2 kolam renang air dingin', en: '2 cold water pools', zh: '2????', de: '2 Kaltwasserpools' },
-        { id: 'Water playing', en: 'Water playing', zh: '??', de: 'Wasserspiele' },
-        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh?', de: 'Cigeureuh Fluss' },
-        { id: 'Skywalk', en: 'Skywalk', zh: '????', de: 'Skywalk' },
-        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '???', de: 'Vogelk�figbr�cke' },
-        { id: 'Gazebo', en: 'Gazebo', zh: '??', de: 'Pavillon' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: 'Sungai Cigeureuh', en: 'Cigeureuh River', zh: 'Cigeureuh河', de: 'Cigeureuh Fluss' },
+        { id: 'Skywalk', en: 'Skywalk', zh: '空中漫步桥', de: 'Skywalk' },
+        { id: 'Jembatan sangkar burung', en: 'Bird cage bridge', zh: '鸟笼桥', de: 'Vogelkäfigbrücke' },
+        { id: 'Gazebo', en: 'Gazebo', zh: '凉亭', de: 'Gazebo' },
         { id: 'Dermaga', en: 'Pier', zh: '??', de: 'Pier' },
         { id: 'Spot alam untuk berfoto', en: 'Nature photo spots', zh: '?????', de: 'Natur-Fotospots' }
       ]
@@ -2244,10 +2185,10 @@ export const LOG_HOME_VILLAS: Villa[] = [
       checkOut: '12.00 WIB',
       smokeFree: true,
       specialNotes: [
-        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '????????????????', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht erlaubt.' },
+        { id: 'Tidak diperkenankan membawa hewan, alat pengeras suara, alat musik, dll.', en: 'Pets, loudspeakers, musical instruments, etc. are not allowed.', zh: '不允许携带宠物、使用扩音器、乐器等。', de: 'Haustiere, Lautsprecher, Musikinstrumente usw. sind nicht gestattet.' },
         { id: 'Tidak diperkenankan membawa makanan dari luar.', en: 'Outside food is not allowed.', zh: '????????', de: 'Das Mitbringen von Speisen von au�erhalb ist nicht gestattet.' },
         { id: 'Jalan naik turun tangga.', en: 'Path involves going up and down stairs.', zh: '?????????', de: 'Der Weg beinhaltet Treppensteigen.' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '????10%??', de: 'Preis exklusive 10% Steuer' }
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
       ]
     },
     description: {
