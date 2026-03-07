@@ -92,7 +92,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
           zh: '美式农舍系列（Olinda, Selby）。',
           de: 'Amerikanische Farmhouse-Kollektion (Olinda, Selby).'
         },
-        image: '/images/emerald-atas-hero.webp',
+        image: '/images/villas/dandenong/facade-dpv.webp',
         type: 'group',
         filterFn: (v) => v.cluster === 'Dandenong Villas'
       },

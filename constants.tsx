@@ -466,7 +466,8 @@ export const DANDENONG_VILLAS: Villa[] = [
       '/images/villas/olinda/DSC00629WEB.jpg',
       '/images/villas/olinda/DSC00630WEB.jpg',
       '/images/villas/olinda/DSC00789WEB.jpg',
-      '/images/villas/olinda/DSC00931WEB.jpg'
+      '/images/villas/olinda/DSC00931WEB.jpg',
+      '/images/villas/olinda/jacuzzi.webp'
     ],
     bedConfiguration: [
       { room: 1, beds: '1 king bed (180 x 200)' },
@@ -546,14 +547,14 @@ export const DANDENONG_VILLAS: Villa[] = [
     features: ['Cozy', 'Private', 'Garden View'],
     image: '/images/villas/selby/hero.jpg',
     images: [
-      '/images/villas/selby/DSC00238WEB.jpg',
+      '/images/villas/selby/DSC03113.WEB.jpg',
       '/images/villas/selby/DSC02726WEB.jpg',
       '/images/villas/selby/DSC02763WEB.jpg',
       '/images/villas/selby/DSC02805WEB.jpg',
       '/images/villas/selby/DSC02837WEB.jpg',
       '/images/villas/selby/DSC02872WEB.jpg',
       '/images/villas/selby/DSC03055WEB.jpg',
-      '/images/villas/selby/DSC03113.WEB.jpg'
+      '/images/villas/selby/DSC00238.WEB.jpg'
     ],
     bedConfiguration: [
       { room: 1, beds: '1 king bed 180 x 200' },
