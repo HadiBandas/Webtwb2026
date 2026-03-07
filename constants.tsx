@@ -424,7 +424,8 @@ export const EMERALD_VILLAS: Villa[] = [
 // ===================================================================
 
 export const DANDENONG_VILLAS: Villa[] = [
-  { id: 'olinda',
+  {
+    id: 'olinda',
     name: 'Olinda Villa',
     cluster: 'Dandenong Villas',
     capacity: '12 orang',
@@ -505,7 +506,8 @@ export const DANDENONG_VILLAS: Villa[] = [
     },
     description: { id: 'Villa luas dengan kapasitas besar dan Jacuzzi pribadi. Cocok untuk gathering keluarga besar.', en: 'Spacious villa with large capacity and private Jacuzzi. Perfect for large family gatherings.', zh: '宽敞的别墅，容量大，配有私人按摩浴缸。非常适合大型家庭聚会。', de: 'Geräumige Villa mit großer Kapazität und privatem Jacuzzi. Perfekt für große Familientreffen.' }
   },
-  { id: 'selby',
+  {
+    id: 'selby',
     name: 'Selby Villa',
     cluster: 'Dandenong Villas',
     capacity: '4 orang',
@@ -587,7 +589,8 @@ export const DANDENONG_VILLAS: Villa[] = [
 // ===================================================================
 
 export const PROVINCIAL_VILLAS: Villa[] = [
-  { id: 'villa-gordes',
+  {
+    id: 'villa-gordes',
     name: 'Villa Gordes (Hijau)',
     cluster: 'Provincial Villas',
     capacity: '4 orang',
@@ -663,7 +666,8 @@ export const PROVINCIAL_VILLAS: Villa[] = [
     },
     description: { id: 'Villa dengan sentuhan pedesaan Prancis. Nuansa hijau yang menenangkan.', en: 'Villa with a touch of French countryside. Soothing green nuances.', zh: '带有法国乡村风情的别墅。令人放松的绿色色调。', de: 'Villa mit einem Hauch von französischer Landschaft. Beruhigende grüne Nuancen.' }
   },
-  { id: 'villa-roussillon',
+  {
+    id: 'villa-roussillon',
     name: 'Villa Roussillon (Abu-abu)',
     cluster: 'Provincial Villas',
     capacity: '5 orang',
@@ -738,7 +742,8 @@ export const PROVINCIAL_VILLAS: Villa[] = [
     },
     description: { id: 'Villa elegan dengan nuansa abu-abu klasik. Cocok untuk keluarga kecil.', en: 'Elegant villa with classic gray nuances. Suitable for small families.', zh: '典雅别墅，经典的灰色调。适合小家庭游玩。', de: 'Elegante Villa mit klassischen grauen Nuancen. Geeignet für kleine Familien.' }
   },
-  { id: 'villa-lourmarin',
+  {
+    id: 'villa-lourmarin',
     name: 'Villa Lourmarin (Coklat)',
     cluster: 'Provincial Villas',
     capacity: '6 orang',
@@ -818,7 +823,8 @@ export const PROVINCIAL_VILLAS: Villa[] = [
 
 // Couple Retreat
 export const RIVERSIDE_VILLAS: Villa[] = [
-  { id: 'riverside-hana',
+  {
+    id: 'riverside-hana',
     name: 'Villa Hana',
     cluster: 'Riverside Villas',
     capacity: '6 Pax',
@@ -890,7 +896,8 @@ export const RIVERSIDE_VILLAS: Villa[] = [
     },
     description: { id: 'Villa elegan dengan interior abu-abu bernuansa modern yang terletak tepat di samping sungai Cigeureuh.', en: 'Elegant villa with modern grey interior located right next to the Cigeureuh river.', zh: '典雅别墅，拥有现代灰色内饰，紧靠Cigeureuh河边。', de: 'Elegante Villa mit modernem grauem Interieur direkt am Fluss Cigeureuh.' }
   },
-  { id: 'riverside-fiore',
+  {
+    id: 'riverside-fiore',
     name: 'Villa Fiore',
     cluster: 'Riverside Villas',
     capacity: '6 Pax',
@@ -967,7 +974,8 @@ export const RIVERSIDE_VILLAS: Villa[] = [
       de: 'Elegante Villa mit frischem gr�nem Interieur direkt am Fluss Cigeureuh.'
     }
   },
-  { id: 'riverside-blomst',
+  {
+    id: 'riverside-blomst',
     name: 'Villa Blomst',
     cluster: 'Riverside Villas',
     capacity: '6 Pax',
@@ -1974,7 +1982,8 @@ export const KAMPUH_BECIK_VILLAS: Villa[] = [
 
 // Log Home
 export const LOG_HOME_VILLAS: Villa[] = [
-  { id: 'villa-campaka',
+  {
+    id: 'villa-campaka',
     name: 'Villa Campaka',
     cluster: 'Nawa Bumi Villas',
     capacity: '12 Pax',
@@ -2622,7 +2631,7 @@ export const ACTIVITY_CATEGORIES: ActivityCategory[] = [
   {
     id: 'wellness',
     title: {
-      id: 'Kesehatan Gunung',
+      id: 'Wellness Pegunungan',
       en: 'Mountain Wellness',
       zh: '山地康养',
       de: 'Berg-Wellness'
@@ -2643,7 +2652,7 @@ export const ACTIVITY_CATEGORIES: ActivityCategory[] = [
     items: [
       {
         title: {
-          id: 'Bermain Air di Sungai',
+          id: 'Aktivitas Sungai',
           en: 'River Playing',
           zh: '溪流戏水',
           de: 'Flussspiel'
@@ -2807,7 +2816,7 @@ export const OFFERS: Offer[] = [
   {
     id: 'wellness-retreat',
     title: {
-      id: 'Retret Kesehatan Gunung',
+      id: 'Paket Wellness Retreat',
       en: 'Mountain Wellness Retreat',
       zh: '山地康养静修',
       de: 'Berg-Wellness-Retreat'
