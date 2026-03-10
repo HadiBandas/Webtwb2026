@@ -66,7 +66,10 @@
         "termsOfService": "Nutzungsbedingungen",
         "reception": "Rezeption",
         "inquiries": "Anfragen",
-        "visitUs": "Besuchen Sie uns"
+        "visitUs": "Besuchen Sie uns",
+        "whatsappBooking": "Über WhatsApp buchen",
+        "selectVilla": "Villa auswählen",
+        "submit": "Anfrage senden"
     },
     "trust": {
         "reviews": "5-Sterne-Bewertungen",
@@ -130,7 +133,17 @@
         "noCharge": "Noch keine Zahlung erforderlich",
         "serviceFee": "Servicegebühr",
         "cleaningFee": "Reinigungsgebühr",
-        "included": "Inbegriffen"
+        "included": "Inbegriffen",
+        "total": "Gesamt",
+        "nights": "Nächte",
+        "night": "Nacht",
+        "estimatedTotal": "Geschätzte Gesamtsumme",
+        "weekdayNights": "Wochentag",
+        "weekendNights": "Wochenende",
+        "highSeasonNights": "Hochsaison",
+        "priceNote": "Geschätzter Preis, ohne 10% Steuern",
+        "selectDates": "Wählen Sie Daten für eine Preisschätzung",
+        "whatsappMessageVilla": "Hallo, ich möchte {{villaName}} buchen.%0A%0ACheck-in: {{checkIn}}%0ACheck-out: {{checkOut}}%0AGäste: {{guests}}%0A%0AGeschätzte {{nights}} Nacht/Nächte: {{price}}%0A%0ABitte bestätigen Sie die Verfügbarkeit."
     },
     "about": {
         "title": "Über uns",
@@ -483,7 +496,9 @@
         "success": "Erfolg!",
         "required": "Erforderlich",
         "save": "Speichern",
+        "saved": "Gespeichert",
         "share": "Teilen",
+        "copied": "Link kopiert!",
         "perNight": "/ Nacht",
         "reviews": "Bewertungen"
     },

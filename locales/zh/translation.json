@@ -65,7 +65,10 @@
         "termsOfService": "服务条款",
         "reception": "前台",
         "inquiries": "咨询",
-        "visitUs": "访问我们"
+        "visitUs": "访问我们",
+        "whatsappBooking": "通过WhatsApp预订",
+        "selectVilla": "选择别墅",
+        "submit": "提交请求"
     },
     "trust": {
         "reviews": "5星级评价",
@@ -129,7 +132,17 @@
         "noCharge": "暂不收费",
         "serviceFee": "服务费",
         "cleaningFee": "清洁费",
-        "included": "已包含"
+        "included": "已包含",
+        "total": "总计",
+        "nights": "晚",
+        "night": "晚",
+        "estimatedTotal": "预估总价",
+        "weekdayNights": "工作日",
+        "weekendNights": "周末",
+        "highSeasonNights": "旺季",
+        "priceNote": "预估价格，不含10%税费",
+        "selectDates": "选择日期以查看价格预估",
+        "whatsappMessageVilla": "您好，我想预订{{villaName}}。%0A%0A入住：{{checkIn}}%0A退房：{{checkOut}}%0A客人数：{{guests}}%0A%0A预估{{nights}}晚费用：{{price}}%0A%0A请确认是否有空房。"
     },
     "about": {
         "title": "关于我们",
@@ -471,7 +484,9 @@
         "success": "成功!",
         "required": "必填",
         "save": "保存",
+        "saved": "已保存",
         "share": "分享",
+        "copied": "链接已复制！",
         "perNight": "/ 晚",
         "reviews": "评价"
     },

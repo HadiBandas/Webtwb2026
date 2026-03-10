@@ -478,7 +478,17 @@
         "noCharge": "You won't be charged yet",
         "serviceFee": "Service fee",
         "cleaningFee": "Cleaning fee",
-        "included": "Included"
+        "included": "Included",
+        "total": "Total",
+        "nights": "nights",
+        "night": "night",
+        "estimatedTotal": "Estimated Total",
+        "weekdayNights": "Weekday",
+        "weekendNights": "Weekend",
+        "highSeasonNights": "High Season",
+        "priceNote": "Estimated price, excludes 10% tax",
+        "selectDates": "Select dates to see price estimate",
+        "whatsappMessageVilla": "Hello, I would like to book {{villaName}}.%0A%0ACheck-in: {{checkIn}}%0ACheck-out: {{checkOut}}%0AGuests: {{guests}}%0A%0AEstimated {{nights}} night(s): {{price}}%0A%0APlease confirm availability."
     },
     "common": {
         "learnMore": "Learn More",
@@ -491,7 +501,9 @@
         "success": "Success!",
         "required": "Required",
         "save": "Save",
+        "saved": "Saved",
         "share": "Share",
+        "copied": "Link copied!",
         "perNight": "/ night",
         "reviews": "reviews"
     },

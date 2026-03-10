@@ -469,7 +469,17 @@
         "noCharge": "Anda belum akan dikenakan biaya",
         "serviceFee": "Biaya layanan",
         "cleaningFee": "Biaya kebersihan",
-        "included": "Termasuk"
+        "included": "Termasuk",
+        "total": "Total",
+        "nights": "malam",
+        "night": "malam",
+        "estimatedTotal": "Estimasi Total",
+        "weekdayNights": "Weekday",
+        "weekendNights": "Weekend",
+        "highSeasonNights": "High Season",
+        "priceNote": "Estimasi harga, belum termasuk pajak 10%",
+        "selectDates": "Pilih tanggal untuk melihat estimasi harga",
+        "whatsappMessageVilla": "Halo, saya ingin memesan {{villaName}}.%0A%0ACheck-in: {{checkIn}}%0ACheck-out: {{checkOut}}%0ATamu: {{guests}}%0A%0AEstimasi {{nights}} malam: {{price}}%0A%0AMohon konfirmasi ketersediaan."
     },
     "common": {
         "learnMore": "Pelajari Lebih Lanjut",
@@ -482,7 +492,9 @@
         "success": "Berhasil!",
         "required": "Wajib diisi",
         "save": "Simpan",
+        "saved": "Disimpan",
         "share": "Bagikan",
+        "copied": "Tautan disalin!",
         "perNight": "/ malam",
         "reviews": "ulasan"
     },

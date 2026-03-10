@@ -555,6 +555,9 @@ export function VillaDetailPage({ villaId }: VillaDetailPageProps) {
                         <div className="sticky top-28 md:top-32 z-20 w-full">
                             <BookingCard
                                 price={currentVilla.priceWeekday || currentVilla.price}
+                                priceWeekday={currentVilla.priceWeekday}
+                                priceWeekend={currentVilla.priceWeekend}
+                                priceHighSeason={currentVilla.priceHighSeason}
                                 rating={4.9}
                                 reviews={45}
                                 villaId={currentVilla.id}
