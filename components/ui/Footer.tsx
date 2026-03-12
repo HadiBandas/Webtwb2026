@@ -3,6 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Mountain, Facebook, Instagram, Youtube, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { Logo } from './Logo';
+import { trackSocialClick, trackPhoneClick } from '../../utils/analytics';
 
 interface FooterProps {
     navigate: (page: string) => void;
@@ -14,9 +15,9 @@ export function Footer({ navigate, isHomePage = false }: FooterProps) {
     const currentYear = new Date().getFullYear();
 
     const socialLinks = [
-        { icon: Facebook, href: 'https://www.facebook.com/tamanwisatabougenvillebdg/?locale=id_ID' },
-        { icon: Instagram, href: 'https://www.instagram.com/tamanwisatabougenville/' },
-        { icon: Youtube, href: 'https://www.youtube.com/@tamanwisatabougenville' }
+        { icon: Facebook, href: 'https://www.facebook.com/tamanwisatabougenvillebdg/?locale=id_ID', platform: 'facebook' },
+        { icon: Instagram, href: 'https://www.instagram.com/tamanwisatabougenville/', platform: 'instagram' },
+        { icon: Youtube, href: 'https://www.youtube.com/@tamanwisatabougenville', platform: 'youtube' }
     ];
 
     return (
@@ -32,12 +33,13 @@ export function Footer({ navigate, isHomePage = false }: FooterProps) {
                             {t('footer.tagline')}
                         </p>
                         <div className="flex gap-4">
-                            {socialLinks.map(({ icon: Icon, href }, i) => (
+                            {socialLinks.map(({ icon: Icon, href, platform }, i) => (
                                 <a
                                     key={i}
                                     href={href}
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={() => trackSocialClick(platform)}
                                     className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-gold hover:border-gold hover:text-forest-dark transition-all duration-300 group"
                                 >
                                     <Icon size={18} />
@@ -113,7 +115,7 @@ export function Footer({ navigate, isHomePage = false }: FooterProps) {
                                 <Phone size={18} className="text-gold mt-1 shrink-0" />
                                 <div className="flex flex-col">
                                     <span className="text-xs uppercase tracking-wider mb-1 text-white/40">{t('footer.reception', 'Reception')}</span>
-                                    <span className="hover:text-white transition-colors cursor-pointer">+62 811 910 2003</span>
+                                    <a href="tel:+628119102003" onClick={trackPhoneClick} className="hover:text-white transition-colors cursor-pointer">+62 811 910 2003</a>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 text-white/60">

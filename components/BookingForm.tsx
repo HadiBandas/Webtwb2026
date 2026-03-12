@@ -6,7 +6,7 @@ import {
 } from 'lucide-react';
 import { BookingState, Villa, Package } from '../types';
 import { VILLAS, PACKAGES } from '../constants';
-import { trackEvent, trackBookingStart } from '../utils/analytics';
+import { trackEvent, trackBookingStart, trackBookingStep, trackDateSelected, trackBookingSubmit } from '../utils/analytics';
 
 interface BookingFormProps {
   initialVilla?: string;
@@ -44,11 +44,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ initialVilla, initialPackage 
     if (state.step === 2 && (!state.checkIn || !state.checkOut)) return;
 
     // Track step completion
-    trackEvent({
-      action: 'booking_step_' + state.step,
-      category: 'engagement',
-      label: state.itemId
-    });
+    trackBookingStep(state.step, state.itemId);
 
     setState(s => ({ ...s, step: s.step + 1 }));
   };
@@ -59,13 +55,8 @@ const BookingForm: React.FC<BookingFormProps> = ({ initialVilla, initialPackage 
     e.preventDefault();
     if (!state.termsAccepted) return;
 
-    // Track submission
-    trackEvent({
-      action: 'booking_submit',
-      category: 'conversion',
-      label: state.type,
-      value: calculateEstimate()
-    });
+    // Track submission across all platforms (GA4, GTM, FB, TikTok)
+    trackBookingSubmit(state.type, calculateEstimate());
 
     setTimeout(() => {
       setBookingRefId(`TWB-${Math.floor(1000 + Math.random() * 9000)}`);
@@ -278,7 +269,10 @@ const BookingForm: React.FC<BookingFormProps> = ({ initialVilla, initialPackage 
                   <input
                     type="date"
                     value={state.checkIn}
-                    onChange={(e) => setState(s => ({ ...s, checkIn: e.target.value }))}
+                    onChange={(e) => {
+                      setState(s => ({ ...s, checkIn: e.target.value }));
+                      if (e.target.value) trackDateSelected('check_in', e.target.value, state.itemId);
+                    }}
                     className="w-full p-4 bg-white border border-gray-200 focus:border-gold focus:ring-0 text-forest-dark uppercase tracking-wider"
                   />
                 </div>
@@ -287,7 +281,10 @@ const BookingForm: React.FC<BookingFormProps> = ({ initialVilla, initialPackage 
                   <input
                     type="date"
                     value={state.checkOut}
-                    onChange={(e) => setState(s => ({ ...s, checkOut: e.target.value }))}
+                    onChange={(e) => {
+                      setState(s => ({ ...s, checkOut: e.target.value }));
+                      if (e.target.value) trackDateSelected('check_out', e.target.value, state.itemId);
+                    }}
                     className="w-full p-4 bg-white border border-gray-200 focus:border-gold focus:ring-0 text-forest-dark uppercase tracking-wider"
                   />
                 </div>

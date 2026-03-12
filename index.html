@@ -9,11 +9,28 @@
   <!-- Security Headers (only ones that work via meta tag) -->
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
-    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://aistudiocdn.com;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval'
+      https://www.googletagmanager.com
+      https://www.google-analytics.com
+      https://connect.facebook.net
+      https://analytics.tiktok.com
+      https://js-agent.newrelic.com
+      https://claritycdn.microsoft.com
+      https://www.clarity.ms
+      https://aistudiocdn.com;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     font-src 'self' https://fonts.gstatic.com;
     img-src 'self' data: https: blob:;
-    connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://api.frankfurter.app;
+    connect-src 'self'
+      https://www.google-analytics.com
+      https://analytics.google.com
+      https://region1.google-analytics.com
+      https://www.googletagmanager.com
+      https://api.frankfurter.app
+      https://analytics.tiktok.com
+      https://www.clarity.ms
+      https://e.clarity.ms
+      https://connect.facebook.net;
     base-uri 'self';
     form-action 'self' https://wa.me;
   " />

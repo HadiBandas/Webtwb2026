@@ -14,7 +14,7 @@ import { FadeIn, Stagger, ScaleIn } from '../components/ui/animations';
 
 import { SEOHead } from '../components/ui/SEOHead';
 import { OrganizationSchema, LocalBusinessSchema } from '../components/ui/StructuredData';
-import { trackPageView } from '../utils/analytics';
+import { trackPageView, trackBookingStart } from '../utils/analytics';
 import { optimizeImage } from '../utils/imageOptimizer';
 import { useCurrency } from '../hooks/useCurrency';
 
@@ -39,6 +39,7 @@ export function HomePage() {
     };
 
     const handleBookNow = () => {
+        trackBookingStart('HomePage Book Now Button');
         window.open(`https://wa.me/628119102003?text=${encodeURIComponent(t('home.whatsapp.inquiry'))}`, '_blank');
     };
 

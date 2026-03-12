@@ -55,8 +55,12 @@ export default {
         'scale-slow': 'scaleSlow 20s ease-in-out infinite alternate',
         'pulse-subtle': 'pulseSubtle 3s ease-in-out infinite',
         'slow-push': 'slowPush 20s ease-out forwards',
+        'shimmer': 'shimmer 2.5s infinite',
       },
       keyframes: {
+        shimmer: {
+          '100%': { transform: 'translateX(200%)' },
+        },
         fadeUp: {
           '0%': { opacity: '0', transform: 'translateY(30px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },

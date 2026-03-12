@@ -4,7 +4,7 @@ import { MapPin, Users, BedDouble, ArrowRight, Star, Home, Sparkles, TreePine, H
 import { Villa } from '../types';
 import { VILLAS } from '../constants';
 import { SEOHead } from './ui/SEOHead';
-import { trackPageView } from '../utils/analytics';
+import { trackPageView, trackEvent } from '../utils/analytics';
 
 interface VillasPageProps {
   lang: 'id' | 'en' | 'zh';
@@ -87,19 +87,6 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
         customBadge: 'Secluded Villa'
       },
       {
-        id: 'dandenong',
-        name: 'Dandenong Villas',
-        description: {
-          id: 'Koleksi villa American Farmhouse (Olinda, Selby).',
-          en: 'American Farmhouse collection (Olinda, Selby).',
-          zh: '美式农舍系列（Olinda, Selby）。',
-          de: 'Amerikanische Farmhouse-Kollektion (Olinda, Selby).'
-        },
-        image: '/images/villas/dandenong/facade-dpv.webp',
-        type: 'group',
-        filterFn: (v) => v.cluster === 'Dandenong Villas'
-      },
-      {
         id: 'emerald',
         name: 'Emerald Villas',
         description: {
@@ -112,6 +99,19 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
         type: 'group',
         filterFn: (v) => v.cluster === 'Emerald Villas',
         customBadge: 'Stand Alone'
+      },
+      {
+        id: 'dandenong',
+        name: 'Dandenong Villas',
+        description: {
+          id: 'Koleksi villa American Farmhouse (Olinda, Selby).',
+          en: 'American Farmhouse collection (Olinda, Selby).',
+          zh: '美式农舍系列（Olinda, Selby）。',
+          de: 'Amerikanische Farmhouse-Kollektion (Olinda, Selby).'
+        },
+        image: '/images/villas/dandenong/facade-dpv.webp',
+        type: 'group',
+        filterFn: (v) => v.cluster === 'Dandenong Villas'
       },
       {
         id: 'provincial',
@@ -194,10 +194,11 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
 
   const handleTabChange = (tabId: string) => {
     if (tabId === activeTab) return;
+    trackEvent({ action: 'villa_filter_tab', category: 'engagement', label: tabId });
     setIsTransitioning(true);
     setTimeout(() => {
       setActiveTab(tabId as any);
-      setActiveCluster(null); // Reset cluster on tab change
+      setActiveCluster(null);
       setIsTransitioning(false);
     }, 300);
   };
@@ -205,10 +206,12 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
   const handleClusterClick = (cluster: Cluster) => {
     if (cluster.type === 'direct' && cluster.villaId) {
       // Navigate directly to villa detail
+      trackEvent({ action: 'villa_card_click', category: 'engagement', label: cluster.name });
       const event = new CustomEvent('navigate-villa', { detail: cluster.villaId });
       window.dispatchEvent(event);
     } else {
       // Enter group view
+      trackEvent({ action: 'villa_cluster_click', category: 'engagement', label: cluster.name });
       setIsTransitioning(true);
       setTimeout(() => {
         setActiveCluster(cluster.id);
@@ -349,14 +352,22 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
 
                   {/* Type Badge */}
                   <div className="absolute top-4 left-4">
-                    <span className={`px-3 py-1 text-xs font-medium tracking-wider uppercase rounded-sm shadow-sm backdrop-blur-md ${cluster.type === 'direct' || cluster.customBadge ? 'bg-gold text-white' : 'bg-white/90 text-forest-dark'}`}>
-                      {cluster.customBadge
-                        ? cluster.customBadge
-                        : cluster.type === 'direct'
-                        ? t('villas.singleUnit', 'Single Unit')
-                        : t('villas.cluster', 'Cluster')
-                      }
-                    </span>
+                    <div className="relative overflow-hidden rounded-sm shadow-[0_4px_12px_rgba(0,0,0,0.5)] border border-white/20">
+                      <span className={`block px-3 py-1 text-xs font-medium tracking-wider uppercase backdrop-blur-md ${cluster.type === 'direct' || cluster.customBadge ? 'bg-forest-green/95 text-white' : 'bg-white/90 text-forest-dark'}`}>
+                        {cluster.customBadge
+                          ? cluster.customBadge
+                          : cluster.type === 'direct'
+                          ? t('villas.singleUnit', 'Single Unit')
+                          : t('villas.cluster', 'Cluster')
+                        }
+                      </span>
+                      {/* Shine effect */}
+                      {(cluster.type === 'direct' || cluster.customBadge) && (
+                        <div className="absolute inset-0 -translate-x-[150%] animate-shimmer pointer-events-none">
+                          <div className="w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
+                        </div>
+                      )}
+                    </div>
                   </div>
 
                   {/* Capacity Badge (Replaces Price) */}

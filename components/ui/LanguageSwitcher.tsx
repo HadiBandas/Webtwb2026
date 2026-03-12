@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Globe, Check } from 'lucide-react';
+import { trackLanguageChange } from '../../utils/analytics';
 
 interface Language {
     code: string;
@@ -30,6 +31,7 @@ export function LanguageSwitcher({ isScrolled = false, isHomePage = false }: Lan
 
     const handleLanguageChange = (langCode: string) => {
         i18n.changeLanguage(langCode);
+        trackLanguageChange(langCode);
         setIsOpen(false);
     };
 

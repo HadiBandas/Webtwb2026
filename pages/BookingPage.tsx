@@ -5,7 +5,7 @@ import { CheckCircle, MessageCircle, Star, Shield, Clock, ArrowRight, Users, Hom
 import { FadeIn, Stagger, ScaleIn } from '../components/ui/animations';
 import { SEOHead } from '../components/ui/SEOHead';
 import { StructuredData } from '../components/ui/StructuredData';
-import { trackPageView, trackWhatsAppBooking } from '../utils/analytics';
+import { trackPageView, trackWhatsAppBooking, trackOTAClick, trackAirbnbVillaClick, trackSpecialistClick } from '../utils/analytics';
 import { VILLAS } from '../constants';
 
 // OTA Logo Components
@@ -198,6 +198,7 @@ export function BookingPage() {
                                     href={`https://wa.me/${specialist.phone}?text=${encodeURIComponent(t(`bookingPage.specialists.messages.${specialist.key}`))}`}
                                     target="_blank"
                                     rel="noreferrer"
+                                    onClick={() => trackSpecialistClick(specialist.name)}
                                     className="flex items-center gap-4 md:flex-col md:text-center bg-white p-4 md:p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group"
                                 >
                                     <div className="w-12 h-12 md:w-16 md:h-16 bg-forest/10 rounded-full flex items-center justify-center text-forest font-serif text-lg md:text-xl group-hover:bg-forest group-hover:text-white transition-colors flex-shrink-0">
@@ -275,6 +276,7 @@ export function BookingPage() {
                                     href={platform.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={() => trackOTAClick(platform.name)}
                                     className={`${platform.bgColor} text-white px-4 py-3 rounded-xl text-sm font-semibold hover:opacity-90 hover:scale-[1.02] transition-all text-center shadow-sm`}
                                 >
                                     {platform.name}
@@ -282,7 +284,7 @@ export function BookingPage() {
                             ) : (
                                 <button
                                     key={platform.name}
-                                    onClick={platform.action}
+                                    onClick={() => { platform.action?.(); trackOTAClick(platform.name); }}
                                     className={`${platform.bgColor} text-white px-4 py-3 rounded-xl text-sm font-semibold hover:opacity-90 hover:scale-[1.02] transition-all text-center shadow-sm`}
                                 >
                                     {platform.name}
@@ -421,6 +423,7 @@ export function BookingPage() {
                                                     href={villa.url}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
+                                                    onClick={() => trackAirbnbVillaClick(villa.name)}
                                                     className="group p-3 border border-gray-100 rounded-xl hover:border-forest/30 hover:shadow-md transition-all flex items-center justify-between bg-white text-left"
                                                 >
                                                     <span className="text-sm font-medium text-gray-700 group-hover:text-forest transition-colors">

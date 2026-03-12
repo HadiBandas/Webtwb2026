@@ -9,7 +9,7 @@ import { VILLAS } from '../constants';
 import useEmblaCarousel from 'embla-carousel-react';
 import { SEOHead } from '../components/ui/SEOHead';
 import { StructuredData } from '../components/ui/StructuredData';
-import { trackPageView, trackVillaView } from '../utils/analytics';
+import { trackPageView, trackVillaView, trackWishlist, trackShare, trackGalleryOpen } from '../utils/analytics';
 import { optimizeImage } from '../utils/imageOptimizer';
 import {
     generateVillaKeywords,
@@ -130,7 +130,9 @@ export function VillaDetailPage({ villaId }: VillaDetailPageProps) {
         }
 
         localStorage.setItem('twb_wishlist', JSON.stringify(wishlist));
-        setIsWishlisted(!isWishlisted);
+        const next = !isWishlisted;
+        setIsWishlisted(next);
+        trackWishlist(currentVilla?.name || villaId, next ? 'add' : 'remove');
     };
 
     // Track page view and villa view on mount
@@ -163,6 +165,7 @@ export function VillaDetailPage({ villaId }: VillaDetailPageProps) {
     const handleImageClick = (index: number) => {
         setGalleryStartIndex(index);
         setGalleryOpen(true);
+        if (index === 0) trackGalleryOpen(currentVilla?.name || villaId);
     };
 
     const handleShare = async () => {
@@ -172,6 +175,8 @@ export function VillaDetailPage({ villaId }: VillaDetailPageProps) {
             url: window.location.href,
         };
 
+        trackShare(currentVilla.name);
+
         if (navigator.share) {
             try {
                 await navigator.share(shareData);
@@ -179,7 +184,6 @@ export function VillaDetailPage({ villaId }: VillaDetailPageProps) {
                 console.log('Error sharing:', err);
             }
         } else {
-            // Fallback: Copy to clipboard
             try {
                 await navigator.clipboard.writeText(window.location.href);
                 setShareTooltip(t('common.copied', 'Link copied!'));

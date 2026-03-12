@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Leaf, Droplets, Users, Recycle, Sun, Heart } from 'lucide-react';
 import { SEOHead } from '../components/ui/SEOHead';
 import { Footer } from '../components/ui/Footer';
 import { FadeIn, TextReveal, Stagger, ScaleIn } from '../components/ui/animations';
+import { trackPageView } from '../utils/analytics';
 
 interface SustainabilityPageProps {
     navigate: (page: string) => void;
@@ -11,6 +12,10 @@ interface SustainabilityPageProps {
 
 export function SustainabilityPage({ navigate }: SustainabilityPageProps) {
     const { t } = useTranslation();
+
+    useEffect(() => {
+        trackPageView('/sustainability', 'Sustainability | Taman Wisata Bougenville');
+    }, []);
 
     const pillars = [
         {
