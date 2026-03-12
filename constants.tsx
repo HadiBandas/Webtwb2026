@@ -264,6 +264,84 @@ export const MOOI_LAKE_VILLAS: Villa[] = [
 
 export const EMERALD_VILLAS: Villa[] = [
   {
+    id: 'emerald-01',
+    name: 'Emerald 01 (Unit Bawah)',
+    localizedName: {
+      id: 'Emerald 01 (Unit Bawah)',
+      en: 'Emerald 01 (Lower Unit)',
+      zh: 'Emerald 01 (下层单元)',
+      de: 'Emerald 01 (Untere Einheit)'
+    },
+    cluster: 'Emerald Villas',
+    capacity: '7 orang',
+    bedrooms: 2,
+    area: 135.33,
+    toilets: 2,
+    price: 8750000,
+    priceWeekday: 8750000,
+    priceWeekend: 10000000,
+    priceHighSeason: 12000000,
+    category: 'luxury',
+    features: ['American Farmhouse', 'Garden Access', 'Patio'],
+    image: '/images/optimized/villas/emerald-01/hero.webp',
+    images: [
+      '/images/optimized/villas/emerald-01/hero.webp',
+      '/images/villas/emerald-01/DSC04218WEB.jpg',
+      '/images/villas/emerald-01/DSC03984WEB.jpg',
+      '/images/villas/emerald-01/DSC04104WEB.jpg',
+      '/images/villas/emerald-01/DSC04151WEB.jpg',
+      '/images/villas/emerald-01/DSC04186WEB.jpg',
+      '/images/villas/emerald-01/DSC04416WEB.jpg',
+      '/images/villas/emerald-01/DSC04902WEB.jpg',
+      '/images/villas/emerald-01/DSC04918.WEB.jpg'
+    ],
+    bedConfiguration: [
+      { room: 1, beds: '1 tempat tidur King (180 x 200 cm) dan 1 tempat tidur Single (90 x 200 cm)' },
+      { room: 2, beds: '2 tempat tidur Queen (160 x 200 cm) masing-masing' }
+    ],
+    facilities: {
+      room: [
+        { id: '2 kamar tidur', en: '2 Bedrooms', zh: '2间卧室', de: '2 Schlafzimmer' },
+        { id: '2 toilet', en: '2 Toilets', zh: '2个洗手间', de: '2 Toiletten' }
+      ],
+      amenities: [
+        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
+        { id: 'Smart TV', en: 'Smart TV', zh: '智能电视', de: 'Smart TV' },
+        { id: 'Wifi', en: 'Wifi', zh: '无线网络', de: 'WLAN' },
+        { id: 'Kulkas', en: 'Refrigerator', zh: '冰箱', de: 'Kühlschrank' },
+        { id: 'Microwave', en: 'Microwave', zh: '微波炉', de: 'Mikrowelle' },
+        { id: 'Mesin kopi', en: 'Coffee machine', zh: '咖啡机', de: 'Kaffeemaschine' },
+        { id: 'Kompor listrik', en: 'Electric stove', zh: '电炉', de: 'Elektroherd' },
+        { id: 'Dispenser', en: 'Water dispenser', zh: '饮水机', de: 'Wasserspender' }
+      ],
+      meals: [
+        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
+        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
+        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
+        { id: 'Welcome fruits', en: 'Welcome fruits', zh: '迎宾水果', de: 'Begrüßungsfrüchte' },
+        { id: 'Air mineral', en: 'Mineral water', zh: '矿泉水', de: 'Mineralwasser' },
+        { id: 'Kopi kapsul, teh, dan gula', en: 'Capsule coffee, tea, and sugar', zh: '胶囊咖啡、茶和糖', de: 'Kapselkaffee, Tee und Zucker' }
+      ],
+      natural: [
+        { id: 'Playground', en: 'Playground', zh: '游乐场', de: 'Spielplatz' },
+        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
+        { id: '2 kolam renang umum', en: '2 Public swimming pools', zh: '2个公共游泳池', de: '2 Öffentliche Schwimmbäder' },
+        { id: 'Area bermain di sungai', en: 'River play area', zh: '河流戏水区', de: 'Flussspielbereich' }
+      ]
+    },
+    policies: {
+      checkIn: '15.00 WIB',
+      checkOut: '12.00 WIB',
+      smokeFree: true,
+      specialNotes: [
+        { id: 'Tidak menyediakan dan/atau menggunakan ekstra bed', en: 'Does not provide and/or use extra bed', zh: '不提供和/或不使用加床', de: 'Kein Zustellbett verfügbar' },
+        { id: 'Tidak dapat menampung kapasitas lebih dari 7 orang', en: 'Cannot accommodate more than 7 people', zh: '最多只能容纳7人', de: 'Kann nicht mehr als 7 Personen beherbergen' },
+        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
+      ]
+    },
+    description: { id: 'Villa bergaya American Farmhouse dengan akses langsung ke taman. Unit bawah yang nyaman untuk keluarga.', en: 'American Farmhouse style villa with direct garden access. Comfortable lower unit for families.', zh: '美式农舍风格别墅，可直接通往花园。适合家庭的舒适下层单元。', de: 'Villa im amerikanischen Farmhouse-Stil mit direktem Gartenzugang. Komfortable untere Einheit für Familien.' }
+  },
+  {
     id: 'emerald-02',
     name: 'Emerald 02 (Unit Atas)',
     localizedName: {
@@ -339,83 +417,6 @@ export const EMERALD_VILLAS: Villa[] = [
       ]
     },
     description: { id: 'Villa bergaya American Farmhouse dengan pemandangan pegunungan yang menakjubkan. Unit atas dengan balkon luas.', en: 'American Farmhouse style villa with stunning mountain views. Upper unit with spacious balcony.', zh: '美式农舍风格别墅，享有迷人的山景。带宽敞阳台的上层单元。', de: 'Villa im amerikanischen Farmhouse-Stil mit atemberaubendem Bergblick. Obere Einheit mit großem Balkon.' }
-  },
-  {
-    id: 'emerald-01',
-    name: 'Emerald 01 (Unit Bawah)',
-    localizedName: {
-      id: 'Emerald 01 (Unit Bawah)',
-      en: 'Emerald 01 (Lower Unit)',
-      zh: 'Emerald 01 (下层单元)',
-      de: 'Emerald 01 (Untere Einheit)'
-    },
-    cluster: 'Emerald Villas',
-    capacity: '7 orang',
-    bedrooms: 2,
-    area: 135.33,
-    toilets: 2,
-    price: 8750000,
-    priceWeekday: 8750000,
-    priceWeekend: 10000000,
-    priceHighSeason: 12000000,
-    category: 'luxury',
-    features: ['American Farmhouse', 'Garden Access', 'Patio'],
-    image: '/images/villas/emerald-01/hero.jpg',
-    images: [
-      '/images/villas/emerald-01/DSC04218WEB.jpg',
-      '/images/villas/emerald-01/DSC03984WEB.jpg',
-      '/images/villas/emerald-01/DSC04104WEB.jpg',
-      '/images/villas/emerald-01/DSC04151WEB.jpg',
-      '/images/villas/emerald-01/DSC04186WEB.jpg',
-      '/images/villas/emerald-01/DSC04416WEB.jpg',
-      '/images/villas/emerald-01/DSC04902WEB.jpg',
-      '/images/villas/emerald-01/DSC04918.WEB.jpg'
-    ],
-    bedConfiguration: [
-      { room: 1, beds: '1 tempat tidur King (180 x 200 cm) dan 1 tempat tidur Single (90 x 200 cm)' },
-      { room: 2, beds: '2 tempat tidur Queen (160 x 200 cm) masing-masing' }
-    ],
-    facilities: {
-      room: [
-        { id: '2 kamar tidur', en: '2 Bedrooms', zh: '2间卧室', de: '2 Schlafzimmer' },
-        { id: '2 toilet', en: '2 Toilets', zh: '2个洗手间', de: '2 Toiletten' }
-      ],
-      amenities: [
-        { id: 'Water heater', en: 'Water heater', zh: '热水器', de: 'Wasserkocher' },
-        { id: 'Smart TV', en: 'Smart TV', zh: '智能电视', de: 'Smart TV' },
-        { id: 'Wifi', en: 'Wifi', zh: '无线网络', de: 'WLAN' },
-        { id: 'Kulkas', en: 'Refrigerator', zh: '冰箱', de: 'Kühlschrank' },
-        { id: 'Microwave', en: 'Microwave', zh: '微波炉', de: 'Mikrowelle' },
-        { id: 'Mesin kopi', en: 'Coffee machine', zh: '咖啡机', de: 'Kaffeemaschine' },
-        { id: 'Kompor listrik', en: 'Electric stove', zh: '电炉', de: 'Elektroherd' },
-        { id: 'Dispenser', en: 'Water dispenser', zh: '饮水机', de: 'Wasserspender' }
-      ],
-      meals: [
-        { id: 'Sarapan', en: 'Breakfast', zh: '早餐', de: 'Frühstück' },
-        { id: 'Makan siang', en: 'Lunch', zh: '午餐', de: 'Mittagessen' },
-        { id: 'Makan malam', en: 'Dinner', zh: '晚餐', de: 'Abendessen' },
-        { id: 'Welcome fruits', en: 'Welcome fruits', zh: '迎宾水果', de: 'Begrüßungsfrüchte' },
-        { id: 'Air mineral', en: 'Mineral water', zh: '矿泉水', de: 'Mineralwasser' },
-        { id: 'Kopi kapsul, teh, dan gula', en: 'Capsule coffee, tea, and sugar', zh: '胶囊咖啡、茶和糖', de: 'Kapselkaffee, Tee und Zucker' }
-      ],
-      natural: [
-        { id: 'Playground', en: 'Playground', zh: '游乐场', de: 'Spielplatz' },
-        { id: 'Water playing', en: 'Water playing', zh: '戏水区', de: 'Wasserspiele' },
-        { id: '2 kolam renang umum', en: '2 Public swimming pools', zh: '2个公共游泳池', de: '2 Öffentliche Schwimmbäder' },
-        { id: 'Area bermain di sungai', en: 'River play area', zh: '河流戏水区', de: 'Flussspielbereich' }
-      ]
-    },
-    policies: {
-      checkIn: '15.00 WIB',
-      checkOut: '12.00 WIB',
-      smokeFree: true,
-      specialNotes: [
-        { id: 'Tidak menyediakan dan/atau menggunakan ekstra bed', en: 'Does not provide and/or use extra bed', zh: '不提供和/或不使用加床', de: 'Kein Zustellbett verfügbar' },
-        { id: 'Tidak dapat menampung kapasitas lebih dari 7 orang', en: 'Cannot accommodate more than 7 people', zh: '最多只能容纳7人', de: 'Kann nicht mehr als 7 Personen beherbergen' },
-        { id: 'Harga belum termasuk pajak 10%', en: 'Price excludes 10% tax', zh: '价格不含10%的税', de: 'Preis exklusive 10% Steuer' }
-      ]
-    },
-    description: { id: 'Villa bergaya American Farmhouse dengan akses langsung ke taman. Unit bawah yang nyaman untuk keluarga.', en: 'American Farmhouse style villa with direct garden access. Comfortable lower unit for families.', zh: '美式农舍风格别墅，可直接通往花园。适合家庭的舒适下层单元。', de: 'Villa im amerikanischen Farmhouse-Stil mit direktem Gartenzugang. Komfortable untere Einheit für Familien.' }
   }
 ];
 

@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { PageHero } from '../components/ui/PageHero';
-import { CheckCircle, MessageCircle, Star, Shield, Clock, ArrowRight, Users, Home, CreditCard, Wallet, Building2, Smartphone } from 'lucide-react';
+import { CheckCircle, MessageCircle, Star, Shield, Clock, ArrowRight, Users, Home, CreditCard, Wallet, Building2, Smartphone, X } from 'lucide-react';
 import { FadeIn, Stagger, ScaleIn } from '../components/ui/animations';
 import { SEOHead } from '../components/ui/SEOHead';
 import { StructuredData } from '../components/ui/StructuredData';
@@ -15,8 +15,45 @@ const BookingComLogo = () => (
     </svg>
 );
 
+const airbnbProperties = {
+  "Luxury's Collection": [
+    { name: "Forest House Villa", url: "https://airbnb.com/h/kozyforesthousevilla" },
+    { name: "Mooi Lake House", url: "https://airbnb.com/h/kozymooilakehouse" },
+    { name: "Gordes Villa", url: "https://airbnb.com/h/kozygordesvilla" },
+    { name: "Roussillon Villa", url: "https://airbnb.com/h/kozyroussillonvilla" },
+    { name: "Lourmarin Villa", url: "https://airbnb.com/h/kozylourmarinvilla" },
+    { name: "Olinda Villa", url: "https://airbnb.com/h/kozyolindavilla" },
+    { name: "Selby Villa", url: "https://airbnb.com/h/kozyselbyvilla" }
+  ],
+  "Log Cabin": [
+    { name: "Pinus Villa", url: "https://airbnb.com/h/kozypinusvilla" },
+    { name: "Suren Villa", url: "https://airbnb.com/h/kozysurenvilla" },
+    { name: "Puspa Villa", url: "https://airbnb.com/h/kozypuspavilla" },
+    { name: "Campaka Villa", url: "https://airbnb.com/h/kozycampakavilla" }
+  ],
+  "Couples Only": [
+    { name: "Hana Villa", url: "https://airbnb.com/h/kozyhanavilla" },
+    { name: "Fiore Villa", url: "https://airbnb.com/h/kozyfiorevilla" },
+    { name: "Blomst Villa", url: "https://airbnb.com/h/kozyblomstvilla" },
+    { name: "Abutilon Cottages 1", url: "https://airbnb.com/h/kozyabutilonvilla" },
+    { name: "Agaphantus Cottages 2", url: "https://airbnb.com/h/kozyagaphantusvilla" },
+    { name: "Allamanda Cottages 3", url: "https://airbnb.com/h/kozyallamandavilla" },
+    { name: "Azalea Cottages 4", url: "https://airbnb.com/h/kozyazaleavilla" },
+    { name: "Buddleja Cottages 5", url: "https://airbnb.com/h/kozybuddlejavilla" },
+    { name: "Calathea Cottages 6", url: "https://airbnb.com/h/kozycalatheavilla" },
+    { name: "Russellia Villa", url: "https://airbnb.com/h/kozyrusseliavilla" },
+    { name: "Camelia Cottages 8", url: "https://airbnb.com/h/kozycameliavilla" },
+    { name: "Jacaranda Cottages 9", url: "https://airbnb.com/h/kozyjacarandavilla" },
+    { name: "Kigelia Cottages 10", url: "https://airbnb.com/h/kozykigeliavilla" },
+    { name: "Lophantera Cottages 11", url: "https://airbnb.com/h/kozylophanteravilla" },
+    { name: "Monstera Cottages 12", url: "https://airbnb.com/h/kozymonsteravilla" },
+    { name: "Philodendron Cottages 13", url: "https://airbnb.com/h/kozyphilodendronvilla" }
+  ]
+};
+
 export function BookingPage() {
     const { t, i18n } = useTranslation();
+    const [isAirbnbModalOpen, setIsAirbnbModalOpen] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -38,14 +75,14 @@ export function BookingPage() {
 
     // OTA platforms data with brand colors
     const otaPlatforms = [
-        { name: 'Booking.com', url: 'https://www.booking.com/hotel/id/taman-wisata-bougenville.html', bgColor: 'bg-[#003580]' },
-        { name: 'Airbnb', url: 'https://www.airbnb.com', bgColor: 'bg-[#FF5A5F]' },
-        { name: 'Traveloka', url: 'https://www.traveloka.com', bgColor: 'bg-[#0064D2]' },
-        { name: 'Tiket.com', url: 'https://www.tiket.com', bgColor: 'bg-[#0770CD]' },
-        { name: 'Agoda', url: 'https://www.agoda.com', bgColor: 'bg-[#5391D0]' },
-        { name: 'Expedia', url: 'https://www.expedia.com', bgColor: 'bg-[#FFCC00] !text-gray-900' },
-        { name: 'VRBO', url: 'https://www.vrbo.com', bgColor: 'bg-[#0F4A8A]' },
-        { name: 'Trip.com', url: 'https://www.trip.com', bgColor: 'bg-[#287DFA]' }
+        { name: 'Booking.com', url: 'https://www.booking.com/hotel/id/log-home-villas-at-taman-wisata-bougenville.id.html?chal_t=1773279361851&force_referer=https%3A%2F%2Fwww.google.com%2F', bgColor: 'bg-[#003580]' },
+        { name: 'Airbnb', action: () => setIsAirbnbModalOpen(true), bgColor: 'bg-[#FF5A5F] cursor-pointer' },
+        { name: 'Traveloka', url: 'https://www.traveloka.com/id-id/hotel/indonesia/taman-wisata-bougenville-by-kozystay-9000007345345', bgColor: 'bg-[#0064D2]' },
+        { name: 'Tiket.com', url: 'https://www.tiket.com/id-id/homes/indonesia/taman-wisata-bougenville-by-kozystay-809001756981085590', bgColor: 'bg-[#0770CD]' },
+        { name: 'Agoda', url: 'https://www.agoda.com/id-id/taman-wisata-bougenville-by-kozystay-h7694987/hotel/bandung-id.html?cid=1844104', bgColor: 'bg-[#5391D0]' },
+        { name: 'Expedia', url: 'https://www.expedia.com/Taman-Wisata-Bougenville-By-Kozystay.h120091278.Hotel-Information', bgColor: 'bg-[#FFCC00] !text-gray-900' },
+        { name: 'VRBO', url: 'https://www.vrbo.com/pdp/lo/120091278?msockid=0e61aa9ad55b66123c67bc4cd4516799', bgColor: 'bg-[#0F4A8A]' },
+        { name: 'Trip.com', url: 'https://id.trip.com/hotels/cimaung-1-hotel-detail-50390122/taman-wisata-bougenville-by-kozystay/', bgColor: 'bg-[#287DFA]' }
     ];
 
     // Payment methods data
@@ -232,15 +269,25 @@ export function BookingPage() {
 
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto">
                         {otaPlatforms.map((platform) => (
-                            <a
-                                key={platform.name}
-                                href={platform.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={`${platform.bgColor} text-white px-4 py-3 rounded-xl text-sm font-semibold hover:opacity-90 hover:scale-[1.02] transition-all text-center shadow-sm`}
-                            >
-                                {platform.name}
-                            </a>
+                            platform.url ? (
+                                <a
+                                    key={platform.name}
+                                    href={platform.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`${platform.bgColor} text-white px-4 py-3 rounded-xl text-sm font-semibold hover:opacity-90 hover:scale-[1.02] transition-all text-center shadow-sm`}
+                                >
+                                    {platform.name}
+                                </a>
+                            ) : (
+                                <button
+                                    key={platform.name}
+                                    onClick={platform.action}
+                                    className={`${platform.bgColor} text-white px-4 py-3 rounded-xl text-sm font-semibold hover:opacity-90 hover:scale-[1.02] transition-all text-center shadow-sm`}
+                                >
+                                    {platform.name}
+                                </button>
+                            )
                         ))}
                     </div>
 
@@ -339,17 +386,57 @@ export function BookingPage() {
                 </div>
             </section>
 
-            {/* Mobile Sticky CTA - Single WhatsApp button only */}
-            <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-100 shadow-xl px-4 py-3">
-                <button
-                    onClick={() => handleWhatsAppBooking()}
-                    className="w-full bg-whatsapp text-white py-3.5 rounded-lg font-bold text-sm flex items-center justify-center gap-2 active:scale-[0.98] transition-transform"
-                >
-                    <MessageCircle size={20} />
-                    {t('bookingPage.chatNow')}
-                </button>
-            </div>
-
+            {/* Airbnb Modal */}
+            {isAirbnbModalOpen && (
+                <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+                    <div 
+                        className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
+                        onClick={() => setIsAirbnbModalOpen(false)}
+                    />
+                    <div className="relative bg-white rounded-2xl w-full max-w-2xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden animate-scale-in">
+                        <div className="flex items-center justify-between p-5 md:p-6 border-b border-gray-100 bg-gray-50/80 backdrop-blur-md">
+                            <div>
+                                <h3 className="font-serif text-xl text-gray-900">Book on Airbnb</h3>
+                                <p className="text-sm text-gray-500 mt-1">Select your preferred villa unit below</p>
+                            </div>
+                            <button 
+                                onClick={() => setIsAirbnbModalOpen(false)}
+                                className="p-2 text-gray-400 hover:text-gray-900 hover:bg-white rounded-full transition-all"
+                            >
+                                <X size={20} />
+                            </button>
+                        </div>
+                        <div className="p-5 md:p-6 overflow-y-auto custom-scrollbar flex-1">
+                            <div className="grid gap-6">
+                                {Object.entries(airbnbProperties).map(([cluster, villas]) => (
+                                    <div key={cluster} className="space-y-3">
+                                        <h4 className="font-medium text-sm text-gray-900 tracking-wide uppercase border-b border-gray-100 pb-2 flex items-center gap-2">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-forest"></div>
+                                            {cluster}
+                                        </h4>
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                            {villas.map(villa => (
+                                                <a 
+                                                    key={villa.name}
+                                                    href={villa.url}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="group p-3 border border-gray-100 rounded-xl hover:border-forest/30 hover:shadow-md transition-all flex items-center justify-between bg-white text-left"
+                                                >
+                                                    <span className="text-sm font-medium text-gray-700 group-hover:text-forest transition-colors">
+                                                        {villa.name}
+                                                    </span>
+                                                    <ArrowRight size={14} className="text-gray-300 group-hover:text-forest group-hover:translate-x-1 transition-all" />
+                                                </a>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
 
         </div>
     );

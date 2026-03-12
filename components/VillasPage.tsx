@@ -118,7 +118,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
           zh: '法国乡村风格别墅（Gordes, Roussillon, Lourmarin）。',
           de: 'Villen im französischen Landhausstil (Gordes, Roussillon, Lourmarin).'
         },
-        image: '/images/villas/roussillon/DSC07418.WEB.jpg',
+        image: '/images/optimized/membership/membership-hero.webp',
         type: 'group',
         filterFn: (v) => v.cluster === 'Provincial Villas'
       },
@@ -346,7 +346,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
                   {/* Type Badge */}
                   <div className="absolute top-4 left-4">
                     <span className={`px-3 py-1 text-xs font-medium tracking-wider uppercase rounded-sm shadow-sm backdrop-blur-md ${cluster.type === 'direct' ? 'bg-gold text-white' : 'bg-white/90 text-forest-dark'}`}>
-                      {cluster.type === 'direct' ? t('villas.singleUnit', 'Single Unit') : t('villas.collection', 'Collection')}
+                      {cluster.type === 'direct' ? t('villas.singleUnit', 'Single Unit') : t('villas.cluster', 'Cluster')}
                     </span>
                   </div>
 
@@ -366,7 +366,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
                   </p>
 
                   <div className="flex items-center justify-center gap-2 text-forest text-xs uppercase tracking-[0.2em] font-medium group-hover:gap-4 transition-all duration-300">
-                    <span>{cluster.type === 'direct' ? t('home.viewDetails') : t('villas.exploreCollection', 'Explore Collection')}</span>
+                    <span>{cluster.type === 'direct' ? t('home.viewDetails') : t('villas.exploreCluster', 'Explore Cluster')}</span>
                     <ArrowRight size={14} />
                   </div>
                 </div>

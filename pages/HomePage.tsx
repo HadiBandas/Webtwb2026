@@ -194,7 +194,9 @@ export function HomePage() {
                                         </div>
 
                                         <div className="p-5 md:p-8">
-                                            <h3 className="font-serif text-2xl text-forest-dark mb-2">{villa.name}</h3>
+                                            <h3 className="font-serif text-2xl text-forest-dark mb-2">
+                                                {villa.localizedName ? (villa.localizedName[i18n.language.split('-')[0] as 'id' | 'en' | 'zh' | 'de'] || villa.name) : villa.name}
+                                            </h3>
                                             <p className="text-gray-500 text-sm mb-6 line-clamp-2 font-light">
                                                 {typeof villa.description === 'string'
                                                     ? villa.description
