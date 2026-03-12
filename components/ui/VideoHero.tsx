@@ -46,7 +46,7 @@ export const VideoHero: React.FC<VideoHeroProps> = ({
             loop
             muted
             playsInline
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover animate-slow-push"
             poster={fallbackImage}
           >
             <source src={videoUrl} type="video/mp4" />
