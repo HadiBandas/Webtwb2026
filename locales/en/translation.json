@@ -186,10 +186,31 @@
         }
     },
     "offers": {
-        "title": "Special Offers",
-        "subtitle": "Experience the Best at Exceptional Prices",
+        "title": "Bespoke & Experiences",
+        "subtitle": "Luxury thoroughly personalized for you",
         "validUntil": "Valid until",
-        "bookOffer": "Book This Offer"
+        "bookOffer": "Book This Offer",
+        "designMyEscape": "Design My Escape",
+        "bespoke": {
+            "label": "Curated Just For You",
+            "title": "True Luxury Defies Standard Packages",
+            "description": "We believe that every meaningful journey cannot be generalized. Currently, we do not offer generic packages. Instead, our Concierge Team invites you to design an exclusive itinerary fully tailored to your rhythm and desires.",
+            "cta": "Contact Our Concierge",
+            "features": {
+                "dining": {
+                    "title": "Personalized Dining",
+                    "desc": "From a private BBQ in the middle of the forest to an exotic breakfast by the river, we help craft a personalized culinary journey rich in Nusantara flavors."
+                },
+                "amenities": {
+                    "title": "Exclusive Amenities",
+                    "desc": "Every detail of your stay will be meticulously attended to—from arrival decorations and priority access to curated romantic moments."
+                },
+                "activities": {
+                    "title": "Curated Activities",
+                    "desc": "Consult your vacation interests with us, and get a special guide to explore the pine forest ecosystem and river more privately and elegantly."
+                }
+            }
+        }
     },
     "resto": {
         "title": "Dining & Function",

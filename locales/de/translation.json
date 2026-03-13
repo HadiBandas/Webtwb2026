@@ -250,10 +250,31 @@
         }
     },
     "offers": {
-        "title": "Sonderangebote",
-        "subtitle": "Erleben Sie das Beste zu außergewöhnlichen Preisen",
+        "title": "Maßgeschneidert & Erlebnisse",
+        "subtitle": "Luxus, der ganz auf Sie zugeschnitten ist",
         "validUntil": "Gültig bis",
-        "bookOffer": "Dieses Angebot buchen"
+        "bookOffer": "Dieses Angebot buchen",
+        "designMyEscape": "Meine Auszeit gestalten",
+        "bespoke": {
+            "label": "Exklusiv Für Sie Kuratiert",
+            "title": "Wahrer Luxus Entzieht Sich Standardpaketen",
+            "description": "Wir glauben daran, dass jede bedeutungsvolle Reise einzigartig ist. Derzeit bieten wir keine generischen Standardpakete an. Stattdessen lädt unser Concierge-Team Sie ein, ein exklusives Programm zu entwerfen, das vollständig an Ihren Rhythmus und Ihre Wünsche angepasst ist.",
+            "cta": "Kontaktieren Sie Unseren Concierge",
+            "features": {
+                "dining": {
+                    "title": "Personalisiertes Essen",
+                    "desc": "Von einem privaten BBQ mitten im Wald bis zu einem exotischen Frühstück am Flussufer helfen wir dabei, eine personalisierte kulinarische Reise zu gestalten, die reich an Nusantara-Aromen ist."
+                },
+                "amenities": {
+                    "title": "Exklusive Annehmlichkeiten",
+                    "desc": "Jedes Detail Ihres Aufenthalts wird sorgfältig bedacht – von der Ankunftsdekoration über den bevorzugten Zugang bis hin zu kuratierten romantischen Momenten."
+                },
+                "activities": {
+                    "title": "Kuratierte Aktivitäten",
+                    "desc": "Besprechen Sie Ihre Urlaubsinteressen mit uns und erhalten Sie einen speziellen Führer, um das Pinienwald-Ökosystem und den Fluss privater und eleganter zu erkunden."
+                }
+            }
+        }
     },
     "resto": {
         "title": "Gastronomie & Veranstaltungen",

@@ -95,7 +95,7 @@ const VillasPage: React.FC<VillasPageProps> = ({ lang: propLang, onBook, onNavig
           zh: '美式农舍两套单元（上层与下层），适合聚会。',
           de: 'Amerikanische Farmhouse-Villen in 2 Einheiten (Oben & Unten), ideal für Veranstaltungen.'
         },
-        image: '/images/emerald-atas-hero.webp',
+        image: '/images/optimized/villas/emerald-01/hero.webp',
         type: 'group',
         filterFn: (v) => v.cluster === 'Emerald Villas',
         customBadge: 'Stand Alone'

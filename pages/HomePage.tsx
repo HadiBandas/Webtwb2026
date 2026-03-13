@@ -265,7 +265,7 @@ export function HomePage() {
                     <Stagger className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8" staggerDelay={0.2}>
                         {[
                             { img: '/images/facilities/Nature Discovery.jpg', titleKey: 'experiences.nature', descKey: 'experiences.natureDesc' },
-                            { img: '/images/facilities/Family Picnic.jpg', titleKey: 'experiences.picnic', descKey: 'experiences.picnicDesc' },
+                            { img: '/images/facilities/Picnic Family.webp', titleKey: 'experiences.picnic', descKey: 'experiences.picnicDesc' },
                             { img: '/images/facilities/waterfall track.jpeg', titleKey: 'experiences.waterfall', descKey: 'experiences.waterfallDesc' },
                             { img: '/images/facilities/Stargazing.png', titleKey: 'experiences.stargazing', descKey: 'experiences.stargazingDesc' }
                         ].map((exp, i) => (

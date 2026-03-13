@@ -2718,7 +2718,7 @@ export const ACTIVITY_CATEGORIES: ActivityCategory[] = [
           zh: '在郁郁葱葱的凉爽花园区享受与家人的美好时光。',
           de: 'Genie�en Sie wertvolle Zeit mit der Familie bei einem Picknick im �ppigen und k�hlen Gartenbereich.'
         },
-        image: '/images/facilities/Family Picnic.jpg'
+        image: '/images/facilities/Picnic Family.webp'
       },
       {
         title: {
@@ -2754,93 +2754,4 @@ export const ACTIVITY_CATEGORIES: ActivityCategory[] = [
   }
 ];
 
-export const OFFERS: Offer[] = [
-  {
-    id: 'romantic-mountain-escape',
-    title: {
-      id: 'Pelarian Romantis Gunung',
-      en: 'Romantic Mountain Escape',
-      zh: '浪漫山地逃逸',
-      de: 'Romantische Bergflucht'
-    },
-    description: {
-      id: 'Ciptakan kenangan tak terlupakan bersama orang terkasih. Termasuk makan malam romantis di tepi sungai, spa pasangan, sarapan di tempat tidur, dan rangkaian bunga eksklusif.',
-      en: 'Create unforgettable memories with your loved one. Includes candlelight dinner by the river, couple spa treatment, breakfast in bed, and exclusive flower arrangements.',
-      zh: '与爱人创造难忘的回忆。包含河畔烛光晚餐、情侣SPA、床上早餐和专属鲜花布置。',
-      de: 'Schaffen Sie unvergessliche Erinnerungen mit Ihrem Liebsten. Beinhaltet Candle-Light-Dinner am Fluss, Paar-Spa-Behandlung, Frühstück im Bett und exklusive Blumenarrangements.'
-    },
-    image: 'https://images.unsplash.com/photo-1510076857177-7470076d4098?q=80&w=1600',
-    validFrom: 'Jan 1, 2025',
-    validTo: 'Mar 31, 2025',
-    discount: 'Save 22%',
-    price: 'Rp 3,500,000',
-    inclusions: [
-      '2 Days 1 Night in Executive Villa',
-      'Candlelight Dinner by Cigeureuh River',
-      'Couple Spa & Massage Treatment',
-      'Breakfast in Bed with Mountain View',
-      'Flower Arrangement & Decoration',
-      'Complimentary Welcome Drink',
-      'Late Check-out (2 PM)'
-    ]
-  },
-  {
-    id: 'family-bonding',
-    title: {
-      id: 'Ikatan Keluarga Utama',
-      en: 'Ultimate Family Bonding',
-      zh: '终极家庭团聚',
-      de: 'Ultimative Familienbindung'
-    },
-    description: {
-      id: 'Terhubung kembali dengan keluarga Anda di jantung alam. Makanan organik lengkap, api unggun pribadi, kegiatan alam untuk anak-anak, dan kenangan seumur hidup.',
-      en: 'Reconnect with your family in the heart of nature. Full board organic meals, private bonfire, nature activities for kids, and memories that last a lifetime.',
-      zh: '在大自然中心与家人重新连接。包含全食宿有机餐、私人篝火、儿童自然活动和终生难忘的回忆。',
-      de: 'Verbinden Sie sich wieder mit Ihrer Familie im Herzen der Natur. Vollpension mit Bio-Mahlzeiten, privates Lagerfeuer, Naturaktivitäten für Kinder und Erinnerungen, die ein Leben lang halten.'
-    },
-    image: 'https://images.unsplash.com/photo-1542834323-5e025882fb84?q=80&w=1600',
-    validFrom: 'Jan 15, 2025',
-    validTo: 'Apr 30, 2025',
-    discount: 'Save 21%',
-    price: 'Rp 5,900,000',
-    inclusions: [
-      '3 Days 2 Nights in Luxury Family Villa',
-      'Full Board Organic Farm-to-Table Meals',
-      'Private Bonfire & BBQ Night',
-      'Guided Nature Discovery Tour for Kids',
-      'Flying Fox & Adventure Activities',
-      'Family Photography Session',
-      'Complimentary Snacks & Drinks',
-      'Early Check-in & Late Check-out'
-    ]
-  },
-  {
-    id: 'wellness-retreat',
-    title: {
-      id: 'Paket Wellness Retreat',
-      en: 'Mountain Wellness Retreat',
-      zh: '山地康养静修',
-      de: 'Berg-Wellness-Retreat'
-    },
-    description: {
-      id: 'Kembalikan keseimbangan tubuh dan pikiran Anda. Yoga harian, meditasi, makanan detoksifikasi, dan akses tak terbatas ke kolam mata air alami kami.',
-      en: 'Restore balance to your body and mind. Daily yoga, meditation, detox meals, and unlimited access to our natural spring pools.',
-      zh: '恢复身心平衡。每日瑜伽、冥想、排毒餐，并可无限次使用我们的天然泉水池。',
-      de: 'Stellen Sie das Gleichgewicht von Körper und Geist wieder her. Tägliches Yoga, Meditation, Detox-Mahlzeiten und unbegrenzter Zugang zu unseren natürlichen Quellpools.'
-    },
-    image: 'https://images.unsplash.com/photo-1544367563-12123d896889?q=80&w=1600',
-    validFrom: 'Feb 1, 2025',
-    validTo: 'May 31, 2025',
-    discount: 'Save 15%',
-    price: 'Rp 2,800,000',
-    inclusions: [
-      '2 Days 1 Night in Wellness Cabin',
-      'Full Board Detox Meals & Juices',
-      'Morning Sunrise Yoga Session',
-      'Guided River Meditation',
-      'Traditional Sundanese Massage (90 min)',
-      'Forest Bathing Experience',
-      'Wellness Gift Pack'
-    ]
-  }
-];
+export const OFFERS: Offer[] = [];

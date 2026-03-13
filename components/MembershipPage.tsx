@@ -37,18 +37,19 @@ export function MembershipPage() {
             />
 
             {/* 1. Cinematic Hero - Full Height */}
-            <div className="relative h-screen flex items-center justify-center overflow-hidden">
+            <div className="relative h-[100vh] flex items-center justify-center overflow-hidden bg-[#FDFBF7]">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={optimizeImage("/images/membership/membership-hero.jpg", 2560)}
                         alt="Mist over mountains"
-                        className="w-full h-full object-cover scale-105 animate-slow-push"
+                        className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-[#FDFBF7]"></div>
+                    {/* Gradient overlay to seamlessly blend the image into the paper background below */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-[#FDFBF7]"></div>
                 </div>
 
                 <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
-                    <div className="inline-block border-t border-b border-white/60 py-2 mb-8">
+                    <div className="inline-block border-t border-b border-white/40 py-2 mb-8">
                         <span className="text-white text-xs md:text-sm tracking-[0.3em] uppercase font-light">{t('membership.collectionLabel')}</span>
                     </div>
                     <h1 className="font-serif text-5xl md:text-8xl text-white mb-8 tracking-tight drop-shadow-lg">
@@ -68,7 +69,7 @@ export function MembershipPage() {
             </div>
 
             {/* 2. Editorial Philosophy Section */}
-            <section className="py-24 md:py-32 px-4 relative">
+            <section className="py-24 md:py-32 px-4 relative bg-[#FDFBF7] -mt-1 pt-25 md:pt-33 z-20">
                 <div className="container mx-auto max-w-5xl">
                     <div className="flex flex-col md:flex-row gap-16 items-center">
                         <div className="w-full md:w-1/2">

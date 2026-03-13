@@ -27,7 +27,7 @@ const GALLERY_IMAGES = {
         { url: '/images/facilities/Mountain Wellness.jpeg', title: { en: 'Mountain Landscape', id: 'Pemandangan Gunung', zh: '山地景观', de: 'Berglandschaft' } },
     ],
     activities: [
-        { url: '/images/facilities/Family Picnic.jpg', title: { en: 'Family Picnic', id: 'Piknik Keluarga', zh: '家庭野餐', de: 'Familienpicknick' } },
+        { url: '/images/facilities/Picnic Family.webp', title: { en: 'Family Picnic', id: 'Piknik Keluarga', zh: '家庭野餐', de: 'Familienpicknick' } },
         { url: '/images/facilities/Children Playground.jpg', title: { en: 'Children Playground', id: 'Taman Bermain Anak', zh: '儿童游乐场', de: 'Kinderspielplatz' } },
         { url: '/images/facilities/Swimming Pool.jpg', title: { en: 'Swimming Pool', id: 'Kolam Renang', zh: '游泳池', de: 'Schwimmbad' } },
         { url: '/images/facilities/Riverplaying.jpg', title: { en: 'River Fun', id: 'Bermain di Sungai', zh: '河边嬉戏', de: 'Flussspaß' } },

@@ -177,10 +177,31 @@
         "subtitle": "Segala yang Perlu Anda Ketahui"
     },
     "offers": {
-        "title": "Penawaran Spesial",
-        "subtitle": "Dapatkan Pengalaman Terbaik dengan Harga Istimewa",
+        "title": "Bespoke & Experiences",
+        "subtitle": "Kemewahan yang sepenuhnya dipersonalisasi untuk Anda",
         "validUntil": "Berlaku hingga",
-        "bookOffer": "Pesan Penawaran Ini"
+        "bookOffer": "Pesan Penawaran Ini",
+        "designMyEscape": "Rancang Liburan Saya",
+        "bespoke": {
+            "label": "Curated Just For You",
+            "title": "Kemewahan Sejati Menolak Paket Standar",
+            "description": "Kami percaya bahwa setiap perjalanan bermakna tidak bisa disamaratakan. Saat ini, kami tidak menawarkan paket massal. Sebaliknya, Concierge Team kami mengundang Anda untuk merancang itinerary eksklusif yang sepenuhnya disesuaikan dengan ritme dan keinginan Anda.",
+            "cta": "Hubungi Concierge Kami",
+            "features": {
+                "dining": {
+                    "title": "Personalized Dining",
+                    "desc": "Dari private BBQ di tengah hutan hingga sarapan eksotis di tepian sungai, kami membantu merangkai perjalanan kuliner personal yang kaya rasa Nusantara."
+                },
+                "amenities": {
+                    "title": "Exclusive Amenities",
+                    "desc": "Setiap detail masa inap Anda akan diperhatikan secara saksama—mulai dari dekorasi kedatangan, prioritas akses, hingga pengaturan momen romantis yang terkurasi."
+                },
+                "activities": {
+                    "title": "Curated Activities",
+                    "desc": "Konsultasikan minat liburan Anda pada kami, dan dapatkan panduan khusus untuk mengeksplorasi ekosistem hutan pinus dan sungai secara lebih privat dan elegan."
+                }
+            }
+        }
     },
     "resto": {
         "title": "Dining & Function",

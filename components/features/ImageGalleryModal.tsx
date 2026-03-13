@@ -60,12 +60,12 @@ export function ImageGalleryModal({ images, isOpen, onClose, initialIndex = 0 }:
                     </div>
 
                     {/* Main Image */}
-                    <div className="relative w-full h-full flex items-center justify-center p-20">
+                    <div className="relative w-full h-full flex items-center justify-center px-4 py-24 md:px-20 md:py-28">
                         <motion.img
                             key={currentIndex}
                             src={images[currentIndex]}
                             alt={`Gallery image ${currentIndex + 1}`}
-                            className="max-w-full max-h-full object-contain"
+                            className="w-full h-full object-contain"
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.3 }}
